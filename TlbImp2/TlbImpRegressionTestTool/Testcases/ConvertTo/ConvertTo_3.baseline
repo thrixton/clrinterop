@@ -1,0 +1,43 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly ConvertTo_3.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("40DA6A2B-CDF6-4940-A677-C8AC3AA2E31F")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("ConvertTo_3")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)1, (Int32)0)
+} // end of assembly
+.module ConvertTo_3.tlb.dll
+.file ConvertTo_3.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class ConvertTo_3.tlb.IA (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("65A7257F-2396-41CC-86B6-665F6641D07E")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void TargetFunction ([mscorlib]System.Int32[], System.Int32)
+.override ConvertTo_3.tlb.IA.TargetFunction{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)42, ArraySubType = 80, SizeParamIndex = 1, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method TargetFunction
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void TargetFunction2 ([mscorlib]System.Int32&)
+.override ConvertTo_3.tlb.IA.TargetFunction2{
+} // end of method TargetFunction2
+} //end of class ConvertTo_3.tlb.IA

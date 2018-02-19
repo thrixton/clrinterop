@@ -1,0 +1,12 @@
+<Rules>
+  <Rule Name="Rule #1" Category="Type">
+    <Condition>
+      <And>
+        <GUID Operator="Equal" Value="31767136-ff80-4914-852b-8bf48756dd8e" />
+      </And>
+    </Condition>
+    <Action Name="ChangeManagedName">
+      <Parameter Key="NewName" Value="NewType" />
+    </Action>
+  </Rule>
+</Rules>

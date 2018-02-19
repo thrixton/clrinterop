@@ -1,0 +1,10 @@
+<Rules>
+  <Rule Name="Rule #1" Category="Function">
+    <Condition>
+      <And>
+        <NativeName Operator="Not Contains" Value="OperatorTest1" />
+      </And>
+    </Condition>
+    <Action Name="PreserveSig" />
+  </Rule>
+</Rules>

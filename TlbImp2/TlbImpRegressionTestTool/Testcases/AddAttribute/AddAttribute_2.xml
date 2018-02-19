@@ -1,0 +1,15 @@
+<Rules>
+  <Rule Name="Rule #1" Category="Type">
+    <Condition>
+      <And>
+        <TypeKind Operator="Equal" Value="Interface" />
+      </And>
+    </Condition>
+    <Action Name="AddAttribute">
+      <Parameter Key="AssemblyName" Value="mscorlib" />
+      <Parameter Key="TypeName" Value="System.ObsoleteAttribute" />
+      <Parameter Key="Constructor" Value="Void .ctor(System.String, Boolean)" />
+      <Parameter Key="Data" Value="01 00 09 4F 62 73 6F 6C 65 74 65 64 01 00 00" />
+    </Action>
+  </Rule>
+</Rules>

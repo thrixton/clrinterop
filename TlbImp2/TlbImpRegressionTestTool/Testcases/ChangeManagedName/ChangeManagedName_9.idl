@@ -1,0 +1,31 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(2F2330D4-7F62-491C-89A2-BBAC627AE2F8),
+	version(1.0),
+	helpstring("ChangeManagedName_9 Type Library")
+]
+library ChangeManagedName_9
+{
+   importlib("stdole2.tlb");
+   importlib("stdole32.tlb");
+
+   	[
+		uuid(68e59b77-0fd8-4f3c-89d5-0efefd67af17)
+	]
+	interface TargetType:IDispatch{
+        HRESULT Foo([in] int en);
+    };
+
+	[
+		uuid(1c07d58e-b7f3-48be-b5e0-9c43c4b0b2a7)
+	]
+	dispinterface TargetType2{
+       	properties:
+            [id(1)] int a;
+        methods:
+        	[id(10)] BSTR OnRunStart();
+        	[id(20)] HRESULT OnRunStop([out, retval] BSTR *reason);
+    };
+};

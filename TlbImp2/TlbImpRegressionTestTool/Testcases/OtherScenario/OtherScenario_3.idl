@@ -1,0 +1,13 @@
+[
+	uuid(777d5a39-13b4-48e9-aee5-46c420c79a31),
+	helpstring("OtherScenario_1")
+]
+library OtherScenario_3
+{
+	importlib("stdole2.tlb");
+
+	[
+		uuid(c08634cb-9c83-4479-984d-a49f7eb8cfb6)
+	]
+	interface TargetType:IDispatch{};
+}

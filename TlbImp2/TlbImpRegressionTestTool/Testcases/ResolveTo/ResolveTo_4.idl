@@ -1,0 +1,19 @@
+[
+	uuid(281b92da-3aea-4cb0-9700-3d0c8b252ad2),
+	version(1.0),
+	helpstring("ResolveTo_4 Type Library")
+]
+library ResolveTo_4
+{
+   importlib("stdole2.tlb");
+   importlib("stdole32.tlb");
+   importlib("ResolveToRef.tlb");
+
+   	[
+		uuid(68e59b77-0fd8-4f3c-89d5-0efefd67af17)
+	]
+	interface IA:IDispatch
+	{
+		HRESULT method1(TargetType* param);
+	};
+};

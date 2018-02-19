@@ -1,0 +1,36 @@
+[
+	uuid(2F2330D4-7F62-491C-89A2-BBAC627AE2F8),
+	version(1.0),
+	helpstring("MultipleRule_3 Type Library")
+]
+library MultipleRule_3
+{
+   importlib("stdole2.tlb");
+   importlib("stdole32.tlb");
+
+   	[
+		uuid(68e59b77-0fd8-4f3c-89d5-0efefd67af17)
+	]
+	interface TargetType:IDispatch
+	{
+		HRESULT TargetFunction(
+            [in] int en,
+            [out, retval] VARIANT_BOOL *ret
+        );
+        HRESULT TargetFunction2(
+            [in] int en,
+            [out, retval] VARIANT_BOOL *ret
+        );
+	};
+
+   	[
+		uuid(29743667-79fd-47f0-8dea-f1eb1406cce0)
+	]
+	interface TargetType2:IDispatch
+	{
+		HRESULT TargetFunction(
+            [in] int en,
+            [out, retval] VARIANT_BOOL *ret
+        );
+	};
+};

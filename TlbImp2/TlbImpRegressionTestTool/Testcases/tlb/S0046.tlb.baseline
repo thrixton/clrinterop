@@ -1,0 +1,43 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly S0046.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("000260B6-0000-0000-C000-000000000046")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("mktl46lcid1038")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)0, (Int32)0)
+} // end of assembly
+.module S0046.tlb.dll
+.file S0046.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class S0046.tlb.__MIDL___MIDL_itf_MKTL0046_0000_0001 (AnsiClass, AutoLayout, BeforeFieldInit, Public, Sealed, SequentialLayout)
+.extends [mscorlib]System.ValueType
+{
+.field (HasFieldMarshal, Public) [mscorlib]System.DateTime[] dArray
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)30, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 31, IidParameterIndex = 0, SafeArraySubType = 0)
+.field (HasFieldMarshal, Public) System.Object pToI
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)26, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} //end of class S0046.tlb.__MIDL___MIDL_itf_MKTL0046_0000_0001
+.class S0046.tlb.rType (AnsiClass, AutoLayout, BeforeFieldInit, Public, Sealed, SequentialLayout)
+.extends [mscorlib]System.ValueType
+{
+.field (HasFieldMarshal, Public) [mscorlib]System.DateTime[] dArray
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)30, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 31, IidParameterIndex = 0, SafeArraySubType = 0)
+.field (HasFieldMarshal, Public) System.Object pToI
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)26, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} //end of class S0046.tlb.rType

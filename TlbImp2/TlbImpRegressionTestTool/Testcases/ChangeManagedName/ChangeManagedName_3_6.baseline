@@ -1,0 +1,148 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly ChangeManagedName_3_6.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("777D5A39-13B4-48E9-AEE5-46C420C79A31")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("ChangeManagedName_3_6")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)0, (Int32)0)
+} // end of assembly
+.module ChangeManagedName_3_6.tlb.dll
+.file ChangeManagedName_3_6.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class ChangeManagedName_3_6.tlb.__MIDL___MIDL_itf_ChangeManagedName_3_6_0001_0065_0001 (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.field (HasDefault, Literal, Public, Static) ChangeManagedName_3_6.tlb.__MIDL___MIDL_itf_ChangeManagedName_3_6_0001_0065_0001 day1 = 1
+.field (HasDefault, Literal, Public, Static) ChangeManagedName_3_6.tlb.__MIDL___MIDL_itf_ChangeManagedName_3_6_0001_0065_0001 day2 = 2
+.field (HasDefault, Literal, Public, Static) ChangeManagedName_3_6.tlb.__MIDL___MIDL_itf_ChangeManagedName_3_6_0001_0065_0001 day3 = 3
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+} //end of class ChangeManagedName_3_6.tlb.__MIDL___MIDL_itf_ChangeManagedName_3_6_0001_0065_0001
+.class ChangeManagedName_3_6.tlb.__MIDL___MIDL_itf_ChangeManagedName_3_6_0001_0065_0002 (AnsiClass, AutoLayout, BeforeFieldInit, Public, Sealed, SequentialLayout)
+.extends [mscorlib]System.ValueType
+{
+.field (Public) System.Int32 fint
+} //end of class ChangeManagedName_3_6.tlb.__MIDL___MIDL_itf_ChangeManagedName_3_6_0001_0065_0002
+.class ChangeManagedName_3_6.tlb.__MIDL___MIDL_itf_ChangeManagedName_3_6_0001_0066_0002 (AnsiClass, AutoLayout, ExplicitLayout, Public, Sealed)
+.extends [mscorlib]System.ValueType
+{
+.field (Public) System.Double d2
+.custom [mscorlib]System.Runtime.InteropServices.FieldOffsetAttribute((Int32)0)
+.field (Public) System.Single f1
+.custom [mscorlib]System.Runtime.InteropServices.FieldOffsetAttribute((Int32)0)
+} //end of class ChangeManagedName_3_6.tlb.__MIDL___MIDL_itf_ChangeManagedName_3_6_0001_0066_0002
+.class ChangeManagedName_3_6.tlb.coclassTargetType (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements ChangeManagedName_3_6.tlb.iTargetType, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.CoClassAttribute(typeof(ChangeManagedName_3_6.tlb.coclassTargetTypeClass))
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("C08634CB-9C83-4479-984D-A49F7EB8CFB6")
+} //end of class ChangeManagedName_3_6.tlb.coclassTargetType
+.class ChangeManagedName_3_6.tlb.coclassTargetTypeClass (AnsiClass, AutoLayout, Import, Public)
+.extends [mscorlib]System.__ComObject
+.implements ChangeManagedName_3_6.tlb.iTargetType, ChangeManagedName_3_6.tlb.coclassTargetType, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("F15E6D0D-87A0-4C02-89C3-6D51B4D09BCF")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)2)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor ()
+{
+} // end of method .ctor
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Foo (System.Int32)
+.override ChangeManagedName_3_6.tlb.coclassTargetTypeClass.Foo{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method Foo
+} //end of class ChangeManagedName_3_6.tlb.coclassTargetTypeClass
+.class ChangeManagedName_3_6.tlb.dispiTargetType (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("EC8E2F30-777F-4ADC-808A-EFD84F9746FD")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)2)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_a ()
+.override ChangeManagedName_3_6.tlb.dispiTargetType.get_a{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+} // end of method get_a
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.String OnRunStart ()
+.override ChangeManagedName_3_6.tlb.dispiTargetType.OnRunStart{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)10)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method OnRunStart
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void OnRunStop ([mscorlib]System.String&)
+.override ChangeManagedName_3_6.tlb.dispiTargetType.OnRunStop{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)20)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method OnRunStop
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_a (System.Int32)
+.override ChangeManagedName_3_6.tlb.dispiTargetType.set_a{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+} // end of method set_a
+.property (None) System.Int32 a
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_a ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_a (System.Int32)
+} // end of property a
+} //end of class ChangeManagedName_3_6.tlb.dispiTargetType
+.class ChangeManagedName_3_6.tlb.enumTargetType (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.field (HasDefault, Literal, Public, Static) ChangeManagedName_3_6.tlb.enumTargetType day1 = 1
+.field (HasDefault, Literal, Public, Static) ChangeManagedName_3_6.tlb.enumTargetType day2 = 2
+.field (HasDefault, Literal, Public, Static) ChangeManagedName_3_6.tlb.enumTargetType day3 = 3
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+} //end of class ChangeManagedName_3_6.tlb.enumTargetType
+.class ChangeManagedName_3_6.tlb.iTargetType (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("C08634CB-9C83-4479-984D-A49F7EB8CFB6")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Foo (System.Int32)
+.override ChangeManagedName_3_6.tlb.iTargetType.Foo{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method Foo
+} //end of class ChangeManagedName_3_6.tlb.iTargetType
+.class ChangeManagedName_3_6.tlb.moduleTargetType (Abstract, AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("3CF74EF1-4D94-4D3C-9D9C-CBD487CD9217")
+.field (Literal, Public, Static) System.UInt32 COLOR_FRAME
+} //end of class ChangeManagedName_3_6.tlb.moduleTargetType
+.class ChangeManagedName_3_6.tlb.strTargetType (AnsiClass, AutoLayout, BeforeFieldInit, Public, Sealed, SequentialLayout)
+.extends [mscorlib]System.ValueType
+{
+.field (Public) System.Int32 fint
+} //end of class ChangeManagedName_3_6.tlb.strTargetType
+.class ChangeManagedName_3_6.tlb.unionTargetType (AnsiClass, AutoLayout, BeforeFieldInit, Public, Sealed, SequentialLayout)
+.extends [mscorlib]System.ValueType
+{
+.field (Public) ChangeManagedName_3_6.tlb.__MIDL___MIDL_itf_ChangeManagedName_3_6_0001_0066_0002 tagged_union
+.field (Public) System.Int32 l1
+} //end of class ChangeManagedName_3_6.tlb.unionTargetType

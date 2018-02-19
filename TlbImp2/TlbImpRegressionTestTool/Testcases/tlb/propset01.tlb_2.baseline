@@ -1,0 +1,420 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly propset01.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("AAC8B08E-8130-4557-A7C5-7BD478647BFF")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("PROPSET01Lib")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)1, (Int32)0)
+} // end of assembly
+.module propset01.tlb.dll
+.file propset01.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class propset01.tlb.classA (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements propset01.tlb.IclassA, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.CoClassAttribute(typeof(propset01.tlb.classAClass))
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("7809A000-28ED-489E-BC0E-B5F9362F87FF")
+} //end of class propset01.tlb.classA
+.class propset01.tlb.classAClass (AnsiClass, AutoLayout, Import, Public)
+.extends [mscorlib]System.__ComObject
+.implements propset01.tlb.IclassA, propset01.tlb.classA, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.ComConversionLossAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("E4A058B7-9681-48EC-B70A-63B939BA8EFF")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)2)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor ()
+{
+} // end of method .ctor
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 set_method11 (System.Int32)
+.override propset01.tlb.classAClass.set_method11{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)18)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method set_method11
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Single get_p1 (System.Int32)
+.override propset01.tlb.classAClass.get_p1{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+} // end of method get_p1
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Single get_p2 (System.Int32)
+.override propset01.tlb.classAClass.get_p2{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)71)
+} // end of method get_p2
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Single method10 ()
+.override propset01.tlb.classAClass.method10{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)11)
+} // end of method method10
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Single method4 (System.Int32)
+.override propset01.tlb.classAClass.method4{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+} // end of method method4
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Single method5 (System.Int32, System.Single)
+.override propset01.tlb.classAClass.method5{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)6)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method method5
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Single tmethod25 (System.Int32, System.Single)
+.override propset01.tlb.classAClass.tmethod25{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)96)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method tmethod25
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Single tmethod5 (System.Int32, System.Single)
+.override propset01.tlb.classAClass.tmethod5{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)86)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method tmethod5
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.String method7 ()
+.override propset01.tlb.classAClass.method7{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)8)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method method7
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String set_method22 (System.Int32)
+.override propset01.tlb.classAClass.set_method22{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)28)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_method22
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void let_p2 (System.Int32, System.Single)
+.override propset01.tlb.classAClass.let_p2{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)71)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method let_p2
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method6 ()
+.override propset01.tlb.classAClass.method6{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)7)
+} // end of method method6
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method8 ()
+.override propset01.tlb.classAClass.method8{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)9)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method method8
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p1 (System.Int32, System.Single)
+.override propset01.tlb.classAClass.set_p1{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_p1
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p2 (System.Int32, [mscorlib]System.Single&)
+.override propset01.tlb.classAClass.set_p2{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)71)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_p2
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_twiceset (System.Single)
+.override propset01.tlb.classAClass.set_twiceset{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_twiceset
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod2 ([mscorlib]System.Single&)
+.override propset01.tlb.classAClass.set_vmethod2{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method set_vmethod2
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod22 ([mscorlib]System.Single&)
+.override propset01.tlb.classAClass.set_vmethod22{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)23)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method set_vmethod22
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod23 (System.Int32, System.Single, System.Single, System.Int32)
+.override propset01.tlb.classAClass.set_vmethod23{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)24)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [3]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_vmethod23
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod29 (System.Int32)
+.override propset01.tlb.classAClass.set_vmethod29{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)210)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method set_vmethod29
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod3 (System.Int32, System.Single, System.Single, System.Int32)
+.override propset01.tlb.classAClass.set_vmethod3{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [3]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_vmethod3
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod9 (System.Int32)
+.override propset01.tlb.classAClass.set_vmethod9{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)10)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method set_vmethod9
+.property (None) System.Int32 method11
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)18)
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 set_method11 (System.Int32)
+} // end of property method11
+.property (None) System.Int32 method22
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)28)
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String set_method22 (System.Int32)
+} // end of property method22
+.property (None) System.Int32 vmethod23
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)24)
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod23 (System.Int32, System.Single, System.Single, System.Int32)
+} // end of property vmethod23
+.property (None) System.Int32 vmethod29
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)210)
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod29 (System.Int32)
+} // end of property vmethod29
+.property (None) System.Int32 vmethod3
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod3 (System.Int32, System.Single, System.Single, System.Int32)
+} // end of property vmethod3
+.property (None) System.Int32 vmethod9
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)10)
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod9 (System.Int32)
+} // end of property vmethod9
+.property (None) System.IntPtr vmethod2
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod2 ([mscorlib]System.Single&)
+} // end of property vmethod2
+.property (None) System.IntPtr vmethod22
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)23)
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod22 ([mscorlib]System.Single&)
+} // end of property vmethod22
+.property (None) System.Single p1
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Single get_p1 (System.Int32)
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p1 (System.Int32, System.Single)
+} // end of property p1
+.property (None) System.Single p2
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)71)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Single get_p2 (System.Int32)
+.other (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void let_p2 (System.Int32, System.Single)
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p2 (System.Int32, [mscorlib]System.Single&)
+} // end of property p2
+.property (None) System.Single twiceset
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_twiceset (System.Single)
+} // end of property twiceset
+} //end of class propset01.tlb.classAClass
+.class propset01.tlb.IclassA (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComConversionLossAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("7809A000-28ED-489E-BC0E-B5F9362F87FF")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4160)
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 set_method11 (System.Int32)
+.override propset01.tlb.IclassA.set_method11{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)18)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method set_method11
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Single get_p1 (System.Int32)
+.override propset01.tlb.IclassA.get_p1{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+} // end of method get_p1
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Single get_p2 (System.Int32)
+.override propset01.tlb.IclassA.get_p2{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)71)
+} // end of method get_p2
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Single method10 ()
+.override propset01.tlb.IclassA.method10{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)11)
+} // end of method method10
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Single method4 (System.Int32)
+.override propset01.tlb.IclassA.method4{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+} // end of method method4
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Single method5 (System.Int32, System.Single)
+.override propset01.tlb.IclassA.method5{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)6)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method method5
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Single tmethod25 (System.Int32, System.Single)
+.override propset01.tlb.IclassA.tmethod25{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)96)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method tmethod25
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Single tmethod5 (System.Int32, System.Single)
+.override propset01.tlb.IclassA.tmethod5{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)86)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method tmethod5
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.String method7 ()
+.override propset01.tlb.IclassA.method7{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)8)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method method7
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String set_method22 (System.Int32)
+.override propset01.tlb.IclassA.set_method22{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)28)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_method22
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void let_p2 (System.Int32, System.Single)
+.override propset01.tlb.IclassA.let_p2{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)71)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method let_p2
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method6 ()
+.override propset01.tlb.IclassA.method6{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)7)
+} // end of method method6
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method8 ()
+.override propset01.tlb.IclassA.method8{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)9)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method method8
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p1 (System.Int32, System.Single)
+.override propset01.tlb.IclassA.set_p1{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_p1
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p2 (System.Int32, [mscorlib]System.Single&)
+.override propset01.tlb.IclassA.set_p2{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)71)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_p2
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_twiceset (System.Single)
+.override propset01.tlb.IclassA.set_twiceset{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_twiceset
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod2 ([mscorlib]System.Single&)
+.override propset01.tlb.IclassA.set_vmethod2{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method set_vmethod2
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod22 ([mscorlib]System.Single&)
+.override propset01.tlb.IclassA.set_vmethod22{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)23)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method set_vmethod22
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod23 (System.Int32, System.Single, System.Single, System.Int32)
+.override propset01.tlb.IclassA.set_vmethod23{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)24)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [3]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_vmethod23
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod29 (System.Int32)
+.override propset01.tlb.IclassA.set_vmethod29{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)210)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method set_vmethod29
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod3 (System.Int32, System.Single, System.Single, System.Int32)
+.override propset01.tlb.IclassA.set_vmethod3{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [3]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_vmethod3
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod9 (System.Int32)
+.override propset01.tlb.IclassA.set_vmethod9{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)10)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method set_vmethod9
+.property (None) System.Int32 method11
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)18)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 set_method11 (System.Int32)
+} // end of property method11
+.property (None) System.Int32 method22
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)28)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String set_method22 (System.Int32)
+} // end of property method22
+.property (None) System.Int32 vmethod23
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)24)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod23 (System.Int32, System.Single, System.Single, System.Int32)
+} // end of property vmethod23
+.property (None) System.Int32 vmethod29
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)210)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod29 (System.Int32)
+} // end of property vmethod29
+.property (None) System.Int32 vmethod3
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod3 (System.Int32, System.Single, System.Single, System.Int32)
+} // end of property vmethod3
+.property (None) System.Int32 vmethod9
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)10)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod9 (System.Int32)
+} // end of property vmethod9
+.property (None) System.IntPtr vmethod2
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod2 ([mscorlib]System.Single&)
+} // end of property vmethod2
+.property (None) System.IntPtr vmethod22
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)23)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vmethod22 ([mscorlib]System.Single&)
+} // end of property vmethod22
+.property (None) System.Single p1
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Single get_p1 (System.Int32)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p1 (System.Int32, System.Single)
+} // end of property p1
+.property (None) System.Single p2
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)71)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Single get_p2 (System.Int32)
+.other (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void let_p2 (System.Int32, System.Single)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p2 (System.Int32, [mscorlib]System.Single&)
+} // end of property p2
+.property (None) System.Single twiceset
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_twiceset (System.Single)
+} // end of property twiceset
+} //end of class propset01.tlb.IclassA

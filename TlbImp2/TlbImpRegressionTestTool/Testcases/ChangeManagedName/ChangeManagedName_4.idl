@@ -1,0 +1,37 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(46000433-1dd4-4a6d-bac8-9c643d27e18e),
+	version(1.0),
+	helpstring("ChangeManagedName_4 Type Library")
+]
+library ChangeManagedName_4
+{
+   importlib("stdole2.tlb");
+   importlib("stdole32.tlb");
+
+   	[
+		uuid(31767136-ff80-4914-852b-8bf48756dd8e)
+	]
+	interface TargetType:IDispatch{
+        HRESULT Foo([in] int en);
+    };
+
+	[
+		uuid(3cf74ef1-4d94-4d3c-9d9c-cbd487cd9217), 
+		helpstring("This is a module"), 
+	] 
+	module moduleTargetType
+	{ 
+		[helpstring("Color for the frame")] unsigned long const COLOR_FRAME = 0; 
+	};
+
+	[
+	  uuid(f15e6d0d-87a0-4c02-89c3-6d51b4d09bcf),
+	]
+	coclass coclassTargetType
+	{
+		[default] interface TargetType;
+	};
+};

@@ -1,0 +1,13 @@
+<Rules>
+  <Rule Name="Rule #1" Category="Type">
+    <Condition>
+      <And>
+        <GUID Operator="Equal" Value="ec8e2f30-777f-4adc-808a-efd84f9746fd" />
+      </And>
+    </Condition>
+    <Action Name="ResolveTo">
+      <Parameter Key="AssemblyName" Value="mscorlib" />
+      <Parameter Key="ManagedTypeFullName" Value="System.String" />
+    </Action>
+  </Rule>
+</Rules>

@@ -1,0 +1,1174 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly dispret.dll.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("ABA5E743-AC99-4F49-98FF-2FC7FE88FC9A")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("DISPRETLib")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)1, (Int32)0)
+} // end of assembly
+.module dispret.dll.tlb.dll
+.file dispret.dll.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class dispret.dll.tlb._HostEvents (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("9D85AC93-527F-4C4A-99A5-FFD1D1AE2A16")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)2)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Boolean Click ()
+.override dispret.dll.tlb._HostEvents.Click{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method Click
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Boolean Ping ()
+.override dispret.dll.tlb._HostEvents.Ping{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method Ping
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_Pa ()
+.override dispret.dll.tlb._HostEvents.get_Pa{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)6)
+} // end of method get_Pa
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_Pb ()
+.override dispret.dll.tlb._HostEvents.get_Pb{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method get_Pb
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Pa (System.Int32)
+.override dispret.dll.tlb._HostEvents.set_Pa{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)6)
+} // end of method set_Pa
+.property (None) System.Int32 Pa
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)6)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_Pa ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Pa (System.Int32)
+} // end of property Pa
+.property (None) System.Int32 Pb
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_Pb ()
+} // end of property Pb
+} //end of class dispret.dll.tlb._HostEvents
+.class dispret.dll.tlb._HostEvents_ClickEventHandler (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.MulticastDelegate
+.implements System.ICloneable, System.Runtime.Serialization.ISerializable, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute((Boolean)False)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor (System.Object, System.UIntPtr)
+{
+} // end of method .ctor
+.method  (PrivateScope, Public, Virtual) System.Boolean Invoke ()
+.override dispret.dll.tlb._HostEvents_ClickEventHandler.Invoke{
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method Invoke
+} //end of class dispret.dll.tlb._HostEvents_ClickEventHandler
+.class dispret.dll.tlb._HostEvents_Event (Interface Abstract, AnsiClass, AutoLayout, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComEventInterfaceAttribute(typeof(dispret.dll.tlb._HostEvents), typeof(dispret.dll.tlb._HostEvents_EventProvider))
+.custom [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute((Boolean)False)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Click (dispret.dll.tlb._HostEvents_ClickEventHandler)
+.override dispret.dll.tlb._HostEvents_Event.add_Click{
+} // end of method add_Click
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Ping (dispret.dll.tlb._HostEvents_PingEventHandler)
+.override dispret.dll.tlb._HostEvents_Event.add_Ping{
+} // end of method add_Ping
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Click (dispret.dll.tlb._HostEvents_ClickEventHandler)
+.override dispret.dll.tlb._HostEvents_Event.remove_Click{
+} // end of method remove_Click
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Ping (dispret.dll.tlb._HostEvents_PingEventHandler)
+.override dispret.dll.tlb._HostEvents_Event.remove_Ping{
+} // end of method remove_Ping
+.event (None) dispret.dll.tlb._HostEvents_ClickEventHandler Click
+{
+.addmethod (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Click (dispret.dll.tlb._HostEvents_ClickEventHandler)
+.removemethod (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Click (dispret.dll.tlb._HostEvents_ClickEventHandler)
+} // end of event Click
+.event (None) dispret.dll.tlb._HostEvents_PingEventHandler Ping
+{
+.addmethod (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Ping (dispret.dll.tlb._HostEvents_PingEventHandler)
+.removemethod (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Ping (dispret.dll.tlb._HostEvents_PingEventHandler)
+} // end of event Ping
+} //end of class dispret.dll.tlb._HostEvents_Event
+.class dispret.dll.tlb._HostEvents_EventProvider (AnsiClass, AutoLayout, Sealed)
+.extends [mscorlib]System.Object
+.implements dispret.dll.tlb._HostEvents_Event, System.IDisposable, 
+{
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor (System.Object)
+{
+.maxstack 6
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:call instance [mscorlib]System.Object::.ctor ()
+IL_0009:ldarg 0
+IL_000d:ldarg 1
+IL_0011:castclass System.Runtime.InteropServices.ComTypes.IConnectionPointContainer
+IL_0016:ldc.i4.0 
+IL_0017:newobj instance [mscorlib]System.WeakReference::.ctor (System.Object, System.Boolean)
+IL_0021:ret 
+IL_XXXX:stfld System.WeakReference m_wkConnectionPointContainer
+} // end of method .ctor
+.field (Private) [mscorlib]System.Collections.ArrayList m_aEventSinkHelpers
+.field (Private) [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+.field (Private) [mscorlib]System.WeakReference m_wkConnectionPointContainer
+.method  (PrivateScope, Public, Virtual) System.Void add_Click (dispret.dll.tlb._HostEvents_ClickEventHandler)
+.override dispret.dll.tlb._HostEvents_EventProvider.add_Click{
+.maxstack 6
+.locals int (dispret.dll.tlb._HostEvents_SinkHelper (0) System.Int32 (1) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0012:brtrue IL_0020
+IL_0017:ldarg 0
+IL_001b:call instance [mscorlib]System.Void Init ()
+IL_0020:newobj instance dispret.dll.tlb._HostEvents_SinkHelper::.ctor ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4.0 
+IL_0027:stloc.1 
+IL_0028:ldarg 0
+IL_002c:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0031:ldloc.0 
+IL_0032:castclass System.Object
+IL_0037:ldloca.s 1
+IL_0039:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Advise (System.Object, [mscorlib]System.Int32&)
+IL_003e:ldloc.0 
+IL_003f:ldloc.1 
+IL_0045:ldloc.0 
+IL_0046:ldarg 1
+IL_004f:ldarg 0
+IL_0053:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0058:ldloc.0 
+IL_0059:castclass System.Object
+IL_005e:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::Add (System.Object)
+IL_0063:pop 
+IL_0064:leave IL_0073
+}
+finally
+{
+IL_0069:ldarg 0
+IL_006d:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_0072:endfinally 
+}
+IL_0073:ret 
+IL_XXXX:stfld dispret.dll.tlb._HostEvents_ClickEventHandler m_ClickDelegate
+IL_XXXX:stfld Int32 m_dwCookie
+} // end of method add_Click
+.method  (PrivateScope, Public, Virtual) System.Void add_Ping (dispret.dll.tlb._HostEvents_PingEventHandler)
+.override dispret.dll.tlb._HostEvents_EventProvider.add_Ping{
+.maxstack 6
+.locals int (dispret.dll.tlb._HostEvents_SinkHelper (0) System.Int32 (1) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0012:brtrue IL_0020
+IL_0017:ldarg 0
+IL_001b:call instance [mscorlib]System.Void Init ()
+IL_0020:newobj instance dispret.dll.tlb._HostEvents_SinkHelper::.ctor ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4.0 
+IL_0027:stloc.1 
+IL_0028:ldarg 0
+IL_002c:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0031:ldloc.0 
+IL_0032:castclass System.Object
+IL_0037:ldloca.s 1
+IL_0039:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Advise (System.Object, [mscorlib]System.Int32&)
+IL_003e:ldloc.0 
+IL_003f:ldloc.1 
+IL_0045:ldloc.0 
+IL_0046:ldarg 1
+IL_004f:ldarg 0
+IL_0053:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0058:ldloc.0 
+IL_0059:castclass System.Object
+IL_005e:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::Add (System.Object)
+IL_0063:pop 
+IL_0064:leave IL_0073
+}
+finally
+{
+IL_0069:ldarg 0
+IL_006d:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_0072:endfinally 
+}
+IL_0073:ret 
+IL_XXXX:stfld dispret.dll.tlb._HostEvents_PingEventHandler m_PingDelegate
+IL_XXXX:stfld Int32 m_dwCookie
+} // end of method add_Ping
+.method  (PrivateScope, Public, Virtual) System.Void Dispose ()
+.override dispret.dll.tlb._HostEvents_EventProvider.Dispose{
+.maxstack 2
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:callvirt instance [mscorlib]System.Void Finalize ()
+IL_0009:ldarg 0
+IL_000d:call [mscorlib]System.Void [mscorlib]System.GC::SuppressFinalize (System.Object)
+IL_0012:ret 
+} // end of method Dispose
+.method  (PrivateScope, Public, Virtual) System.Void Finalize ()
+{
+.maxstack 5
+.locals int (System.Int32 (0) System.Int32 (1) dispret.dll.tlb._HostEvents_SinkHelper (2) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0012:brfalse IL_007e
+IL_0017:ldarg 0
+IL_001b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0020:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::get_Count ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4 0
+IL_002b:stloc.1 
+IL_002c:ldc.i4 0
+IL_0031:ldloc.0 
+IL_0032:bge IL_006f
+IL_0037:ldarg 0
+IL_003b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0040:ldloc.1 
+IL_0041:callvirt instance System.Object [mscorlib]System.Collections.ArrayList::get_Item (System.Int32)
+IL_0046:castclass dispret.dll.tlb._HostEvents_SinkHelper
+IL_004b:stloc.2 
+IL_004c:ldarg 0
+IL_0050:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0055:ldloc.2 
+IL_0056:ldfld Int32 m_dwCookie
+IL_005b:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Unadvise (System.Int32)
+IL_0060:ldloc.1 
+IL_0061:ldc.i4 1
+IL_0066:add 
+IL_0067:stloc.1 
+IL_0068:ldloc.1 
+IL_0069:ldloc.0 
+IL_006a:blt IL_0037
+IL_006f:ldarg 0
+IL_0073:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0078:call System.Int32 [mscorlib]System.Runtime.InteropServices.Marshal::ReleaseComObject (System.Object)
+IL_007d:pop 
+IL_007e:leave IL_0089
+}
+catch System.Exception
+{
+IL_0083:pop 
+IL_0084:leave IL_0089
+}
+IL_0089:leave IL_0098
+}
+finally
+{
+IL_008e:ldarg 0
+IL_0092:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_0097:endfinally 
+}
+IL_0098:ret 
+} // end of method Finalize
+.method  (Private, PrivateScope) System.Void Init ()
+.override dispret.dll.tlb._HostEvents_EventProvider.Init{
+.maxstack 5
+.locals int (System.Runtime.InteropServices.ComTypes.IConnectionPoint (0) System.Guid (1) System.Byte[] (2) )
+IL_0000:ldnull 
+IL_0001:stloc.0 
+IL_0002:ldc.i4 16
+IL_0007:newarr System.Byte
+IL_000c:stloc.2 
+IL_000d:ldloc.2 
+IL_000e:ldc.i4 0
+IL_0013:ldc.i4 147
+IL_0018:stelem.i1 
+IL_0019:ldloc.2 
+IL_001a:ldc.i4 1
+IL_001f:ldc.i4 172
+IL_0024:stelem.i1 
+IL_0025:ldloc.2 
+IL_0026:ldc.i4 2
+IL_002b:ldc.i4 133
+IL_0030:stelem.i1 
+IL_0031:ldloc.2 
+IL_0032:ldc.i4 3
+IL_0037:ldc.i4 157
+IL_003c:stelem.i1 
+IL_003d:ldloc.2 
+IL_003e:ldc.i4 4
+IL_0043:ldc.i4 127
+IL_0048:stelem.i1 
+IL_0049:ldloc.2 
+IL_004a:ldc.i4 5
+IL_004f:ldc.i4 82
+IL_0054:stelem.i1 
+IL_0055:ldloc.2 
+IL_0056:ldc.i4 6
+IL_005b:ldc.i4 74
+IL_0060:stelem.i1 
+IL_0061:ldloc.2 
+IL_0062:ldc.i4 7
+IL_0067:ldc.i4 76
+IL_006c:stelem.i1 
+IL_006d:ldloc.2 
+IL_006e:ldc.i4 8
+IL_0073:ldc.i4 153
+IL_0078:stelem.i1 
+IL_0079:ldloc.2 
+IL_007a:ldc.i4 9
+IL_007f:ldc.i4 165
+IL_0084:stelem.i1 
+IL_0085:ldloc.2 
+IL_0086:ldc.i4 10
+IL_008b:ldc.i4 255
+IL_0090:stelem.i1 
+IL_0091:ldloc.2 
+IL_0092:ldc.i4 11
+IL_0097:ldc.i4 209
+IL_009c:stelem.i1 
+IL_009d:ldloc.2 
+IL_009e:ldc.i4 12
+IL_00a3:ldc.i4 209
+IL_00a8:stelem.i1 
+IL_00a9:ldloc.2 
+IL_00aa:ldc.i4 13
+IL_00af:ldc.i4 174
+IL_00b4:stelem.i1 
+IL_00b5:ldloc.2 
+IL_00b6:ldc.i4 14
+IL_00bb:ldc.i4 42
+IL_00c0:stelem.i1 
+IL_00c1:ldloc.2 
+IL_00c2:ldc.i4 15
+IL_00c7:ldc.i4 22
+IL_00cc:stelem.i1 
+IL_00cd:ldloca.s 1
+IL_00cf:ldloc.2 
+IL_00d0:call instance [mscorlib]System.Guid::.ctor ([mscorlib]System.Byte[])
+IL_00d5:ldarg 0
+IL_00d9:ldfld System.WeakReference m_wkConnectionPointContainer
+IL_00de:callvirt instance System.Object [mscorlib]System.WeakReference::get_Target ()
+IL_00e3:castclass System.Runtime.InteropServices.ComTypes.IConnectionPointContainer
+IL_00e8:ldloca.s 1
+IL_00ea:ldloca.s 0
+IL_00ec:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPointContainer::FindConnectionPoint ([mscorlib]System.Guid&, [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint&)
+IL_00f1:ldarg 0
+IL_00f5:ldloc.0 
+IL_00f6:castclass System.Runtime.InteropServices.ComTypes.IConnectionPoint
+IL_0100:ldarg 0
+IL_0104:newobj instance [mscorlib]System.Collections.ArrayList::.ctor ()
+IL_010e:ret 
+IL_XXXX:stfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_XXXX:stfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+} // end of method Init
+.method  (PrivateScope, Public, Virtual) System.Void remove_Click (dispret.dll.tlb._HostEvents_ClickEventHandler)
+.override dispret.dll.tlb._HostEvents_EventProvider.remove_Click{
+.maxstack 6
+.locals int (System.Int32 (0) System.Int32 (1) dispret.dll.tlb._HostEvents_SinkHelper (2) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0012:brfalse IL_00e1
+IL_0017:ldarg 0
+IL_001b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0020:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::get_Count ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4 0
+IL_002b:stloc.1 
+IL_002c:ldc.i4 0
+IL_0031:ldloc.0 
+IL_0032:bge IL_00e1
+IL_0037:ldarg 0
+IL_003b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0040:ldloc.1 
+IL_0041:callvirt instance System.Object [mscorlib]System.Collections.ArrayList::get_Item (System.Int32)
+IL_0046:castclass dispret.dll.tlb._HostEvents_SinkHelper
+IL_004b:stloc.2 
+IL_004c:ldloc.2 
+IL_004d:ldfld dispret.dll.tlb._HostEvents_ClickEventHandler m_ClickDelegate
+IL_0052:ldnull 
+IL_0053:beq IL_00d2
+IL_0058:ldloc.2 
+IL_0059:ldfld dispret.dll.tlb._HostEvents_ClickEventHandler m_ClickDelegate
+IL_005e:ldarg 1
+IL_0062:castclass System.Object
+IL_0067:callvirt instance System.Boolean [mscorlib]System.Delegate::Equals (System.Object)
+IL_006c:ldc.i4 255
+IL_0071:and 
+IL_0072:ldc.i4 0
+IL_0077:beq IL_00d2
+IL_007c:ldarg 0
+IL_0080:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0085:ldloc.1 
+IL_0086:callvirt instance [mscorlib]System.Void [mscorlib]System.Collections.ArrayList::RemoveAt (System.Int32)
+IL_008b:ldarg 0
+IL_008f:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0094:ldloc.2 
+IL_0095:ldfld Int32 m_dwCookie
+IL_009a:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Unadvise (System.Int32)
+IL_009f:ldloc.0 
+IL_00a0:ldc.i4 1
+IL_00a5:bgt IL_00e1
+IL_00aa:ldarg 0
+IL_00ae:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_00b3:call System.Int32 [mscorlib]System.Runtime.InteropServices.Marshal::ReleaseComObject (System.Object)
+IL_00b8:pop 
+IL_00b9:ldarg 0
+IL_00bd:ldnull 
+IL_00c3:ldarg 0
+IL_00c7:ldnull 
+IL_00cd:br IL_00e1
+IL_00d2:ldloc.1 
+IL_00d3:ldc.i4 1
+IL_00d8:add 
+IL_00d9:stloc.1 
+IL_00da:ldloc.1 
+IL_00db:ldloc.0 
+IL_00dc:blt IL_0037
+IL_00e1:leave IL_00f0
+}
+finally
+{
+IL_00e6:ldarg 0
+IL_00ea:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_00ef:endfinally 
+}
+IL_00f0:ret 
+IL_XXXX:stfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_XXXX:stfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+} // end of method remove_Click
+.method  (PrivateScope, Public, Virtual) System.Void remove_Ping (dispret.dll.tlb._HostEvents_PingEventHandler)
+.override dispret.dll.tlb._HostEvents_EventProvider.remove_Ping{
+.maxstack 6
+.locals int (System.Int32 (0) System.Int32 (1) dispret.dll.tlb._HostEvents_SinkHelper (2) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0012:brfalse IL_00e1
+IL_0017:ldarg 0
+IL_001b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0020:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::get_Count ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4 0
+IL_002b:stloc.1 
+IL_002c:ldc.i4 0
+IL_0031:ldloc.0 
+IL_0032:bge IL_00e1
+IL_0037:ldarg 0
+IL_003b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0040:ldloc.1 
+IL_0041:callvirt instance System.Object [mscorlib]System.Collections.ArrayList::get_Item (System.Int32)
+IL_0046:castclass dispret.dll.tlb._HostEvents_SinkHelper
+IL_004b:stloc.2 
+IL_004c:ldloc.2 
+IL_004d:ldfld dispret.dll.tlb._HostEvents_PingEventHandler m_PingDelegate
+IL_0052:ldnull 
+IL_0053:beq IL_00d2
+IL_0058:ldloc.2 
+IL_0059:ldfld dispret.dll.tlb._HostEvents_PingEventHandler m_PingDelegate
+IL_005e:ldarg 1
+IL_0062:castclass System.Object
+IL_0067:callvirt instance System.Boolean [mscorlib]System.Delegate::Equals (System.Object)
+IL_006c:ldc.i4 255
+IL_0071:and 
+IL_0072:ldc.i4 0
+IL_0077:beq IL_00d2
+IL_007c:ldarg 0
+IL_0080:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0085:ldloc.1 
+IL_0086:callvirt instance [mscorlib]System.Void [mscorlib]System.Collections.ArrayList::RemoveAt (System.Int32)
+IL_008b:ldarg 0
+IL_008f:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0094:ldloc.2 
+IL_0095:ldfld Int32 m_dwCookie
+IL_009a:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Unadvise (System.Int32)
+IL_009f:ldloc.0 
+IL_00a0:ldc.i4 1
+IL_00a5:bgt IL_00e1
+IL_00aa:ldarg 0
+IL_00ae:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_00b3:call System.Int32 [mscorlib]System.Runtime.InteropServices.Marshal::ReleaseComObject (System.Object)
+IL_00b8:pop 
+IL_00b9:ldarg 0
+IL_00bd:ldnull 
+IL_00c3:ldarg 0
+IL_00c7:ldnull 
+IL_00cd:br IL_00e1
+IL_00d2:ldloc.1 
+IL_00d3:ldc.i4 1
+IL_00d8:add 
+IL_00d9:stloc.1 
+IL_00da:ldloc.1 
+IL_00db:ldloc.0 
+IL_00dc:blt IL_0037
+IL_00e1:leave IL_00f0
+}
+finally
+{
+IL_00e6:ldarg 0
+IL_00ea:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_00ef:endfinally 
+}
+IL_00f0:ret 
+IL_XXXX:stfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_XXXX:stfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+} // end of method remove_Ping
+} //end of class dispret.dll.tlb._HostEvents_EventProvider
+.class dispret.dll.tlb._HostEvents_PingEventHandler (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.MulticastDelegate
+.implements System.ICloneable, System.Runtime.Serialization.ISerializable, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute((Boolean)False)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor (System.Object, System.UIntPtr)
+{
+} // end of method .ctor
+.method  (PrivateScope, Public, Virtual) System.Boolean Invoke ()
+.override dispret.dll.tlb._HostEvents_PingEventHandler.Invoke{
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method Invoke
+} //end of class dispret.dll.tlb._HostEvents_PingEventHandler
+.class dispret.dll.tlb._HostEvents_SinkHelper (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+.implements dispret.dll.tlb._HostEvents, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (Assembly, PrivateScope, RTSpecialName, SpecialName) .ctor ()
+{
+.maxstack 4
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:call instance [mscorlib]System.Object::.ctor ()
+IL_0009:ldarg 0
+IL_000d:ldc.i4 0
+IL_0017:ldarg 0
+IL_001b:ldnull 
+IL_0021:ldarg 0
+IL_0025:ldnull 
+IL_002b:ret 
+IL_XXXX:stfld dispret.dll.tlb._HostEvents_ClickEventHandler m_ClickDelegate
+IL_XXXX:stfld dispret.dll.tlb._HostEvents_PingEventHandler m_PingDelegate
+IL_XXXX:stfld Int32 m_dwCookie
+} // end of method .ctor
+.field (Public) dispret.dll.tlb._HostEvents_ClickEventHandler m_ClickDelegate
+.field (Public) dispret.dll.tlb._HostEvents_PingEventHandler m_PingDelegate
+.field (Public) System.Int32 m_dwCookie
+.method  (PrivateScope, Public, Virtual) System.Boolean Click ()
+.override dispret.dll.tlb._HostEvents_SinkHelper.Click{
+.maxstack 2
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:ldfld dispret.dll.tlb._HostEvents_ClickEventHandler m_ClickDelegate
+IL_0009:brfalse IL_001d
+IL_000e:ldarg 0
+IL_0012:ldfld dispret.dll.tlb._HostEvents_ClickEventHandler m_ClickDelegate
+IL_0017:callvirt instance System.Boolean dispret.dll.tlb._HostEvents_ClickEventHandler::Invoke ()
+IL_001c:ret 
+IL_001d:ldc.i4.0 
+IL_001e:ret 
+} // end of method Click
+.method  (PrivateScope, Public, Virtual) System.Boolean Ping ()
+.override dispret.dll.tlb._HostEvents_SinkHelper.Ping{
+.maxstack 2
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:ldfld dispret.dll.tlb._HostEvents_PingEventHandler m_PingDelegate
+IL_0009:brfalse IL_001d
+IL_000e:ldarg 0
+IL_0012:ldfld dispret.dll.tlb._HostEvents_PingEventHandler m_PingDelegate
+IL_0017:callvirt instance System.Boolean dispret.dll.tlb._HostEvents_PingEventHandler::Invoke ()
+IL_001c:ret 
+IL_001d:ldc.i4.0 
+IL_001e:ret 
+} // end of method Ping
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_Pa ()
+.override dispret.dll.tlb._HostEvents_SinkHelper.get_Pa{
+.maxstack 1
+.locals int ()
+IL_0000:ldc.i4.0 
+IL_0001:ret 
+} // end of method get_Pa
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_Pb ()
+.override dispret.dll.tlb._HostEvents_SinkHelper.get_Pb{
+.maxstack 1
+.locals int ()
+IL_0000:ldc.i4.0 
+IL_0001:ret 
+} // end of method get_Pb
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Pa (System.Int32)
+.override dispret.dll.tlb._HostEvents_SinkHelper.set_Pa{
+.maxstack 0
+.locals int ()
+IL_0000:ret 
+} // end of method set_Pa
+} //end of class dispret.dll.tlb._HostEvents_SinkHelper
+.class dispret.dll.tlb._HostEvents2 (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComConversionLossAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("4A7DD669-CC45-4DDA-B703-88CDB303A3A7")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4160)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Boolean Start ()
+.override dispret.dll.tlb._HostEvents2.Start{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+} // end of method Start
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_p1 ()
+.override dispret.dll.tlb._HostEvents2.get_p1{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+} // end of method get_p1
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p1 (System.Int32)
+.override dispret.dll.tlb._HostEvents2.set_p1{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_p1
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p2 ([mscorlib]System.Int32&)
+.override dispret.dll.tlb._HostEvents2.set_p2{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_p2
+.property (None) System.Int32 p1
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_p1 ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p1 (System.Int32)
+} // end of property p1
+.property (None) System.IntPtr p2
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p2 ([mscorlib]System.Int32&)
+} // end of property p2
+} //end of class dispret.dll.tlb._HostEvents2
+.class dispret.dll.tlb._HostEvents2_Event (Interface Abstract, AnsiClass, AutoLayout, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComEventInterfaceAttribute(typeof(dispret.dll.tlb._HostEvents2), typeof(dispret.dll.tlb._HostEvents2_EventProvider))
+.custom [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute((Boolean)False)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Start (dispret.dll.tlb._HostEvents2_StartEventHandler)
+.override dispret.dll.tlb._HostEvents2_Event.add_Start{
+} // end of method add_Start
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Start (dispret.dll.tlb._HostEvents2_StartEventHandler)
+.override dispret.dll.tlb._HostEvents2_Event.remove_Start{
+} // end of method remove_Start
+.event (None) dispret.dll.tlb._HostEvents2_StartEventHandler Start
+{
+.addmethod (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Start (dispret.dll.tlb._HostEvents2_StartEventHandler)
+.removemethod (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Start (dispret.dll.tlb._HostEvents2_StartEventHandler)
+} // end of event Start
+} //end of class dispret.dll.tlb._HostEvents2_Event
+.class dispret.dll.tlb._HostEvents2_EventProvider (AnsiClass, AutoLayout, Sealed)
+.extends [mscorlib]System.Object
+.implements dispret.dll.tlb._HostEvents2_Event, System.IDisposable, 
+{
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor (System.Object)
+{
+.maxstack 6
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:call instance [mscorlib]System.Object::.ctor ()
+IL_0009:ldarg 0
+IL_000d:ldarg 1
+IL_0011:castclass System.Runtime.InteropServices.ComTypes.IConnectionPointContainer
+IL_0016:ldc.i4.0 
+IL_0017:newobj instance [mscorlib]System.WeakReference::.ctor (System.Object, System.Boolean)
+IL_0021:ret 
+IL_XXXX:stfld System.WeakReference m_wkConnectionPointContainer
+} // end of method .ctor
+.field (Private) [mscorlib]System.Collections.ArrayList m_aEventSinkHelpers
+.field (Private) [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+.field (Private) [mscorlib]System.WeakReference m_wkConnectionPointContainer
+.method  (PrivateScope, Public, Virtual) System.Void add_Start (dispret.dll.tlb._HostEvents2_StartEventHandler)
+.override dispret.dll.tlb._HostEvents2_EventProvider.add_Start{
+.maxstack 6
+.locals int (dispret.dll.tlb._HostEvents2_SinkHelper (0) System.Int32 (1) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0012:brtrue IL_0020
+IL_0017:ldarg 0
+IL_001b:call instance [mscorlib]System.Void Init ()
+IL_0020:newobj instance dispret.dll.tlb._HostEvents2_SinkHelper::.ctor ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4.0 
+IL_0027:stloc.1 
+IL_0028:ldarg 0
+IL_002c:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0031:ldloc.0 
+IL_0032:castclass System.Object
+IL_0037:ldloca.s 1
+IL_0039:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Advise (System.Object, [mscorlib]System.Int32&)
+IL_003e:ldloc.0 
+IL_003f:ldloc.1 
+IL_0045:ldloc.0 
+IL_0046:ldarg 1
+IL_004f:ldarg 0
+IL_0053:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0058:ldloc.0 
+IL_0059:castclass System.Object
+IL_005e:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::Add (System.Object)
+IL_0063:pop 
+IL_0064:leave IL_0073
+}
+finally
+{
+IL_0069:ldarg 0
+IL_006d:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_0072:endfinally 
+}
+IL_0073:ret 
+IL_XXXX:stfld dispret.dll.tlb._HostEvents2_StartEventHandler m_StartDelegate
+IL_XXXX:stfld Int32 m_dwCookie
+} // end of method add_Start
+.method  (PrivateScope, Public, Virtual) System.Void Dispose ()
+.override dispret.dll.tlb._HostEvents2_EventProvider.Dispose{
+.maxstack 2
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:callvirt instance [mscorlib]System.Void Finalize ()
+IL_0009:ldarg 0
+IL_000d:call [mscorlib]System.Void [mscorlib]System.GC::SuppressFinalize (System.Object)
+IL_0012:ret 
+} // end of method Dispose
+.method  (PrivateScope, Public, Virtual) System.Void Finalize ()
+{
+.maxstack 5
+.locals int (System.Int32 (0) System.Int32 (1) dispret.dll.tlb._HostEvents2_SinkHelper (2) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0012:brfalse IL_007e
+IL_0017:ldarg 0
+IL_001b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0020:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::get_Count ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4 0
+IL_002b:stloc.1 
+IL_002c:ldc.i4 0
+IL_0031:ldloc.0 
+IL_0032:bge IL_006f
+IL_0037:ldarg 0
+IL_003b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0040:ldloc.1 
+IL_0041:callvirt instance System.Object [mscorlib]System.Collections.ArrayList::get_Item (System.Int32)
+IL_0046:castclass dispret.dll.tlb._HostEvents2_SinkHelper
+IL_004b:stloc.2 
+IL_004c:ldarg 0
+IL_0050:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0055:ldloc.2 
+IL_0056:ldfld Int32 m_dwCookie
+IL_005b:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Unadvise (System.Int32)
+IL_0060:ldloc.1 
+IL_0061:ldc.i4 1
+IL_0066:add 
+IL_0067:stloc.1 
+IL_0068:ldloc.1 
+IL_0069:ldloc.0 
+IL_006a:blt IL_0037
+IL_006f:ldarg 0
+IL_0073:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0078:call System.Int32 [mscorlib]System.Runtime.InteropServices.Marshal::ReleaseComObject (System.Object)
+IL_007d:pop 
+IL_007e:leave IL_0089
+}
+catch System.Exception
+{
+IL_0083:pop 
+IL_0084:leave IL_0089
+}
+IL_0089:leave IL_0098
+}
+finally
+{
+IL_008e:ldarg 0
+IL_0092:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_0097:endfinally 
+}
+IL_0098:ret 
+} // end of method Finalize
+.method  (Private, PrivateScope) System.Void Init ()
+.override dispret.dll.tlb._HostEvents2_EventProvider.Init{
+.maxstack 5
+.locals int (System.Runtime.InteropServices.ComTypes.IConnectionPoint (0) System.Guid (1) System.Byte[] (2) )
+IL_0000:ldnull 
+IL_0001:stloc.0 
+IL_0002:ldc.i4 16
+IL_0007:newarr System.Byte
+IL_000c:stloc.2 
+IL_000d:ldloc.2 
+IL_000e:ldc.i4 0
+IL_0013:ldc.i4 105
+IL_0018:stelem.i1 
+IL_0019:ldloc.2 
+IL_001a:ldc.i4 1
+IL_001f:ldc.i4 214
+IL_0024:stelem.i1 
+IL_0025:ldloc.2 
+IL_0026:ldc.i4 2
+IL_002b:ldc.i4 125
+IL_0030:stelem.i1 
+IL_0031:ldloc.2 
+IL_0032:ldc.i4 3
+IL_0037:ldc.i4 74
+IL_003c:stelem.i1 
+IL_003d:ldloc.2 
+IL_003e:ldc.i4 4
+IL_0043:ldc.i4 69
+IL_0048:stelem.i1 
+IL_0049:ldloc.2 
+IL_004a:ldc.i4 5
+IL_004f:ldc.i4 204
+IL_0054:stelem.i1 
+IL_0055:ldloc.2 
+IL_0056:ldc.i4 6
+IL_005b:ldc.i4 218
+IL_0060:stelem.i1 
+IL_0061:ldloc.2 
+IL_0062:ldc.i4 7
+IL_0067:ldc.i4 77
+IL_006c:stelem.i1 
+IL_006d:ldloc.2 
+IL_006e:ldc.i4 8
+IL_0073:ldc.i4 183
+IL_0078:stelem.i1 
+IL_0079:ldloc.2 
+IL_007a:ldc.i4 9
+IL_007f:ldc.i4 3
+IL_0084:stelem.i1 
+IL_0085:ldloc.2 
+IL_0086:ldc.i4 10
+IL_008b:ldc.i4 136
+IL_0090:stelem.i1 
+IL_0091:ldloc.2 
+IL_0092:ldc.i4 11
+IL_0097:ldc.i4 205
+IL_009c:stelem.i1 
+IL_009d:ldloc.2 
+IL_009e:ldc.i4 12
+IL_00a3:ldc.i4 179
+IL_00a8:stelem.i1 
+IL_00a9:ldloc.2 
+IL_00aa:ldc.i4 13
+IL_00af:ldc.i4 3
+IL_00b4:stelem.i1 
+IL_00b5:ldloc.2 
+IL_00b6:ldc.i4 14
+IL_00bb:ldc.i4 163
+IL_00c0:stelem.i1 
+IL_00c1:ldloc.2 
+IL_00c2:ldc.i4 15
+IL_00c7:ldc.i4 167
+IL_00cc:stelem.i1 
+IL_00cd:ldloca.s 1
+IL_00cf:ldloc.2 
+IL_00d0:call instance [mscorlib]System.Guid::.ctor ([mscorlib]System.Byte[])
+IL_00d5:ldarg 0
+IL_00d9:ldfld System.WeakReference m_wkConnectionPointContainer
+IL_00de:callvirt instance System.Object [mscorlib]System.WeakReference::get_Target ()
+IL_00e3:castclass System.Runtime.InteropServices.ComTypes.IConnectionPointContainer
+IL_00e8:ldloca.s 1
+IL_00ea:ldloca.s 0
+IL_00ec:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPointContainer::FindConnectionPoint ([mscorlib]System.Guid&, [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint&)
+IL_00f1:ldarg 0
+IL_00f5:ldloc.0 
+IL_00f6:castclass System.Runtime.InteropServices.ComTypes.IConnectionPoint
+IL_0100:ldarg 0
+IL_0104:newobj instance [mscorlib]System.Collections.ArrayList::.ctor ()
+IL_010e:ret 
+IL_XXXX:stfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_XXXX:stfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+} // end of method Init
+.method  (PrivateScope, Public, Virtual) System.Void remove_Start (dispret.dll.tlb._HostEvents2_StartEventHandler)
+.override dispret.dll.tlb._HostEvents2_EventProvider.remove_Start{
+.maxstack 6
+.locals int (System.Int32 (0) System.Int32 (1) dispret.dll.tlb._HostEvents2_SinkHelper (2) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0012:brfalse IL_00e1
+IL_0017:ldarg 0
+IL_001b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0020:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::get_Count ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4 0
+IL_002b:stloc.1 
+IL_002c:ldc.i4 0
+IL_0031:ldloc.0 
+IL_0032:bge IL_00e1
+IL_0037:ldarg 0
+IL_003b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0040:ldloc.1 
+IL_0041:callvirt instance System.Object [mscorlib]System.Collections.ArrayList::get_Item (System.Int32)
+IL_0046:castclass dispret.dll.tlb._HostEvents2_SinkHelper
+IL_004b:stloc.2 
+IL_004c:ldloc.2 
+IL_004d:ldfld dispret.dll.tlb._HostEvents2_StartEventHandler m_StartDelegate
+IL_0052:ldnull 
+IL_0053:beq IL_00d2
+IL_0058:ldloc.2 
+IL_0059:ldfld dispret.dll.tlb._HostEvents2_StartEventHandler m_StartDelegate
+IL_005e:ldarg 1
+IL_0062:castclass System.Object
+IL_0067:callvirt instance System.Boolean [mscorlib]System.Delegate::Equals (System.Object)
+IL_006c:ldc.i4 255
+IL_0071:and 
+IL_0072:ldc.i4 0
+IL_0077:beq IL_00d2
+IL_007c:ldarg 0
+IL_0080:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0085:ldloc.1 
+IL_0086:callvirt instance [mscorlib]System.Void [mscorlib]System.Collections.ArrayList::RemoveAt (System.Int32)
+IL_008b:ldarg 0
+IL_008f:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0094:ldloc.2 
+IL_0095:ldfld Int32 m_dwCookie
+IL_009a:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Unadvise (System.Int32)
+IL_009f:ldloc.0 
+IL_00a0:ldc.i4 1
+IL_00a5:bgt IL_00e1
+IL_00aa:ldarg 0
+IL_00ae:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_00b3:call System.Int32 [mscorlib]System.Runtime.InteropServices.Marshal::ReleaseComObject (System.Object)
+IL_00b8:pop 
+IL_00b9:ldarg 0
+IL_00bd:ldnull 
+IL_00c3:ldarg 0
+IL_00c7:ldnull 
+IL_00cd:br IL_00e1
+IL_00d2:ldloc.1 
+IL_00d3:ldc.i4 1
+IL_00d8:add 
+IL_00d9:stloc.1 
+IL_00da:ldloc.1 
+IL_00db:ldloc.0 
+IL_00dc:blt IL_0037
+IL_00e1:leave IL_00f0
+}
+finally
+{
+IL_00e6:ldarg 0
+IL_00ea:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_00ef:endfinally 
+}
+IL_00f0:ret 
+IL_XXXX:stfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_XXXX:stfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+} // end of method remove_Start
+} //end of class dispret.dll.tlb._HostEvents2_EventProvider
+.class dispret.dll.tlb._HostEvents2_SinkHelper (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+.implements dispret.dll.tlb._HostEvents2, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (Assembly, PrivateScope, RTSpecialName, SpecialName) .ctor ()
+{
+.maxstack 4
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:call instance [mscorlib]System.Object::.ctor ()
+IL_0009:ldarg 0
+IL_000d:ldc.i4 0
+IL_0017:ldarg 0
+IL_001b:ldnull 
+IL_0021:ret 
+IL_XXXX:stfld dispret.dll.tlb._HostEvents2_StartEventHandler m_StartDelegate
+IL_XXXX:stfld Int32 m_dwCookie
+} // end of method .ctor
+.field (Public) dispret.dll.tlb._HostEvents2_StartEventHandler m_StartDelegate
+.field (Public) System.Int32 m_dwCookie
+.method  (PrivateScope, Public, Virtual) System.Boolean Start ()
+.override dispret.dll.tlb._HostEvents2_SinkHelper.Start{
+.maxstack 2
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:ldfld dispret.dll.tlb._HostEvents2_StartEventHandler m_StartDelegate
+IL_0009:brfalse IL_001d
+IL_000e:ldarg 0
+IL_0012:ldfld dispret.dll.tlb._HostEvents2_StartEventHandler m_StartDelegate
+IL_0017:callvirt instance System.Boolean dispret.dll.tlb._HostEvents2_StartEventHandler::Invoke ()
+IL_001c:ret 
+IL_001d:ldc.i4.0 
+IL_001e:ret 
+} // end of method Start
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_p1 ()
+.override dispret.dll.tlb._HostEvents2_SinkHelper.get_p1{
+.maxstack 1
+.locals int ()
+IL_0000:ldc.i4.0 
+IL_0001:ret 
+} // end of method get_p1
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p1 (System.Int32)
+.override dispret.dll.tlb._HostEvents2_SinkHelper.set_p1{
+.maxstack 0
+.locals int ()
+IL_0000:ret 
+} // end of method set_p1
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p2 ([mscorlib]System.Int32&)
+.override dispret.dll.tlb._HostEvents2_SinkHelper.set_p2{
+.maxstack 0
+.locals int ()
+IL_0000:ret 
+} // end of method set_p2
+} //end of class dispret.dll.tlb._HostEvents2_SinkHelper
+.class dispret.dll.tlb._HostEvents2_StartEventHandler (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.MulticastDelegate
+.implements System.ICloneable, System.Runtime.Serialization.ISerializable, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute((Boolean)False)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor (System.Object, System.UIntPtr)
+{
+} // end of method .ctor
+.method  (PrivateScope, Public, Virtual) System.Boolean Invoke ()
+.override dispret.dll.tlb._HostEvents2_StartEventHandler.Invoke{
+} // end of method Invoke
+} //end of class dispret.dll.tlb._HostEvents2_StartEventHandler
+.class dispret.dll.tlb.CHost (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements dispret.dll.tlb.IHost, dispret.dll.tlb._HostEvents_Event, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.CoClassAttribute(typeof(dispret.dll.tlb.CHostClass))
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("FF0403F3-D089-4A81-888A-61E7077132E2")
+} //end of class dispret.dll.tlb.CHost
+.class dispret.dll.tlb.CHostClass (AnsiClass, AutoLayout, Import, Public)
+.extends [mscorlib]System.__ComObject
+.implements dispret.dll.tlb.IHost, dispret.dll.tlb.CHost, dispret.dll.tlb._HostEvents_Event, dispret.dll.tlb._HostEvents2_Event, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.ComSourceInterfacesAttribute("dispret.dll.tlb._HostEvents dispret.dll.tlb._HostEvents2  ")
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("49D06EE8-75B7-4475-89E2-111F1FA1D903")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)2)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor ()
+{
+} // end of method .ctor
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 CauseClickEvent ()
+.override dispret.dll.tlb.CHostClass.CauseClickEvent{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+} // end of method CauseClickEvent
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 CausePingEvent ()
+.override dispret.dll.tlb.CHostClass.CausePingEvent{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+} // end of method CausePingEvent
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 CauseStartEvent ()
+.override dispret.dll.tlb.CHostClass.CauseStartEvent{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+} // end of method CauseStartEvent
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 GetThreadID ()
+.override dispret.dll.tlb.CHostClass.GetThreadID{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+} // end of method GetThreadID
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.String GetName ()
+.override dispret.dll.tlb.CHostClass.GetName{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method GetName
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Click (dispret.dll.tlb._HostEvents_ClickEventHandler)
+.override dispret.dll.tlb.CHostClass.add_Click{
+} // end of method add_Click
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Ping (dispret.dll.tlb._HostEvents_PingEventHandler)
+.override dispret.dll.tlb.CHostClass.add_Ping{
+} // end of method add_Ping
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Start (dispret.dll.tlb._HostEvents2_StartEventHandler)
+.override dispret.dll.tlb.CHostClass.add_Start{
+} // end of method add_Start
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Click (dispret.dll.tlb._HostEvents_ClickEventHandler)
+.override dispret.dll.tlb.CHostClass.remove_Click{
+} // end of method remove_Click
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Ping (dispret.dll.tlb._HostEvents_PingEventHandler)
+.override dispret.dll.tlb.CHostClass.remove_Ping{
+} // end of method remove_Ping
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Start (dispret.dll.tlb._HostEvents2_StartEventHandler)
+.override dispret.dll.tlb.CHostClass.remove_Start{
+} // end of method remove_Start
+.event (None) dispret.dll.tlb._HostEvents_ClickEventHandler Click
+{
+.addmethod (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Click (dispret.dll.tlb._HostEvents_ClickEventHandler)
+.removemethod (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Click (dispret.dll.tlb._HostEvents_ClickEventHandler)
+} // end of event Click
+.event (None) dispret.dll.tlb._HostEvents_PingEventHandler Ping
+{
+.addmethod (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Ping (dispret.dll.tlb._HostEvents_PingEventHandler)
+.removemethod (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Ping (dispret.dll.tlb._HostEvents_PingEventHandler)
+} // end of event Ping
+.event (None) dispret.dll.tlb._HostEvents2_StartEventHandler Start
+{
+.addmethod (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Start (dispret.dll.tlb._HostEvents2_StartEventHandler)
+.removemethod (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Start (dispret.dll.tlb._HostEvents2_StartEventHandler)
+} // end of event Start
+} //end of class dispret.dll.tlb.CHostClass
+.class dispret.dll.tlb.IHost (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("FF0403F3-D089-4A81-888A-61E7077132E2")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4160)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 CauseClickEvent ()
+.override dispret.dll.tlb.IHost.CauseClickEvent{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+} // end of method CauseClickEvent
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 CausePingEvent ()
+.override dispret.dll.tlb.IHost.CausePingEvent{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+} // end of method CausePingEvent
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 CauseStartEvent ()
+.override dispret.dll.tlb.IHost.CauseStartEvent{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+} // end of method CauseStartEvent
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 GetThreadID ()
+.override dispret.dll.tlb.IHost.GetThreadID{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+} // end of method GetThreadID
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.String GetName ()
+.override dispret.dll.tlb.IHost.GetName{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method GetName
+} //end of class dispret.dll.tlb.IHost

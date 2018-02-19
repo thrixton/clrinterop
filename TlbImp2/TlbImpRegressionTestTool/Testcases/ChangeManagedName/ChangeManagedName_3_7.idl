@@ -1,0 +1,67 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(777d5a39-13b4-48e9-aee5-46c420c79a31),
+	helpstring("ChangeManagedName_3_7")
+]
+library ChangeManagedName_3_7
+{
+	importlib("stdole2.tlb");
+	importlib("stdole32.tlb");
+
+    [
+		uuid(c08634cb-9c83-4479-984d-a49f7eb8cfb6)
+	]
+	interface iTargetType:IDispatch{
+        HRESULT Foo([in] int en);
+    };
+	
+	[
+		uuid(ec8e2f30-777f-4adc-808a-efd84f9746fd)
+	]
+	dispinterface dispiTargetType
+	{
+    	properties:
+            [id(1)] int a;
+        methods:
+        	[id(10)] BSTR OnRunStart();
+        	[id(20)] HRESULT OnRunStop([out, retval] BSTR *reason);
+    };
+
+	enum enumTargetType{
+        day1 = 1,
+        day2 = 2,
+        day3 = 3
+    };
+
+	typedef struct
+	{
+		int fint;
+	}strTargetType;
+
+	[
+		uuid(3cf74ef1-4d94-4d3c-9d9c-cbd487cd9217), 
+		helpstring("This is not GDI.EXE"), 
+	] 
+	module moduleTargetType
+	{ 
+		[helpstring("Color for the frame")] unsigned long const COLOR_FRAME = 0; 
+	};
+
+	typedef union unionTargetType switch (long l1)
+	{ 
+		case 1024: 
+			float f1; 
+		case 2048: 
+			double d2; 
+	} unionTargetType; 
+
+	[
+	  uuid(f15e6d0d-87a0-4c02-89c3-6d51b4d09bcf),
+	]
+	coclass coclassTargetType
+	{
+		[default] interface iTargetType;
+	};
+}

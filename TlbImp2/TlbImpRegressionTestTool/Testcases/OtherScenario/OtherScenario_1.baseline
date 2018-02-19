@@ -1,0 +1,34 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly OtherScenario_1.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("777D5A39-13B4-48E9-AEE5-46C420C79A31")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("OtherScenario_1")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)0, (Int32)0)
+} // end of assembly
+.module OtherScenario_1.tlb.dll
+.file OtherScenario_1.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class OtherScenario_1.tlb.TargetType (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("C08634CB-9C83-4479-984D-A49F7EB8CFB6")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+} //end of class OtherScenario_1.tlb.TargetType

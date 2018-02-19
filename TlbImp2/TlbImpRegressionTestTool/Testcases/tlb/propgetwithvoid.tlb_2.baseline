@@ -1,0 +1,40 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly propgetwithvoid.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("2F6CA420-C641-101A-B826-00DD01103DE1")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("PropgetWithVoid")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)1, (Int32)0)
+} // end of assembly
+.module propgetwithvoid.tlb.dll
+.file propgetwithvoid.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class propgetwithvoid.tlb.IProp (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Reflection.DefaultMemberAttribute("HellowMessage")
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("2F6CA422-C641-101A-B826-00DD01103DE1")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)1)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.IntPtr HellowMessage (System.Int32)
+.override propgetwithvoid.tlb.IProp.HellowMessage{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method HellowMessage
+} //end of class propgetwithvoid.tlb.IProp

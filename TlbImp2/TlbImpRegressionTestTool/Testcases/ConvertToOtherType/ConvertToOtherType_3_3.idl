@@ -1,0 +1,15 @@
+[
+  uuid(40da6a2b-cdf6-4940-a677-c8ac3aa2e31f),
+  version(1.0)
+]
+library ConvertToOtherType_3_3
+{
+    importlib("stdole2.tlb");
+    [
+      uuid(65a7257f-2396-41cc-86b6-665f6641d07e)
+    ]
+    interface IA1 : IDispatch {
+		HRESULT TargetFunction1(float param1, float param2);
+		HRESULT TargetFunction2(int param1, int param2);
+    };
+};

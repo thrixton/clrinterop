@@ -1,0 +1,69 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly Operator_2.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("777D5A39-13B4-48E9-AEE5-46C420C79A31")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("Operator_2")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)0, (Int32)0)
+} // end of assembly
+.module Operator_2.tlb.dll
+.file Operator_2.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class Operator_2.tlb.TargetType (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("C08634CB-9C83-4479-984D-A49F7EB8CFB6")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Boolean FuncA (System.Int32)
+.override Operator_2.tlb.TargetType.FuncA{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method FuncA
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 FuncB (System.Int32, [mscorlib]System.Boolean&)
+.override Operator_2.tlb.TargetType.FuncB{
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)45, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method FuncB
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 OperatorTest1 (System.Int32, [mscorlib]System.Boolean&)
+.override Operator_2.tlb.TargetType.OperatorTest1{
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)45, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method OperatorTest1
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 OperatorTest2 (System.Int32, [mscorlib]System.Boolean&)
+.override Operator_2.tlb.TargetType.OperatorTest2{
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)45, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method OperatorTest2
+} //end of class Operator_2.tlb.TargetType

@@ -1,0 +1,16 @@
+<Rules>
+  <Rule Name="Rule #1" Category="Signature">
+    <Condition>
+      <And>
+        <NativeParameterIndex Operator="Equal" Value="2" />
+      </And>
+    </Condition>
+    <Action Name="ConvertTo">
+      <Parameter Key="Direction" Value="[In]" />
+      <Parameter Key="ByRef" Value="True" />
+      <Parameter Key="ManagedType" Value="object" />
+      <Parameter Key="MarshalAs" Value="IUnknown" />
+      <Parameter Key="Attributes" Value="[]" />
+    </Action>
+  </Rule>
+</Rules>

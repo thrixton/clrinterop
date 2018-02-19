@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Err_InputFileNotFound" xml:space="preserve">
+    <value>Unable to locate input type library: '{0}'</value>
+  </data>
+  <data name="Err_InputFileNotValidTypeLib" xml:space="preserve">
+    <value>The input file '{0}' is not a valid type library.</value>
+  </data>
+  <data name="Err_TypeLibLoad" xml:space="preserve">
+    <value>Error occurred while opening type library:
+{0}</value>
+  </data>
+  <data name="Err_InvalidExtension" xml:space="preserve">
+    <value>The extension for the output assembly must be .dll.</value>
+  </data>
+  <data name="Err_OutputFileNameTooLong" xml:space="preserve">
+    <value>Output file name, created from Type Library name, would be too long:
+{0}</value>
+  </data>
+  <data name="Err_OutputWouldOverwriteInput" xml:space="preserve">
+    <value>Output file would overwrite input file.</value>
+  </data>
+  <data name="Err_InvalidOutputDirectory" xml:space="preserve">
+    <value>Output directory does not exist.</value>
+  </data>
+  <data name="Err_TypeLoadExceptions" xml:space="preserve">
+    <value>The following exceptions were thrown while loading the types in the assembly:
+</value>
+  </data>
+  <data name="Err_ErrorWhileOpenningFile" xml:space="preserve">
+    <value>The following error occurred while trying to open file {0}: {1} - {2}</value>
+  </data>
+  <data name="Err_NoInputFile" xml:space="preserve">
+    <value>No input file has been specified.</value>
+  </data>
+  <data name="Err_TooManyKeys" xml:space="preserve">
+    <value>Only one key pair/public key may be specified on the command line.</value>
+  </data>
+  <data name="Err_RefAssemblyCantLoad" xml:space="preserve">
+    <value>Cannot load referenced assembly: '{0}'</value>
+  </data>
+  <data name="Err_RefAssemblyNotFound" xml:space="preserve">
+    <value>Unable to locate referenced assembly '{0}' or one of its dependencies.</value>
+  </data>
+  <data name="Err_RefAssemblyInvalid" xml:space="preserve">
+    <value>Referenced assembly '{0}' is not a valid assembly.</value>
+  </data>
+  <data name="Err_UnknownStrictRefOpt" xml:space="preserve">
+    <value>Unknown strictref option: '{0}'</value>
+  </data>
+  <data name="Err_RefNotInList" xml:space="preserve">
+    <value>Type library '{0}' is not in the list of references.</value>
+  </data>
+  <data name="Err_CannotCreateAppDomain" xml:space="preserve">
+    <value>Error creating an app domain to perform the conversion.</value>
+  </data>
+  <data name="Err_CannotCreateRemoteTlbImp" xml:space="preserve">
+    <value>Unable to load the RemoteTlbImp type required to perform the conversion.</value>
+  </data>
+  <data name="Err_OutputCannotBeDirectory" xml:space="preserve">
+    <value>The output file name cannot specify a directory.</value>
+  </data>
+  <data name="Err_InvalidVersion" xml:space="preserve">
+    <value>The version is invalid. </value>
+  </data>
+  <data name="Err_InvalidStrongName" xml:space="preserve">
+    <value>Invalid strong name parameters specified.</value>
+  </data>
+  <data name="Err_PIAMustBeStrongNamed" xml:space="preserve">
+    <value>Primary interop assemblies must be strongly named. This can be accomplished by using either the /publickey, /keyfile or /keycontainer options.</value>
+  </data>
+  <data name="Err_InvalidTransform" xml:space="preserve">
+    <value>The specified transformation option '{0}' is invalid.</value>
+  </data>
+  <data name="Err_MultipleVersionsOfAssembly" xml:space="preserve">
+    <value>Encountered multiple versions of the assembly with GUID '{0}'.  Try pre-importing one of these assemblies.</value>
+  </data>
+  <data name="Err_ReferenceNotFound" xml:space="preserve">
+    <value>Unable to locate specified reference: '{0}'.</value>
+  </data>
+  <data name="Err_InvalidMachine" xml:space="preserve">
+    <value>The specified machine option '{0}' is invalid.</value>
+  </data>
+  <data name="Err_BadMachineSwitch" xml:space="preserve">
+    <value>A single valid machine type compatible with the input type library must be specified.</value>
+  </data>
+  <data name="Err_NoPIARegistered" xml:space="preserve">
+    <value>Referenced type library '{0}' does not have a primary interop assembly registered. </value>
+  </data>
+  <data name="Err_RefAsmOverwrittenByOutput" xml:space="preserve">
+    <value>The assembly for referenced type library, '{0}', will not be imported since it would be overwritten by the output assembly '{1}'.</value>
+  </data>
+  <data name="Err_ExistingAsmOverwrittenByRefAsm" xml:space="preserve">
+    <value>The assembly for referenced type library, '{0}', will not be imported since it would overwrite existing assembly '{1}'.</value>
+  </data>
+  <data name="Err_ExistingFileOverwrittenByRefAsm" xml:space="preserve">
+    <value>The assembly for referenced type library, '{0}', will not be imported since it would overwrite existing file '{1}'.</value>
+  </data>
+  <data name="Err_RegisteredPIANotPIA" xml:space="preserve">
+    <value>Assembly '{0}' which is registered as the primary interop assembly for type library '{0}' is not actually a primary interop assembly.</value>
+  </data>
+  <data name="Err_ReferencedPIANotPIA" xml:space="preserve">
+    <value>Referenced assembly '{0}' is not a primary interop assembly.</value>
+  </data>
+  <data name="Wrn_CircularReference" xml:space="preserve">
+    <value>The referenced type library, '{0}', contains a circular reference, and may not be fully imported.</value>
+  </data>
+  <data name="Err_SilentExclusive" xml:space="preserve">
+    <value>The usage of silent and silence is mutually exclusive.</value>
+  </data>
+  <data name="Wrn_PIARegisteredForTlb" xml:space="preserve">
+    <value>Primary interop assembly '{0}' is already registered for type library '{1}'.</value>
+  </data>
+  <data name="Wrn_AgnosticAssembly" xml:space="preserve">
+    <value>Importing a type library into a platform agnostic assembly.  This can cause errors if the type library is not truly platform agnostic.</value>
+  </data>
+  <data name="Err_AmbigousOption" xml:space="preserve">
+    <value>Ambiguous option: /{0}</value>
+  </data>
+  <data name="Err_UnknownOption" xml:space="preserve">
+    <value>Unknown option: /{0}</value>
+  </data>
+  <data name="Err_NoValueRequired" xml:space="preserve">
+    <value>The /{0} option does not require a value.</value>
+  </data>
+  <data name="Err_ValueRequired" xml:space="preserve">
+    <value>The /{0} option requires a value.</value>
+  </data>
+  <data name="Msg_TypeLibImported" xml:space="preserve">
+    <value>Type library imported to {0}</value>
+  </data>
+  <data name="Msg_RefFoundInAsmRefList" xml:space="preserve">
+    <value>A reference to type library '{0}' has been resolved to user specified assembly '{1}'.</value>
+  </data>
+  <data name="Msg_ResolvedFile" xml:space="preserve">
+    <value>Resolved referenced file '{0}' to file '{1}'.</value>
+  </data>
+  <data name="Msg_ResolvedRefToPIA" xml:space="preserve">
+    <value>A reference to type library '{0}' has been resolved to primary interop assembly '{1}'.</value>
+  </data>
+  <data name="Msg_ResolvingRef" xml:space="preserve">
+    <value>Resolving reference to type library '{0}'.</value>
+  </data>
+  <data name="Msg_AssemblyLoaded" xml:space="preserve">
+    <value>Assembly '{0}' loaded.</value>
+  </data>
+  <data name="Msg_AssemblyResolved" xml:space="preserve">
+    <value>Assembly '{0}' resolved.</value>
+  </data>
+  <data name="Msg_AutoImportingTypeLib" xml:space="preserve">
+    <value>Auto importing '{0}' to '{1}'.</value>
+  </data>
+  <data name="Msg_DisplayException" xml:space="preserve">
+    <value>Exception[{0}] = {1} - {2}</value>
+  </data>
+  <data name="Msg_DisplayNestedException" xml:space="preserve">
+    <value>Exception[{0}] ==&gt;&gt; {1} - {2}</value>
+  </data>
+  <data name="Msg_AsmRefLookupMatchProblem" xml:space="preserve">
+    <value>A reference lookup for a type library failed because the assembly '{0}' with TypeLib GUID '{1}' and version '{2}.{3}' does not match the type library '{4}' with TypeLib GUID '{5}' and version '{6}.{7}'.</value>
+  </data>
+  <data name="Msg_Copyright" xml:space="preserve">
+    <value>Microsoft (R) .NET Framework Type Library to Assembly Converter {0}
+Copyright (C) Microsoft Corporation.  All rights reserved.
+</value>
+  </data>
+  <data name="Msg_Usage_00" xml:space="preserve">
+    <value>Syntax: TlbImp TypeLibName [Options]
+Options:</value>
+  </data>
+  <data name="Msg_Usage_01" xml:space="preserve">
+    <value>    /out:FileName            File name of assembly to be produced</value>
+  </data>
+  <data name="Msg_Usage_02" xml:space="preserve">
+    <value>    /namespace:Namespace     Namespace of the assembly to be produced</value>
+  </data>
+  <data name="Msg_Usage_03" xml:space="preserve">
+    <value>    /asmversion:Version      Version number of the assembly to be produced</value>
+  </data>
+  <data name="Msg_Usage_04" xml:space="preserve">
+    <value>    /reference:FileName      File name of assembly to use to resolve references</value>
+  </data>
+  <data name="Msg_Usage_05" xml:space="preserve">
+    <value>    /tlbreference:FileName   File name of typelib to use to resolve references</value>
+  </data>
+  <data name="Msg_Usage_06" xml:space="preserve">
+    <value>    /publickey:FileName      File containing strong name public key</value>
+  </data>
+  <data name="Msg_Usage_07" xml:space="preserve">
+    <value>    /keyfile:FileName        File containing strong name key pair</value>
+  </data>
+  <data name="Msg_Usage_08" xml:space="preserve">
+    <value>    /keycontainer:FileName   Key container holding strong name key pair</value>
+  </data>
+  <data name="Msg_Usage_09" xml:space="preserve">
+    <value>    /delaysign               Force strong name delay signing</value>
+  </data>
+  <data name="Msg_Usage_10" xml:space="preserve">
+    <value>    /product:Product         The name of the product with which this assembly</value>
+  </data>
+  <data name="Msg_Usage_11" xml:space="preserve">
+    <value>                             is distributed</value>
+  </data>
+  <data name="Msg_Usage_12" xml:space="preserve">
+    <value>    /productversion:Version  The version of the product with which this</value>
+  </data>
+  <data name="Msg_Usage_13" xml:space="preserve">
+    <value>                             assembly is distributed</value>
+  </data>
+  <data name="Msg_Usage_14" xml:space="preserve">
+    <value>    /company:Company         The name of the company that produced this</value>
+  </data>
+  <data name="Msg_Usage_15" xml:space="preserve">
+    <value>                             assembly</value>
+  </data>
+  <data name="Msg_Usage_16" xml:space="preserve">
+    <value>    /copyright:Copyright     Describes all copyright notices, trademarks, and</value>
+  </data>
+  <data name="Msg_Usage_17" xml:space="preserve">
+    <value>                             registered trademarks that apply to this assembly</value>
+  </data>
+  <data name="Msg_Usage_18" xml:space="preserve">
+    <value>    /trademark:Trademark     Describes all trademarks and registered trademarks</value>
+  </data>
+  <data name="Msg_Usage_19" xml:space="preserve">
+    <value>                             that apply to this assembly</value>
+  </data>
+  <data name="Msg_Usage_20" xml:space="preserve">
+    <value>    /unsafe                  Produce interfaces without runtime security checks</value>
+  </data>
+  <data name="Msg_Usage_21" xml:space="preserve">
+    <value>    /noclassmembers          Prevents TlbImp from adding members to classes</value>
+  </data>
+  <data name="Msg_Usage_22" xml:space="preserve">
+    <value>    /nologo                  Prevents TlbImp from displaying logo</value>
+  </data>
+  <data name="Msg_Usage_23" xml:space="preserve">
+    <value>    /silent                  Suppresses all output except for errors</value>
+  </data>
+  <data name="Msg_Usage_24" xml:space="preserve">
+    <value>    /silence:WarningNumber   Suppresses output for the given warning (Can not </value>
+  </data>
+  <data name="Msg_Usage_25" xml:space="preserve">
+    <value>                             be used with /silent)</value>
+  </data>
+  <data name="Msg_Usage_26" xml:space="preserve">
+    <value>    /verbose                 Displays extra information</value>
+  </data>
+  <data name="Msg_Usage_27" xml:space="preserve">
+    <value>    /primary                 Produce a primary interop assembly</value>
+  </data>
+  <data name="Msg_Usage_28" xml:space="preserve">
+    <value>    /sysarray                Import SAFEARRAY as System.Array</value>
+  </data>
+  <data name="Msg_Usage_29" xml:space="preserve">
+    <value>    /machine:MachineType     Create an assembly for the specified machine type</value>
+  </data>
+  <data name="Msg_Usage_30" xml:space="preserve">
+    <value>    /transform:TransformName Perform the specified transformation</value>
+  </data>
+  <data name="Msg_Usage_31" xml:space="preserve">
+    <value>    /strictref               Only use assemblies specified using /reference and</value>
+  </data>
+  <data name="Msg_Usage_32" xml:space="preserve">
+    <value>                             registered PIAs</value>
+  </data>
+  <data name="Msg_Usage_33" xml:space="preserve">
+    <value>    /strictref:nopia         Only use assemblies specified using /reference and</value>
+  </data>
+  <data name="Msg_Usage_34" xml:space="preserve">
+    <value>                             ignore PIAs</value>
+  </data>
+  <data name="Msg_Usage_35" xml:space="preserve">
+    <value>    /v2                      Enable new behaviors in TlbImp v2. Please note</value>
+  </data>
+  <data name="Msg_Usage_36" xml:space="preserve">
+    <value>                             that using this switch may break your existing</value>
+  </data>
+  <data name="Msg_Usage_37" xml:space="preserve">
+    <value>                             application.</value>
+  </data>
+  <data name="Msg_Usage_38" xml:space="preserve">
+    <value>    /preservesig             Stop applying the [out, retval] parameter</value>
+  </data>
+  <data name="Msg_Usage_39" xml:space="preserve">
+    <value>                             transformation, and add PreserveSigAttribute to</value>
+  </data>
+  <data name="Msg_Usage_40" xml:space="preserve">
+    <value>                             methods in interfaces, except for disp-only</value>
+  </data>
+  <data name="Msg_Usage_41" xml:space="preserve">
+    <value>                             interfaces. The properties from non-dispatch</value>
+  </data>
+  <data name="Msg_Usage_42" xml:space="preserve">
+    <value>                             interfaces will be omitted.</value>
+  </data>
+  <data name="Msg_Usage_45" xml:space="preserve">
+    <value>    /? or /help              Display this usage message</value>
+  </data>
+  <data name="Msg_Usage_46" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Msg_Usage_47" xml:space="preserve">
+    <value>The assembly version must be specified as: Major.Minor.Build.Revision.</value>
+  </data>
+  <data name="Msg_Usage_48" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Msg_Usage_49" xml:space="preserve">
+    <value>Multiple reference assemblies can be specified by using the /reference option</value>
+  </data>
+  <data name="Msg_Usage_50" xml:space="preserve">
+    <value>multiple times.</value>
+  </data>
+  <data name="Msg_Usage_51" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Msg_Usage_52" xml:space="preserve">
+    <value>Supported machine types:</value>
+  </data>
+  <data name="Msg_Usage_53" xml:space="preserve">
+    <value>    X86</value>
+  </data>
+  <data name="Msg_Usage_54" xml:space="preserve">
+    <value>    X64</value>
+  </data>
+  <data name="Msg_Usage_55" xml:space="preserve">
+    <value>    Itanium</value>
+  </data>
+  <data name="Msg_Usage_56" xml:space="preserve">
+    <value>    Agnostic</value>
+  </data>
+  <data name="Msg_Usage_57" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Msg_Usage_58" xml:space="preserve">
+    <value>Supported transforms:</value>
+  </data>
+  <data name="Msg_Usage_59" xml:space="preserve">
+    <value>    SerializableValueClasses Mark all value classes as serializable</value>
+  </data>
+  <data name="Msg_Usage_60" xml:space="preserve">
+    <value>    DispRet                  Apply the [out, retval] parameter transformation</value>
+  </data>
+  <data name="Msg_Usage_61" xml:space="preserve">
+    <value>                             to methods of disp-only interfaces</value>
+  </data>
+  <data name="Msg_Usage_62" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Msg_Usage_63" xml:space="preserve">
+    <value>A resource ID can optionally be appended to the TypeLibName when importing a</value>
+  </data>
+  <data name="Msg_Usage_64" xml:space="preserve">
+    <value>type library from a module containing multiple type libraries.</value>
+  </data>
+  <data name="Msg_Usage_65" xml:space="preserve">
+    <value> example: TlbImp MyModule.dll\1</value>
+  </data>
+  <data name="Msg_Usage_66" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Msg_Usage_67" xml:space="preserve">
+    <value>New behaviors in TlbImp version 2 include:</value>
+  </data>
+  <data name="Msg_Usage_68" xml:space="preserve">
+    <value>    Convert VARIANT_BOOL in structures to bool.</value>
+  </data>
+  <data name="Wrn_AmbiguousReturn" xml:space="preserve">
+    <value>Type library importer has encountered a method with an unexpected [out, retval] parameter: '{0}.{1}'.</value>
+  </data>
+  <data name="Wrn_BadVTable" xml:space="preserve">
+    <value>Vtable slot number associated with member '{0}' of type '{1}' in type library '{2}' is invalid.</value>
+  </data>
+  <data name="Wrn_BadVtType" xml:space="preserve">
+    <value>Type library importer has encountered an invalid VT type 0x{0:X} when importing type '{1}'.</value>
+  </data>
+  <data name="Err_CircularImport" xml:space="preserve">
+    <value>Type library '{0}' was exported from a CLR assembly and cannot be re-imported as a CLR assembly.</value>
+  </data>
+  <data name="Wrn_DuplicateTypeName" xml:space="preserve">
+    <value>Type library importer has encountered a duplicate type name: '{0}'.</value>
+  </data>
+  <data name="Wrn_EventWithNewEnum" xml:space="preserve">
+    <value>Type library importer encountered a source interface on coclass '{0}' with a NewEnum member.  This is not supported.</value>
+  </data>
+  <data name="Wrn_InvalidNamespace" xml:space="preserve">
+    <value>Type library has an invalid namespace and cannot be imported (library: '{0}'; namespace: '{1}').</value>
+  </data>
+  <data name="Wrn_InvalidTypeInfo" xml:space="preserve">
+    <value>Type '{0}' is invalid and may only be partially converted.</value>
+  </data>
+  <data name="Wrn_InvalidTypeInfo_Unnamed" xml:space="preserve">
+    <value>There was an error converting a type.  The name of the type cannot be determined.  </value>
+  </data>
+  <data name="Wrn_MultipleLcids" xml:space="preserve">
+    <value>Type library importer has encountered a method with multiple [lcid] parameters while importing '{0}.{1}'.</value>
+  </data>
+  <data name="Wrn_NotIUnknown" xml:space="preserve">
+    <value>Type library importer has encountered an interface not derived from IUnknown: '{0}'.</value>
+  </data>
+  <data name="Wrn_ParamErrorNamed" xml:space="preserve">
+    <value>Error while importing type: parameter referenced a type library that is not available (type: '{0}'; parameter: '{1}'; method: '{2}').</value>
+  </data>
+  <data name="Wrn_ParamErrorUnnamed" xml:space="preserve">
+    <value>Error while importing type: parameter referenced a type library that is not available (type: '{0}'; parameter: '{1}'; method: '{2}').</value>
+  </data>
+  <data name="Wrn_PropgetWithoutReturn" xml:space="preserve">
+    <value>Type library importer encountered a property getter '{0}' on type '{1}' without a valid return type.  The importer will attempt to import this property as a method instead.</value>
+  </data>
+  <data name="Msg_TypeInfoImported" xml:space="preserve">
+    <value>Type '{0}' imported.</value>
+  </data>
+  <data name="Wrn_UnconvertableArgs" xml:space="preserve">
+    <value>At least one of the arguments for '{0}.{1}' cannot be marshaled by the runtime marshaler.  Such arguments will therefore be passed as a pointer and may require unsafe code to manipulate.</value>
+  </data>
+  <data name="Wrn_UnconvertableField" xml:space="preserve">
+    <value>The type library importer could not convert the signature for the member '{0}.{1}'.</value>
+  </data>
+  <data name="Wrn_DualNotDispatch" xml:space="preserve">
+    <value>Interface '{0}' is marked as [dual], but does not derive from IDispatch. It will be converted as an IUnknown-derived interface.</value>
+  </data>
+  <data name="Wrn_IEnumCustomAttributeOnIUnknown" xml:space="preserve">
+    <value>Ignoring IDL custom attribute '{0}' on '{1}' because it cannot be used on an IUnknown interface.</value>
+  </data>
+  <data name="Wrn_NonIntegralCustomAttributeType" xml:space="preserve">
+    <value>Ignoring IDL custom attribute '{0}' on '{1}' because it must be used with an integral value.</value>
+  </data>
+  <data name="Wrn_NoPropsInEvents" xml:space="preserve">
+    <value>Type library importer has encountered a source interface containing properties: '{0}'.</value>
+  </data>
+  <data name="Err_RefTlbCantLoad" xml:space="preserve">
+    <value>Cannot load referenced type library. Please specify dependent type libraries using /tlbreference.</value>
+  </data>
+  <data name="Err_UnexpectedException" xml:space="preserve">
+    <value>The type library importer encountered an unexpected exception: {0} - {1}</value>
+  </data>
+  <data name="Err_PermissionException" xml:space="preserve">
+    <value>Tlbimp has encountered a permission problem. Please make sure you have necessary permission using Tlbimp.</value>
+  </data>
+  <data name="Err_FatalErrorInConversion_Named" xml:space="preserve">
+    <value>Tlbimp has encountered a fatal error while importing type '{0}'.</value>
+  </data>
+  <data name="Err_FatalErrorInConversion_Unnamed" xml:space="preserve">
+    <value>Tlbimp has encountered a fatal error while importing type.</value>
+  </data>
+  <data name="Err_CanotFindReferencedType" xml:space="preserve">
+    <value>Cannot find type '{0}' in '{1}'. There could be a mismatch between the referenced assembly and the type library.</value>
+  </data>
+  <data name="Wrn_MultiNewEnum" xml:space="preserve">
+    <value>Tlbimp has encountered more than one function or property has dispid of NewEnum. This is not supported.</value>
+  </data>
+  <data name="Err_RefTypeLibMissing" xml:space="preserve">
+    <value>Cannot resolve type library '{0}, {1}, {{{2}}}'. Please specify the full path name to this type library using /tlbreference and try again.</value>
+  </data>
+  <data name="Msg_TypeLibRefResolved" xml:space="preserve">
+    <value>Resolved type library '{0}, {1}, {{{2}}}' at '{3}'.</value>
+  </data>
+  <data name="Msg_TypeLibRefResolvedInRegistry" xml:space="preserve">
+    <value>Resolved type library '{0}, {1}, {{{2}}}' at '{3}' from registry.</value>
+  </data>
+  <data name="Msg_TypeLibRefMismatch" xml:space="preserve">
+    <value>Resolved type library mismatch: expecting '{0}, {1}, {{{2}}}' but found '{3}, {4}, {{{5}}}' at '{6}'.</value>
+  </data>
+  <data name="Msg_TypeLibRefResolveFailed" xml:space="preserve">
+    <value>Cannot resolve type library '{0}, {1}, {{{2}}}'.</value>
+  </data>
+  <data name="Msg_PropertyIsOmitted" xml:space="preserve">
+    <value>Property '{0}' of type '{1}' is omitted.</value>
+  </data>
+  <data name="Msg_Usage_43" xml:space="preserve">
+    <value>    /removeenumprefix        Remove the common prefixes of enum fields, which</value>
+  </data>
+  <data name="Msg_Usage_44" xml:space="preserve">
+    <value>                             are equal to enum type name appended a "_".</value>
+  </data>
+</root>

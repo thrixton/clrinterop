@@ -1,0 +1,14 @@
+<Rules>
+  <Rule Name="Rule #1" Category="Type">
+    <Condition>
+      <And>
+        <NativeName Operator="Equal" Value="TargetType" />
+        <TypeKind Operator="Equal" Value="Interface" />
+      </And>
+    </Condition>
+    <Action Name="ResolveTo">
+      <Parameter Key="AssemblyName" Value="mscorlib" />
+      <Parameter Key="ManagedTypeFullName" Value="System.String" />
+    </Action>
+  </Rule>
+</Rules>

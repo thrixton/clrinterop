@@ -1,0 +1,14 @@
+[
+  uuid(40da6a2b-cdf6-4940-a677-c8ac3aa2e31f),
+  version(1.0)
+]
+library ConvertTo_1
+{
+    importlib("stdole2.tlb");
+    [
+      uuid(65a7257f-2396-41cc-86b6-665f6641d07e)
+    ]
+    interface IA : IDispatch {
+		HRESULT TargetFunction(int* pint1, int* pint2);
+    };
+};

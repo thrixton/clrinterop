@@ -1,0 +1,19 @@
+[
+	uuid(2F2330D4-7F62-491C-89A2-BBAC627AE2F8),
+	version(1.0),
+	helpstring("MultipleRule_4 Type Library")
+]
+library MultipleRule_4
+{
+   importlib("stdole2.tlb");
+   importlib("stdole32.tlb");
+
+   	[
+		uuid(68e59b77-0fd8-4f3c-89d5-0efefd67af17)
+	]
+	interface TargetType:IDispatch
+	{
+		HRESULT TargetFunction([out,retval] int* param);
+		HRESULT TargetFunction2([out,retval] int* param);
+	};
+};

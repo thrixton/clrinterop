@@ -1,0 +1,87 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly AddAttribute_6.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("2F2330D4-7F62-491C-86A2-BBAC627AE2F8")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("AddAttribute_6")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)1, (Int32)0)
+} // end of assembly
+.module AddAttribute_6.tlb.dll
+.file AddAttribute_6.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class AddAttribute_6.tlb.dispTargetType (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("78378925-AF56-401A-9156-8E345ED7FD1B")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)2)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_a ()
+.override AddAttribute_6.tlb.dispTargetType.get_a{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+} // end of method get_a
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.String OnRunStart ()
+.override AddAttribute_6.tlb.dispTargetType.OnRunStart{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)10)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method OnRunStart
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void OnRunStop ([mscorlib]System.String&)
+.override AddAttribute_6.tlb.dispTargetType.OnRunStop{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)20)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method OnRunStop
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_a (System.Int32)
+.override AddAttribute_6.tlb.dispTargetType.set_a{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+} // end of method set_a
+.property (None) System.Int32 a
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_a ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_a (System.Int32)
+} // end of property a
+} //end of class AddAttribute_6.tlb.dispTargetType
+.class AddAttribute_6.tlb.TargetType (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("68E59B77-0FD8-4F3C-89D5-0EFEFD67AF17")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Foo (System.Int32)
+.override AddAttribute_6.tlb.TargetType.Foo{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method Foo
+} //end of class AddAttribute_6.tlb.TargetType
+.class AddAttribute_6.tlb.TargetType2 (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("1C07D58E-B7F3-48BE-B5E0-9C43C4B0B2A7")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Bar (System.Int32)
+.override AddAttribute_6.tlb.TargetType2.Bar{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method Bar
+} //end of class AddAttribute_6.tlb.TargetType2

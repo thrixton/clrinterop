@@ -1,0 +1,184 @@
+<Rules>
+  <Rule Name="Rule #1 ChangeManagedName MsoLineDashStyle" Category="Type">
+    <Condition>
+      <And>
+        <NativeName Operator="Equal" Value="MsoLineDashStyle" />
+      </And>
+    </Condition>
+    <Action Name="ChangeManagedName">
+      <Parameter Key="NewName" Value="MicrosoftOfficeDashStyle" />
+    </Action>
+  </Rule>
+  <Rule Name="Rule #2 ChangeManagedName MsoLineStyle" Category="Type">
+    <Condition>
+      <And>
+        <NativeName Operator="Equal" Value="MsoLineStyle" />
+        <TypeKind Operator="Equal" Value="Enum" />
+      </And>
+    </Condition>
+    <Action Name="ChangeManagedName">
+      <Parameter Key="NewName" Value="MicrosoftOfficeLineStyle" />
+    </Action>
+  </Rule>
+  <Rule Name="Rule #3 ChangeManagedName MsoArrowheadStyle" Category="Type">
+    <Condition>
+      <And>
+        <NativeName Operator="Equal" Value="MsoArrowheadStyle" />
+        <Not>
+          <TypeKind Operator="Equal" Value="Enum" />
+        </Not>
+      </And>
+    </Condition>
+    <Action Name="ChangeManagedName">
+      <Parameter Key="NewName" Value="MicrosoftOfficeArrowheadStyle" />
+    </Action>
+  </Rule>
+  <Rule Name="Rule #4 ChangeManagedName IAccessible" Category="Type">
+    <Condition>
+      <And>
+        <GUID Operator="Equal" Value="618736E0-3C3D-11CF-810C-00AA00389B71" />
+      </And>
+    </Condition>
+    <Action Name="ChangeManagedName">
+      <Parameter Key="NewName" Value="MicrosoftOfficeIAccessible" />
+    </Action>
+  </Rule>
+  <Rule Name="Rule #5 AddAttribute CommandBar" Category="Type">
+    <Condition>
+      <And>
+        <NativeName Operator="Equal" Value="CommandBar" />
+      </And>
+    </Condition>
+    <Action Name="AddAttribute">
+      <Parameter Key="AssemblyName" Value="mscorlib" />
+      <Parameter Key="TypeName" Value="System.CLSCompliantAttribute" />
+      <Parameter Key="Constructor" Value="Void .ctor(Boolean)" />
+      <Parameter Key="Data" Value="01 00 00 00 00" />
+    </Action>
+  </Rule>
+  <Rule Name="Rule #6 AddAttribute All DispatchInterfaces" Category="Type">
+    <Condition>
+      <And>
+        <TypeKind Operator="Equal" Value="DispatchInterface" />
+      </And>
+    </Condition>
+    <Action Name="AddAttribute">
+      <Parameter Key="AssemblyName" Value="mscorlib" />
+      <Parameter Key="TypeName" Value="System.ObsoleteAttribute" />
+      <Parameter Key="Constructor" Value="Void .ctor(System.String, Boolean)" />
+      <Parameter Key="Data" Value="01 00 11 44 69 73 70 61 74 63 68 49 6E 74 65 72 66 61 63 65 01 00 00" />
+    </Action>
+  </Rule>
+  <Rule Name="Rule #7 ResolveTo MsoArrowheadWidth" Category="Type">
+    <Condition>
+      <And>
+        <NativeName Operator="Equal" Value="MsoArrowheadWidth" />
+      </And>
+    </Condition>
+    <Action Name="ResolveTo">
+      <Parameter Key="AssemblyName" Value="mscorlib" />
+      <Parameter Key="ManagedTypeFullName" Value="System.String" />
+    </Action>
+  </Rule>
+  <Rule Name="Rule #8 PreserveSig PropertyGet IAccessible.accParent. IAccessible is dual dispinterface" Category="Function">
+    <Condition>
+      <And>
+        <NativeName Operator="Equal" Value="accParent" />
+        <NativeParentTypeName Operator="Equal" Value="IAccessible" />
+      </And>
+    </Condition>
+    <Action Name="PreserveSig" />
+  </Rule>
+  <Rule Name="Rule #9 PreserveSig IAccessible.accHitTest" Category="Function">
+    <Condition>
+      <And>
+        <NativeName Operator="Equal" Value="accHitTest" />
+        <NativeParentTypeName Operator="Equal" Value="IAccessible" />
+      </And>
+    </Condition>
+    <Action Name="PreserveSig" />
+  </Rule>
+  <Rule Name="Rule #10 PreserveSig all functions in CommandBarControls. CommandBarControls is dual dispinterface" Category="Function">
+    <Condition>
+      <And>
+        <NativeParentTypeName Operator="Equal" Value="CommandBarControls" />
+      </And>
+    </Condition>
+    <Action Name="PreserveSig" />
+  </Rule>
+  <Rule Name="Rule #11 ConvertTo return signature of IAccessible.accLocation" Category="Signature">
+    <Condition>
+      <And>
+        <NativeParentFunctionName Operator="Equal" Value="accLocation" />
+        <NativeParameterIndex Operator="Equal" Value="0" />
+      </And>
+    </Condition>
+    <Action Name="ConvertTo">
+      <Parameter Key="Direction" Value="[Out]" />
+      <Parameter Key="ByRef" Value="False" />
+      <Parameter Key="ManagedType" Value="int" />
+      <Parameter Key="MarshalAs" Value="Error" />
+      <Parameter Key="Attributes" Value="[]" />
+    </Action>
+  </Rule>
+  <Rule Name="Rule #12 ConvertTo INT * signature of IAccessible.accLocation" Category="Signature">
+    <Condition>
+      <And>
+        <NativeParentFunctionName Operator="Equal" Value="accLocation" />
+        <NativeSignature Operator="Equal" Value="INT *" />
+      </And>
+    </Condition>
+    <Action Name="ConvertTo">
+      <Parameter Key="Direction" Value="[In]" />
+      <Parameter Key="ByRef" Value="False" />
+      <Parameter Key="ManagedType" Value="LPArray" />
+      <Parameter Key="MarshalAs" Value="(default)" />
+      <Parameter Key="Attributes" Value="[SizeConst=8]" />
+    </Action>
+  </Rule>
+  <Rule Name="Rule #13 ConvertTo second parameter of IAccessible.accSelect" Category="Signature">
+    <Condition>
+      <And>
+        <NativeParentFunctionName Operator="Equal" Value="accSelect" />
+        <NativeParameterIndex Operator="Equal" Value="2" />
+      </And>
+    </Condition>
+    <Action Name="ConvertTo">
+      <Parameter Key="Direction" Value="[In]" />
+      <Parameter Key="ByRef" Value="True" />
+      <Parameter Key="ManagedType" Value="string" />
+      <Parameter Key="MarshalAs" Value="LPStr" />
+      <Parameter Key="Attributes" Value="[]" />
+    </Action>
+  </Rule>
+  <Rule Name="Rule #14 ConvertTo return signature of IAccessible.accSelect" Category="Signature">
+    <Condition>
+      <And>
+        <NativeParentFunctionName Operator="Equal" Value="accSelect" />
+        <NativeParameterIndex Operator="Equal" Value="0" />
+      </And>
+    </Condition>
+    <Action Name="ConvertTo">
+      <Parameter Key="Direction" Value="[In]" />
+      <Parameter Key="ByRef" Value="False" />
+      <Parameter Key="ManagedType" Value="int" />
+      <Parameter Key="MarshalAs" Value="Error" />
+      <Parameter Key="Attributes" Value="[]" />
+    </Action>
+  </Rule>
+  <Rule Name="Rule #15 ConvertTo first parameter of IAccessible.accChildCount (getter)" Category="Signature">
+    <Condition>
+      <And>
+        <NativeParentFunctionName Operator="Equal" Value="accChildCount" />
+        <NativeParameterIndex Operator="Equal" Value="1" />
+      </And>
+    </Condition>
+    <Action Name="ConvertTo">
+      <Parameter Key="Direction" Value="[Out]" />
+      <Parameter Key="ByRef" Value="False" />
+      <Parameter Key="ManagedType" Value="int" />
+      <Parameter Key="MarshalAs" Value="Error" />
+      <Parameter Key="Attributes" Value="[]" />
+    </Action>
+  </Rule>
+</Rules>

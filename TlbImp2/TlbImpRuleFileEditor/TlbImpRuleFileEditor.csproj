@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6CC46CF1-F1EF-4417-9BFD-EBD67907670A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TlbImpRuleFileEditor</RootNamespace>
+    <AssemblyName>TlbImpConfigFileEditor</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationIcon>action.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutDialog.Designer.cs">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAttributeActionWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAttributeActionWizard.Designer.cs">
+      <DependentUpon>AddAttributeActionWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAttributeDataInputHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAttributeDataInputHelper.Designer.cs">
+      <DependentUpon>AddAttributeDataInputHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyTypeSelectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyTypeSelectDialog.Designer.cs">
+      <DependentUpon>AssemblyTypeSelectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeManagedNameActionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeManagedNameActionDialog.Designer.cs">
+      <DependentUpon>ChangeManagedNameActionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="ImageCloseButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ManagedTypeSelectButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ManagedTypeSelectButton.Designer.cs">
+      <DependentUpon>ManagedTypeSelectButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParameterIndexNumericUpDown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ParameterIndexNumericUpDown.Designer.cs">
+      <DependentUpon>ParameterIndexNumericUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResolveToActionWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResolveToActionWizard.Designer.cs">
+      <DependentUpon>ResolveToActionWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TlbTypeSelectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TlbTypeSelectDialog.Designer.cs">
+      <DependentUpon>TlbTypeSelectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConditionInPlaceEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConditionInPlaceEditor.Designer.cs">
+      <DependentUpon>ConditionInPlaceEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertionHighlight.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InsertionHighlight.Designer.cs">
+      <DependentUpon>InsertionHighlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NativeSignatureInputHelper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NativeSignatureInputHelper.Designer.cs">
+      <DependentUpon>NativeSignatureInputHelper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBoxConditionExpression.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RuleForm.Designer.cs">
+      <DependentUpon>RuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APIHelper.cs" />
+    <Compile Include="ConvertToActionWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConvertToActionWizard.Designer.cs">
+      <DependentUpon>ConvertToActionWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RuleTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutDialog.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAttributeActionWizard.resx">
+      <DependentUpon>AddAttributeActionWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAttributeDataInputHelper.resx">
+      <DependentUpon>AddAttributeDataInputHelper.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssemblyTypeSelectDialog.resx">
+      <DependentUpon>AssemblyTypeSelectDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeManagedNameActionDialog.resx">
+      <DependentUpon>ChangeManagedNameActionDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagedTypeSelectButton.resx">
+      <DependentUpon>ManagedTypeSelectButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NativeSignatureInputHelper.resx">
+      <DependentUpon>NativeSignatureInputHelper.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParameterIndexNumericUpDown.resx">
+      <DependentUpon>ParameterIndexNumericUpDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResolveToActionWizard.resx">
+      <DependentUpon>ResolveToActionWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TlbTypeSelectDialog.resx">
+      <DependentUpon>TlbTypeSelectDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConditionInPlaceEditor.resx">
+      <DependentUpon>ConditionInPlaceEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertionHighlight.resx">
+      <DependentUpon>InsertionHighlight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RuleForm.resx">
+      <DependentUpon>RuleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConvertToActionWizard.resx">
+      <DependentUpon>ConvertToActionWizard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RuleSet2TreeNodeProcessor.cs" />
+    <Compile Include="TreeNodeConstants.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AssemblyTreeView\AssemblyTreeViewer.csproj">
+      <Project>{C6F05386-C2A3-40EF-9EC2-AD89793F1C3C}</Project>
+      <Name>AssemblyTreeViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\coreRuleEngine\CoreRuleEngine.csproj">
+      <Project>{51848F63-8022-4A09-8D67-A670BA402107}</Project>
+      <Name>CoreRuleEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tlbImpRuleEngine\TlbImpRuleEngine.csproj">
+      <Project>{CF522F3F-5A8F-45D3-A4A5-49958EB24638}</Project>
+      <Name>TlbImpRuleEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TypeLibraryViewer\TypeLibraryTreeView.csproj">
+      <Project>{CAD9FB1A-AE77-4561-8983-A796AEBE0E11}</Project>
+      <Name>TypeLibraryTreeView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\typelibTypes.interop\TypeLibTypes.Interop.csproj">
+      <Project>{CFC5A366-641A-4EAD-818A-A792123E8A21}</Project>
+      <Name>TypeLibTypes.Interop</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VSObject_Library.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveAs.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addrule.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removerule.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removeallrules.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addcondition.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removecondition.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removeallsubconditions.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resetrootcondition.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modifycondition.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modifyaction.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addruletotree.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_normal.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_down.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_hover.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="action.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

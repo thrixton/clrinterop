@@ -1,0 +1,19 @@
+[
+	uuid(777d5a39-13b4-48e9-aee5-46c420c79a31),
+	helpstring("Operator_3")
+]
+library Operator_3
+{
+	importlib("stdole2.tlb");
+
+	[
+		uuid(c08634cb-9c83-4479-984d-a49f7eb8cfb6)
+	]
+	interface TargetType:IDispatch{
+		HRESULT FuncA([in] int en, [out, retval] VARIANT_BOOL *ret);
+		HRESULT FuncB([in] int en, [out, retval] VARIANT_BOOL *ret);
+		HRESULT OperatorTest1([in] int en, [out, retval] VARIANT_BOOL *ret);
+		HRESULT OperatorTest2([in] int en, [out, retval] VARIANT_BOOL *ret);
+	};	
+	
+}

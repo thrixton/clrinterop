@@ -1,0 +1,54 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly PreserveSig_3.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("40DA6A2B-CDF6-4940-A677-C8AC3AA2E31F")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("PreserveSig_3")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)1, (Int32)0)
+} // end of assembly
+.module PreserveSig_3.tlb.dll
+.file PreserveSig_3.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class PreserveSig_3.tlb.TargetType (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("65A7257F-2396-41CC-86B6-665F6641D07E")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Boolean TargetFunction2 (System.Int32)
+.override PreserveSig_3.tlb.TargetType.TargetFunction2{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method TargetFunction2
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Boolean TargetFunction3 (System.Int32)
+.override PreserveSig_3.tlb.TargetType.TargetFunction3{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method TargetFunction3
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 TargetFunction (System.Int32, [mscorlib]System.Boolean&)
+.override PreserveSig_3.tlb.TargetType.TargetFunction{
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)45, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method TargetFunction
+} //end of class PreserveSig_3.tlb.TargetType

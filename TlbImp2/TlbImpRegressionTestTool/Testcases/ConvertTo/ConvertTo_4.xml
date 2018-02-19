@@ -1,0 +1,19 @@
+<Rules>
+  <Rule Name="Rule #1" Category="Signature">
+    <Condition>
+      <And>
+        <NativeParameterIndex Operator="Equal" Value="1" />
+        <And>
+          <NativeParentFunctionName Operator="Equal" Value="TargetFunction" />
+        </And>
+      </And>
+    </Condition>
+    <Action Name="ConvertTo">
+      <Parameter Key="Direction" Value="[Out]" />
+      <Parameter Key="ByRef" Value="False" />
+      <Parameter Key="ManagedType" Value="LPArray" />
+      <Parameter Key="MarshalAs" Value="(default)" />
+      <Parameter Key="Attributes" Value="[SizeConst=12]" />
+    </Action>
+  </Rule>
+</Rules>

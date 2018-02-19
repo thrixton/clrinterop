@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D153819-A374-4D70-9E89-5D92B6D59278}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TlbImpRegressionTestTool</RootNamespace>
+    <AssemblyName>TlbImpRegressionTestTool</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemPrinter.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="ILReader.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Testcases\AddAttribute\AddAttribute_1.baseline" />
+    <None Include="Testcases\AddAttribute\AddAttribute_1.tlb" />
+    <None Include="Testcases\AddAttribute\AddAttribute_2.baseline" />
+    <None Include="Testcases\AddAttribute\AddAttribute_2.tlb" />
+    <None Include="Testcases\AddAttribute\AddAttribute_3.baseline" />
+    <None Include="Testcases\AddAttribute\AddAttribute_3.tlb" />
+    <None Include="Testcases\AddAttribute\AddAttribute_4.baseline" />
+    <None Include="Testcases\AddAttribute\AddAttribute_4.tlb" />
+    <None Include="Testcases\AddAttribute\AddAttribute_5.baseline" />
+    <None Include="Testcases\AddAttribute\AddAttribute_5.tlb" />
+    <None Include="Testcases\AddAttribute\AddAttribute_6.baseline" />
+    <None Include="Testcases\AddAttribute\AddAttribute_6.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_1.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_1.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_2.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_2.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_3_1.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_3_1.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_3_2.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_3_2.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_3_3.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_3_3.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_3_4.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_3_4.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_3_5.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_3_5.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_3_6.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_3_6.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_3_7.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_3_7.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_4.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_4.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_5.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_5.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_6.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_6.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_7.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_7.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_8.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_8.tlb" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_9.baseline" />
+    <None Include="Testcases\ChangeManagedName\ChangeManagedName_9.tlb" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_1.baseline" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_1.tlb" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_2.baseline" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_2.tlb" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_3_1.baseline" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_3_1.tlb" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_3_2.baseline" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_3_2.tlb" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_3_3.baseline" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_3_3.tlb" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_4.baseline" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_4.tlb" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_5.baseline" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_5.tlb" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_6.baseline" />
+    <None Include="Testcases\ConvertToOtherType\ConvertToOtherType_6.tlb" />
+    <None Include="Testcases\ConvertTo\ConvertTo_1.baseline" />
+    <None Include="Testcases\ConvertTo\ConvertTo_1.tlb" />
+    <None Include="Testcases\ConvertTo\ConvertTo_2.baseline" />
+    <None Include="Testcases\ConvertTo\ConvertTo_2.tlb" />
+    <None Include="Testcases\ConvertTo\ConvertTo_3.baseline" />
+    <None Include="Testcases\ConvertTo\ConvertTo_3.tlb" />
+    <None Include="Testcases\ConvertTo\ConvertTo_4.baseline" />
+    <None Include="Testcases\ConvertTo\ConvertTo_4.tlb" />
+    <None Include="Testcases\MultipleRules\MultipleRuleRef.tlb" />
+    <None Include="Testcases\MultipleRules\MultipleRule_1.baseline" />
+    <None Include="Testcases\MultipleRules\MultipleRule_1.tlb" />
+    <None Include="Testcases\MultipleRules\MultipleRule_2.baseline" />
+    <None Include="Testcases\MultipleRules\MultipleRule_2.tlb" />
+    <None Include="Testcases\MultipleRules\MultipleRule_3.baseline" />
+    <None Include="Testcases\MultipleRules\MultipleRule_3.tlb" />
+    <None Include="Testcases\MultipleRules\MultipleRule_4.baseline" />
+    <None Include="Testcases\MultipleRules\MultipleRule_4.tlb" />
+    <None Include="Testcases\MultipleRules\MultipleRule_5.baseline" />
+    <None Include="Testcases\MultipleRules\MultipleRule_5.tlb" />
+    <None Include="Testcases\MultipleRules\MultipleRule_6.baseline" />
+    <None Include="Testcases\MultipleRules\MultipleRule_6.tlb" />
+    <None Include="Testcases\Office\mso.dll.baseline" />
+    <None Include="Testcases\Office\mso.dll.tlb" />
+    <None Include="Testcases\Operator\Operator_1.baseline" />
+    <None Include="Testcases\Operator\Operator_1.tlb" />
+    <None Include="Testcases\Operator\Operator_2.baseline" />
+    <None Include="Testcases\Operator\Operator_2.tlb" />
+    <None Include="Testcases\Operator\Operator_3.baseline" />
+    <None Include="Testcases\Operator\Operator_3.tlb" />
+    <None Include="Testcases\Operator\Operator_4.baseline" />
+    <None Include="Testcases\Operator\Operator_4.tlb" />
+    <None Include="Testcases\Operator\Operator_5.baseline" />
+    <None Include="Testcases\Operator\Operator_5.tlb" />
+    <None Include="Testcases\Operator\Operator_6.baseline" />
+    <None Include="Testcases\Operator\Operator_6.tlb" />
+    <None Include="Testcases\Operator\Operator_7.baseline" />
+    <None Include="Testcases\Operator\Operator_7.tlb" />
+    <None Include="Testcases\Operator\Operator_8.baseline" />
+    <None Include="Testcases\Operator\Operator_8.tlb" />
+    <None Include="Testcases\OtherScenario\OtherScenario_1.baseline" />
+    <None Include="Testcases\OtherScenario\OtherScenario_1.tlb" />
+    <None Include="Testcases\OtherScenario\OtherScenario_2.baseline" />
+    <None Include="Testcases\OtherScenario\OtherScenario_2.tlb" />
+    <None Include="Testcases\OtherScenario\OtherScenario_3.baseline" />
+    <None Include="Testcases\OtherScenario\OtherScenario_3.tlb" />
+    <None Include="Testcases\PreserveSig\PreserveSig_1.baseline" />
+    <None Include="Testcases\PreserveSig\PreserveSig_1.tlb" />
+    <None Include="Testcases\PreserveSig\PreserveSig_2.baseline" />
+    <None Include="Testcases\PreserveSig\PreserveSig_2.tlb" />
+    <None Include="Testcases\PreserveSig\PreserveSig_3.baseline" />
+    <None Include="Testcases\PreserveSig\PreserveSig_3.tlb" />
+    <None Include="Testcases\ResolveTo\ResolveToRef.tlb" />
+    <None Include="Testcases\ResolveTo\ResolveTo_1.baseline" />
+    <None Include="Testcases\ResolveTo\ResolveTo_1.tlb" />
+    <None Include="Testcases\ResolveTo\ResolveTo_2.baseline" />
+    <None Include="Testcases\ResolveTo\ResolveTo_2.tlb" />
+    <None Include="Testcases\ResolveTo\ResolveTo_3.baseline" />
+    <None Include="Testcases\ResolveTo\ResolveTo_3.tlb" />
+    <None Include="Testcases\ResolveTo\ResolveTo_4.baseline" />
+    <None Include="Testcases\ResolveTo\ResolveTo_4.tlb" />
+    <None Include="Testcases\ResolveTo\ResolveTo_5.baseline" />
+    <None Include="Testcases\ResolveTo\ResolveTo_5.tlb" />
+    <None Include="Testcases\tlb\ConvertProperty.tlb" />
+    <None Include="Testcases\tlb\ConvertProperty.tlb.baseline" />
+    <None Include="Testcases\tlb\ConvertProperty.tlb_2.baseline" />
+    <None Include="Testcases\tlb\DISPRET.DLL.TLB" />
+    <None Include="Testcases\tlb\dispret.dll.tlb.baseline" />
+    <None Include="Testcases\tlb\dispret.dll.tlb_2.baseline" />
+    <None Include="Testcases\tlb\ManagedNameAttribute.tlb" />
+    <None Include="Testcases\tlb\ManagedNameAttribute.tlb.baseline" />
+    <None Include="Testcases\tlb\ManagedNameAttribute.tlb_2.baseline" />
+    <None Include="Testcases\tlb\ManagedName_InconsistenceNSandCoclass.tlb" />
+    <None Include="Testcases\tlb\ManagedName_InconsistenceNSandCoclass.tlb.baseline" />
+    <None Include="Testcases\tlb\ManagedName_InconsistenceNSandCoclass.tlb_2.baseline" />
+    <None Include="Testcases\tlb\MSACC9.OLB.tlb" />
+    <None Include="Testcases\tlb\MSACC9.OLB.tlb.baseline" />
+    <None Include="Testcases\tlb\MSACC9.OLB.tlb_2.baseline" />
+    <None Include="Testcases\tlb\msado20.tlb" />
+    <None Include="Testcases\tlb\msado20.tlb.baseline" />
+    <None Include="Testcases\tlb\msado20.tlb_2.baseline" />
+    <None Include="Testcases\tlb\msado25.tlb" />
+    <None Include="Testcases\tlb\msado25.tlb.baseline" />
+    <None Include="Testcases\tlb\msado25.tlb_2.baseline" />
+    <None Include="Testcases\tlb\msado25.tlb_3.baseline" />
+    <None Include="Testcases\tlb\mso.dll.tlb" />
+    <None Include="Testcases\tlb\mso.dll.tlb.baseline" />
+    <None Include="Testcases\tlb\mso.dll.tlb_2.baseline" />
+    <None Include="Testcases\tlb\mso.dll.tlb_3.baseline" />
+    <None Include="Testcases\tlb\MSO9.DLL.tlb" />
+    <None Include="Testcases\tlb\MSO9.DLL.tlb.baseline" />
+    <None Include="Testcases\tlb\MSO9.DLL.tlb_2.baseline" />
+    <None Include="Testcases\tlb\MSO97RT.DLL.tlb" />
+    <None Include="Testcases\tlb\MSO97RT.DLL.tlb.baseline" />
+    <None Include="Testcases\tlb\MSO97RT.DLL.tlb_2.baseline" />
+    <None Include="Testcases\tlb\MSPPT.OLB.tlb" />
+    <None Include="Testcases\tlb\msppt.olb.tlb.baseline" />
+    <None Include="Testcases\tlb\msppt.olb.tlb_2.baseline" />
+    <None Include="Testcases\tlb\MSPPT9.OLB.tlb" />
+    <None Include="Testcases\tlb\MSPPT9.OLB.tlb.baseline" />
+    <None Include="Testcases\tlb\MSPPT9.OLB.tlb_2.baseline" />
+    <None Include="Testcases\tlb\msstdfmt.dll.tlb" />
+    <None Include="Testcases\tlb\msstdfmt.dll.tlb.baseline" />
+    <None Include="Testcases\tlb\msstdfmt.dll.tlb_2.baseline" />
+    <None Include="Testcases\tlb\MSWORD9.OLB.tlb" />
+    <None Include="Testcases\tlb\msword9.olb.tlb.baseline" />
+    <None Include="Testcases\tlb\msword9.olb.tlb_2.baseline" />
+    <None Include="Testcases\tlb\Prop01.tlb" />
+    <None Include="Testcases\tlb\prop01.tlb.baseline" />
+    <None Include="Testcases\tlb\prop01.tlb_2.baseline" />
+    <None Include="Testcases\tlb\prop02.tlb" />
+    <None Include="Testcases\tlb\prop02.tlb.baseline" />
+    <None Include="Testcases\tlb\prop02.tlb_2.baseline" />
+    <None Include="Testcases\tlb\Prop03.tlb" />
+    <None Include="Testcases\tlb\prop03.tlb.baseline" />
+    <None Include="Testcases\tlb\prop03.tlb_2.baseline" />
+    <None Include="Testcases\tlb\PropGet01.tlb" />
+    <None Include="Testcases\tlb\PropGet01.tlb.baseline" />
+    <None Include="Testcases\tlb\PropGet01.tlb_2.baseline" />
+    <None Include="Testcases\tlb\propgetwithvoid.tlb" />
+    <None Include="Testcases\tlb\propgetwithvoid.tlb.baseline" />
+    <None Include="Testcases\tlb\propgetwithvoid.tlb_2.baseline" />
+    <None Include="Testcases\tlb\PropSet01.tlb" />
+    <None Include="Testcases\tlb\propset01.tlb.baseline" />
+    <None Include="Testcases\tlb\propset01.tlb_2.baseline" />
+    <None Include="Testcases\tlb\S0006.tlb" />
+    <None Include="Testcases\tlb\s0006.tlb.baseline" />
+    <None Include="Testcases\tlb\s0006.tlb_2.baseline" />
+    <None Include="Testcases\tlb\S0046.tlb" />
+    <None Include="Testcases\tlb\S0046.tlb.baseline" />
+    <None Include="Testcases\tlb\S0046.tlb_2.baseline" />
+    <None Include="Testcases\tlb\SPDESIGN.EXE.TLB" />
+    <None Include="Testcases\tlb\spdesign.exe.tlb.baseline" />
+    <None Include="Testcases\tlb\test_deep_object_in_union.tlb" />
+    <None Include="Testcases\tlb\test_deep_object_in_union.tlb.baseline" />
+    <None Include="Testcases\tlb\UDTSafeArrayEnum.tlb" />
+    <None Include="Testcases\tlb\UDTSafeArrayEnum.tlb.baseline" />
+    <None Include="Testcases\tlb\UDTSafeArrayEnum.tlb_2.baseline" />
+    <None Include="Testcases\tlb\UDTSafeArrayInterface.tlb" />
+    <None Include="Testcases\tlb\UDTSafeArrayInterface.tlb.baseline" />
+    <None Include="Testcases\tlb\UDTSafeArrayInterface.tlb_2.baseline" />
+    <None Include="Testcases\tlb\VB6EXT.OLB.tlb" />
+    <None Include="Testcases\tlb\vb6ext.olb.tlb.baseline" />
+    <None Include="Testcases\tlb\vb6ext.olb.tlb_2.baseline" />
+    <None Include="Testcases\tlb\VBA6.DLL.tlb" />
+    <None Include="Testcases\tlb\VBA6.DLL.tlb.baseline" />
+    <None Include="Testcases\tlb\VBA6.DLL.tlb_2.baseline" />
+    <None Include="Testcases\tlb\vcpb2.tlb" />
+    <None Include="Testcases\tlb\vcpb2.tlb.baseline" />
+    <None Include="Testcases\tlb\vcpb2.tlb_2.baseline" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RemoteAssemPrinter.cs" />
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestCase.cs" />
+    <Compile Include="TestCaseRunner.cs" />
+    <Compile Include="TestCaseSet.cs" />
+    <Compile Include="TestCaseSettings.cs" />
+    <Compile Include="TestCaseStatusChangeEventArgs.cs" />
+    <Compile Include="Testcases\ResolveTo\TestClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="action.ico" />
+    <Content Include="Testcases\AddAttribute\AddAttribute_1.idl" />
+    <Content Include="Testcases\AddAttribute\AddAttribute_1.xml" />
+    <Content Include="Testcases\AddAttribute\AddAttribute_2.idl" />
+    <Content Include="Testcases\AddAttribute\AddAttribute_2.xml" />
+    <Content Include="Testcases\AddAttribute\AddAttribute_3.idl" />
+    <Content Include="Testcases\AddAttribute\AddAttribute_3.xml" />
+    <Content Include="Testcases\AddAttribute\AddAttribute_4.idl" />
+    <Content Include="Testcases\AddAttribute\AddAttribute_4.xml" />
+    <Content Include="Testcases\AddAttribute\AddAttribute_5.idl" />
+    <Content Include="Testcases\AddAttribute\AddAttribute_5.xml" />
+    <Content Include="Testcases\AddAttribute\AddAttribute_6.idl" />
+    <Content Include="Testcases\AddAttribute\AddAttribute_6.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_1.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_1.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_2.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_2.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_3_1.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_3_1.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_3_2.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_3_2.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_3_3.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_3_3.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_3_4.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_3_4.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_3_5.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_3_5.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_3_6.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_3_6.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_3_7.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_3_7.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_4.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_4.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_5.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_5.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_6.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_6.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_7.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_7.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_8.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_8.xml" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_9.idl" />
+    <Content Include="Testcases\ChangeManagedName\ChangeManagedName_9.xml" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_1.idl" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_1.xml" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_2.idl" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_2.xml" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_3_1.idl" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_3_1.xml" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_3_2.idl" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_3_2.xml" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_3_3.idl" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_3_3.xml" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_4.idl" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_4.xml" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_5.idl" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_5.xml" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_6.idl" />
+    <Content Include="Testcases\ConvertToOtherType\ConvertToOtherType_6.xml" />
+    <Content Include="Testcases\ConvertTo\ConvertTo_1.idl" />
+    <Content Include="Testcases\ConvertTo\ConvertTo_1.xml" />
+    <Content Include="Testcases\ConvertTo\ConvertTo_2.idl" />
+    <Content Include="Testcases\ConvertTo\ConvertTo_2.xml" />
+    <Content Include="Testcases\ConvertTo\ConvertTo_3.idl" />
+    <Content Include="Testcases\ConvertTo\ConvertTo_3.xml" />
+    <Content Include="Testcases\ConvertTo\ConvertTo_4.idl" />
+    <Content Include="Testcases\ConvertTo\ConvertTo_4.xml" />
+    <Content Include="Testcases\MultipleRules\MultipleRuleRef.idl" />
+    <Content Include="Testcases\MultipleRules\MultipleRule_1.idl" />
+    <Content Include="Testcases\MultipleRules\MultipleRule_1.xml" />
+    <Content Include="Testcases\MultipleRules\MultipleRule_2.idl" />
+    <Content Include="Testcases\MultipleRules\MultipleRule_2.xml" />
+    <Content Include="Testcases\MultipleRules\MultipleRule_3.idl" />
+    <Content Include="Testcases\MultipleRules\MultipleRule_3.xml" />
+    <Content Include="Testcases\MultipleRules\MultipleRule_4.idl" />
+    <Content Include="Testcases\MultipleRules\MultipleRule_4.xml" />
+    <Content Include="Testcases\MultipleRules\MultipleRule_5.idl" />
+    <Content Include="Testcases\MultipleRules\MultipleRule_5.xml" />
+    <Content Include="Testcases\MultipleRules\MultipleRule_6.idl" />
+    <Content Include="Testcases\MultipleRules\MultipleRule_6.xml" />
+    <Content Include="Testcases\MultipleRules\ResolveTo_1.idl" />
+    <Content Include="Testcases\Office\mso.dll.xml" />
+    <Content Include="Testcases\Operator\Operator_1.idl" />
+    <Content Include="Testcases\Operator\Operator_1.xml" />
+    <Content Include="Testcases\Operator\Operator_2.idl" />
+    <Content Include="Testcases\Operator\Operator_2.xml" />
+    <Content Include="Testcases\Operator\Operator_3.idl" />
+    <Content Include="Testcases\Operator\Operator_3.xml" />
+    <Content Include="Testcases\Operator\Operator_4.idl" />
+    <Content Include="Testcases\Operator\Operator_4.xml" />
+    <Content Include="Testcases\Operator\Operator_5.idl" />
+    <Content Include="Testcases\Operator\Operator_5.xml" />
+    <Content Include="Testcases\Operator\Operator_6.idl" />
+    <Content Include="Testcases\Operator\Operator_6.xml" />
+    <Content Include="Testcases\Operator\Operator_7.idl" />
+    <Content Include="Testcases\Operator\Operator_7.xml" />
+    <Content Include="Testcases\Operator\Operator_8.idl" />
+    <Content Include="Testcases\Operator\Operator_8.xml" />
+    <Content Include="Testcases\OtherScenario\OtherScenario_1.idl" />
+    <Content Include="Testcases\OtherScenario\OtherScenario_1.xml" />
+    <Content Include="Testcases\OtherScenario\OtherScenario_2.idl" />
+    <Content Include="Testcases\OtherScenario\OtherScenario_2.xml" />
+    <Content Include="Testcases\OtherScenario\OtherScenario_3.idl" />
+    <Content Include="Testcases\OtherScenario\OtherScenario_3.xml" />
+    <Content Include="Testcases\PreserveSig\PreserveSig_1.idl" />
+    <Content Include="Testcases\PreserveSig\PreserveSig_1.xml" />
+    <Content Include="Testcases\PreserveSig\PreserveSig_2.idl" />
+    <Content Include="Testcases\PreserveSig\PreserveSig_2.xml" />
+    <Content Include="Testcases\PreserveSig\PreserveSig_3.idl" />
+    <Content Include="Testcases\PreserveSig\PreserveSig_3.xml" />
+    <Content Include="Testcases\ResolveTo\ResolveToRef.idl" />
+    <Content Include="Testcases\ResolveTo\ResolveTo_1.idl" />
+    <Content Include="Testcases\ResolveTo\ResolveTo_1.xml" />
+    <Content Include="Testcases\ResolveTo\ResolveTo_2.idl" />
+    <Content Include="Testcases\ResolveTo\ResolveTo_2.xml" />
+    <Content Include="Testcases\ResolveTo\ResolveTo_3.idl" />
+    <Content Include="Testcases\ResolveTo\ResolveTo_3.xml" />
+    <Content Include="Testcases\ResolveTo\ResolveTo_4.idl" />
+    <Content Include="Testcases\ResolveTo\ResolveTo_4.xml" />
+    <Content Include="Testcases\ResolveTo\ResolveTo_5.idl" />
+    <Content Include="Testcases\ResolveTo\ResolveTo_5.xml" />
+    <Content Include="Testcases\Testcases.xml" />
+    <Content Include="Testcases\WinDiff.Exe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,715 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly VBA6.DLL.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("000204EF-0000-0000-C000-000000000046")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("VBA")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)6, (Int32)0)
+} // end of assembly
+.module VBA6.DLL.tlb.dll
+.file VBA6.DLL.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class VBA6.DLL.tlb._Collection (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements System.Collections.IEnumerable, 
+{
+.custom [mscorlib]System.Reflection.DefaultMemberAttribute("Item")
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("A4C46780-499F-101B-BB78-00AA00383CBB")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4176)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 Count ()
+.override VBA6.DLL.tlb._Collection.Count{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+} // end of method Count
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) [mscorlib]System.Collections.IEnumerator GetEnumerator ()
+.override VBA6.DLL.tlb._Collection.GetEnumerator{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)-4)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)44, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0, MarshalType = "System.Runtime.InteropServices.CustomMarshalers.EnumeratorToEnumVariantMarshaler, CustomMarshalers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", MarshalTypeRef = System.Runtime.InteropServices.CustomMarshalers.EnumeratorToEnumVariantMarshaler, MarshalCookie = "")
+} // end of method GetEnumerator
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Object Item ([mscorlib]System.Object&)
+.override VBA6.DLL.tlb._Collection.Item{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method Item
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Add ([mscorlib]System.Object&, [mscorlib]System.Object&, [mscorlib]System.Object&, [mscorlib]System.Object&)
+.override VBA6.DLL.tlb._Collection.Add{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+.param [3]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+.param [4]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+} // end of method Add
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Remove ([mscorlib]System.Object&)
+.override VBA6.DLL.tlb._Collection.Remove{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method Remove
+} //end of class VBA6.DLL.tlb._Collection
+.class VBA6.DLL.tlb._ErrObject (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Reflection.DefaultMemberAttribute("Number")
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("A4C466B8-499F-101B-BB78-00AA00383CBB")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4176)
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_HelpContext ()
+.override VBA6.DLL.tlb._ErrObject.get_HelpContext{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743816)
+} // end of method get_HelpContext
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_LastDllError ()
+.override VBA6.DLL.tlb._ErrObject.get_LastDllError{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743820)
+} // end of method get_LastDllError
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_Number ()
+.override VBA6.DLL.tlb._ErrObject.get_Number{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+} // end of method get_Number
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_Description ()
+.override VBA6.DLL.tlb._ErrObject.get_Description{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743812)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_Description
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_HelpFile ()
+.override VBA6.DLL.tlb._ErrObject.get_HelpFile{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743814)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_HelpFile
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_Source ()
+.override VBA6.DLL.tlb._ErrObject.get_Source{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743810)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_Source
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Clear ()
+.override VBA6.DLL.tlb._ErrObject.Clear{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743819)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method Clear
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Raise (System.Int32, [mscorlib]System.Object&, [mscorlib]System.Object&, [mscorlib]System.Object&, [mscorlib]System.Object&)
+.override VBA6.DLL.tlb._ErrObject.Raise{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743818)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+.param [3]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+.param [4]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+.param [5]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+} // end of method Raise
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Description (System.String)
+.override VBA6.DLL.tlb._ErrObject.set_Description{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743812)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_Description
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_HelpContext (System.Int32)
+.override VBA6.DLL.tlb._ErrObject.set_HelpContext{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743816)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_HelpContext
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_HelpFile (System.String)
+.override VBA6.DLL.tlb._ErrObject.set_HelpFile{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743814)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_HelpFile
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Number (System.Int32)
+.override VBA6.DLL.tlb._ErrObject.set_Number{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_Number
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Source (System.String)
+.override VBA6.DLL.tlb._ErrObject.set_Source{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743810)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_Source
+.property (None) System.Int32 HelpContext
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743816)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_HelpContext ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_HelpContext (System.Int32)
+} // end of property HelpContext
+.property (None) System.Int32 LastDllError
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743820)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_LastDllError ()
+} // end of property LastDllError
+.property (None) System.Int32 Number
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_Number ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Number (System.Int32)
+} // end of property Number
+.property (None) System.String Description
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743812)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_Description ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Description (System.String)
+} // end of property Description
+.property (None) System.String HelpFile
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743814)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_HelpFile ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_HelpFile (System.String)
+} // end of property HelpFile
+.property (None) System.String Source
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743810)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_Source ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Source (System.String)
+} // end of property Source
+} //end of class VBA6.DLL.tlb._ErrObject
+.class VBA6.DLL.tlb._HiddenModule (Abstract, AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("CF1C2C60-0D25-1069-9427-00DD0111BF30")
+} //end of class VBA6.DLL.tlb._HiddenModule
+.class VBA6.DLL.tlb.Collection (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements VBA6.DLL.tlb._Collection, System.Collections.IEnumerable, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.CoClassAttribute(typeof(VBA6.DLL.tlb.CollectionClass))
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("A4C46780-499F-101B-BB78-00AA00383CBB")
+} //end of class VBA6.DLL.tlb.Collection
+.class VBA6.DLL.tlb.CollectionClass (AnsiClass, AutoLayout, Import, Public)
+.extends [mscorlib]System.__ComObject
+.implements VBA6.DLL.tlb._Collection, System.Collections.IEnumerable, VBA6.DLL.tlb.Collection, 
+{
+.custom [mscorlib]System.Reflection.DefaultMemberAttribute("Item")
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("A4C4671C-499F-101B-BB78-00AA00383CBB")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)2)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor ()
+{
+} // end of method .ctor
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 Count ()
+.override VBA6.DLL.tlb.CollectionClass.Count{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+} // end of method Count
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) [mscorlib]System.Collections.IEnumerator GetEnumerator ()
+.override VBA6.DLL.tlb.CollectionClass.GetEnumerator{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)-4)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)44, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0, MarshalType = "System.Runtime.InteropServices.CustomMarshalers.EnumeratorToEnumVariantMarshaler, CustomMarshalers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", MarshalTypeRef = System.Runtime.InteropServices.CustomMarshalers.EnumeratorToEnumVariantMarshaler, MarshalCookie = "")
+} // end of method GetEnumerator
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Object Item ([mscorlib]System.Object&)
+.override VBA6.DLL.tlb.CollectionClass.Item{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method Item
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Add ([mscorlib]System.Object&, [mscorlib]System.Object&, [mscorlib]System.Object&, [mscorlib]System.Object&)
+.override VBA6.DLL.tlb.CollectionClass.Add{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+.param [3]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+.param [4]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+} // end of method Add
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Remove ([mscorlib]System.Object&)
+.override VBA6.DLL.tlb.CollectionClass.Remove{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method Remove
+} //end of class VBA6.DLL.tlb.CollectionClass
+.class VBA6.DLL.tlb.Constants (Abstract, AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("343DB180-2BCC-1069-82D4-00DD010EDFAA")
+.field (HasDefault, Literal, Public, Static) System.Int32 vbObjectError = -2147221504
+.field (HasDefault, HasFieldMarshal, Literal, Public, Static) System.String vbBack = 
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)20, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.field (HasDefault, HasFieldMarshal, Literal, Public, Static) System.String vbCr = 
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)20, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.field (HasDefault, HasFieldMarshal, Literal, Public, Static) System.String vbCrLf = 
+
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)20, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.field (HasDefault, HasFieldMarshal, Literal, Public, Static) System.String vbFormFeed = 
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)20, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.field (HasDefault, HasFieldMarshal, Literal, Public, Static) System.String vbLf = 
+
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)20, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.field (HasDefault, HasFieldMarshal, Literal, Public, Static) System.String vbNewLine = 
+
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)20, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.field (HasDefault, HasFieldMarshal, Literal, Public, Static) System.String vbNullChar = 
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)20, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.field (HasDefault, HasFieldMarshal, Literal, Public, Static) System.String vbNullString = 
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)20, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.field (HasDefault, HasFieldMarshal, Literal, Public, Static) System.String vbTab = 	
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)20, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.field (HasDefault, HasFieldMarshal, Literal, Public, Static) System.String vbVerticalTab = 
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)20, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} //end of class VBA6.DLL.tlb.Constants
+.class VBA6.DLL.tlb.Conversion (Abstract, AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("36785F40-2BCC-1069-82D6-00DD010EDFAA")
+} //end of class VBA6.DLL.tlb.Conversion
+.class VBA6.DLL.tlb.DateTime (Abstract, AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("37D75300-2BCC-1069-82D8-00DD010EDFAA")
+} //end of class VBA6.DLL.tlb.DateTime
+.class VBA6.DLL.tlb.ErrObject (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements VBA6.DLL.tlb._ErrObject, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.CoClassAttribute(typeof(VBA6.DLL.tlb.ErrObjectClass))
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("A4C466B8-499F-101B-BB78-00AA00383CBB")
+} //end of class VBA6.DLL.tlb.ErrObject
+.class VBA6.DLL.tlb.ErrObjectClass (AnsiClass, AutoLayout, Import, Public)
+.extends [mscorlib]System.__ComObject
+.implements VBA6.DLL.tlb._ErrObject, VBA6.DLL.tlb.ErrObject, 
+{
+.custom [mscorlib]System.Reflection.DefaultMemberAttribute("Number")
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("A4C46654-499F-101B-BB78-00AA00383CBB")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)2)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor ()
+{
+} // end of method .ctor
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_HelpContext ()
+.override VBA6.DLL.tlb.ErrObjectClass.get_HelpContext{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743816)
+} // end of method get_HelpContext
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_LastDllError ()
+.override VBA6.DLL.tlb.ErrObjectClass.get_LastDllError{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743820)
+} // end of method get_LastDllError
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_Number ()
+.override VBA6.DLL.tlb.ErrObjectClass.get_Number{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+} // end of method get_Number
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_Description ()
+.override VBA6.DLL.tlb.ErrObjectClass.get_Description{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743812)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_Description
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_HelpFile ()
+.override VBA6.DLL.tlb.ErrObjectClass.get_HelpFile{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743814)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_HelpFile
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_Source ()
+.override VBA6.DLL.tlb.ErrObjectClass.get_Source{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743810)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_Source
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Clear ()
+.override VBA6.DLL.tlb.ErrObjectClass.Clear{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743819)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+} // end of method Clear
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Raise (System.Int32, [mscorlib]System.Object&, [mscorlib]System.Object&, [mscorlib]System.Object&, [mscorlib]System.Object&)
+.override VBA6.DLL.tlb.ErrObjectClass.Raise{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743818)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+.param [3]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+.param [4]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+.param [5]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+} // end of method Raise
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Description (System.String)
+.override VBA6.DLL.tlb.ErrObjectClass.set_Description{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743812)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_Description
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_HelpContext (System.Int32)
+.override VBA6.DLL.tlb.ErrObjectClass.set_HelpContext{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743816)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_HelpContext
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_HelpFile (System.String)
+.override VBA6.DLL.tlb.ErrObjectClass.set_HelpFile{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743814)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_HelpFile
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Number (System.Int32)
+.override VBA6.DLL.tlb.ErrObjectClass.set_Number{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_Number
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Source (System.String)
+.override VBA6.DLL.tlb.ErrObjectClass.set_Source{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743810)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_Source
+.property (None) System.Int32 HelpContext
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743816)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_HelpContext ()
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_HelpContext (System.Int32)
+} // end of property HelpContext
+.property (None) System.Int32 LastDllError
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743820)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_LastDllError ()
+} // end of property LastDllError
+.property (None) System.Int32 Number
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_Number ()
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Number (System.Int32)
+} // end of property Number
+.property (None) System.String Description
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743812)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_Description ()
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Description (System.String)
+} // end of property Description
+.property (None) System.String HelpFile
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743814)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_HelpFile ()
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_HelpFile (System.String)
+} // end of property HelpFile
+.property (None) System.String Source
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743810)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_Source ()
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Source (System.String)
+} // end of property Source
+} //end of class VBA6.DLL.tlb.ErrObjectClass
+.class VBA6.DLL.tlb.FileSystem (Abstract, AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("3738A200-2BCC-1069-82D7-00DD010EDFAA")
+} //end of class VBA6.DLL.tlb.FileSystem
+.class VBA6.DLL.tlb.Financial (Abstract, AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("59B600C0-1C02-101B-8D72-00DD010EDFAA")
+} //end of class VBA6.DLL.tlb.Financial
+.class VBA6.DLL.tlb.Information (Abstract, AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("38885380-2BCC-1069-82D9-00DD010EDFAA")
+} //end of class VBA6.DLL.tlb.Information
+.class VBA6.DLL.tlb.Interaction (Abstract, AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("39302C40-2BCC-1069-82DA-00DD010EDFAA")
+} //end of class VBA6.DLL.tlb.Interaction
+.class VBA6.DLL.tlb.Math (Abstract, AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("39D67E60-2BCC-1069-82DB-00DD010EDFAA")
+} //end of class VBA6.DLL.tlb.Math
+.class VBA6.DLL.tlb.Strings (Abstract, AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("35BFBDA0-2BCC-1069-82D5-00DD010EDFAA")
+} //end of class VBA6.DLL.tlb.Strings
+.class VBA6.DLL.tlb.VbAppWinStyle (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("ED822018-6D7F-11CF-B949-00AA004455EA")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbAppWinStyle vbHide = 0
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbAppWinStyle vbMaximizedFocus = 3
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbAppWinStyle vbMinimizedFocus = 2
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbAppWinStyle vbMinimizedNoFocus = 6
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbAppWinStyle vbNormalFocus = 1
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbAppWinStyle vbNormalNoFocus = 4
+} //end of class VBA6.DLL.tlb.VbAppWinStyle
+.class VBA6.DLL.tlb.VbCalendar (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("ED822020-6D7F-11CF-B949-00AA004455EA")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbCalendar vbCalGreg = 0
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbCalendar vbCalHijri = 1
+} //end of class VBA6.DLL.tlb.VbCalendar
+.class VBA6.DLL.tlb.VbCallType (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("07D7F563-A08E-11D0-9706-00A0C911004E")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbCallType VbGet = 2
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbCallType VbLet = 4
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbCallType VbMethod = 1
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbCallType VbSet = 8
+} //end of class VBA6.DLL.tlb.VbCallType
+.class VBA6.DLL.tlb.VbCompareMethod (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("ED822019-6D7F-11CF-B949-00AA004455EA")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbCompareMethod vbBinaryCompare = 0
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbCompareMethod vbDatabaseCompare = 2
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbCompareMethod vbTextCompare = 1
+} //end of class VBA6.DLL.tlb.VbCompareMethod
+.class VBA6.DLL.tlb.VbDateTimeFormat (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("07D7F561-A08E-11D0-9706-00A0C911004E")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbDateTimeFormat vbGeneralDate = 0
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbDateTimeFormat vbLongDate = 1
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbDateTimeFormat vbLongTime = 3
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbDateTimeFormat vbShortDate = 2
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbDateTimeFormat vbShortTime = 4
+} //end of class VBA6.DLL.tlb.VbDateTimeFormat
+.class VBA6.DLL.tlb.VbDayOfWeek (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("ED822015-6D7F-11CF-B949-00AA004455EA")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbDayOfWeek vbFriday = 6
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbDayOfWeek vbMonday = 2
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbDayOfWeek vbSaturday = 7
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbDayOfWeek vbSunday = 1
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbDayOfWeek vbThursday = 5
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbDayOfWeek vbTuesday = 3
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbDayOfWeek vbUseSystemDayOfWeek = 0
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbDayOfWeek vbWednesday = 4
+} //end of class VBA6.DLL.tlb.VbDayOfWeek
+.class VBA6.DLL.tlb.VbFileAttribute (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("ED822013-6D7F-11CF-B949-00AA004455EA")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbFileAttribute vbAlias = 64
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbFileAttribute vbArchive = 32
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbFileAttribute vbDirectory = 16
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbFileAttribute vbHidden = 2
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbFileAttribute vbNormal = 0
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbFileAttribute vbReadOnly = 1
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbFileAttribute vbSystem = 4
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbFileAttribute vbVolume = 8
+} //end of class VBA6.DLL.tlb.VbFileAttribute
+.class VBA6.DLL.tlb.VbFirstWeekOfYear (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("ED822016-6D7F-11CF-B949-00AA004455EA")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbFirstWeekOfYear vbFirstFourDays = 2
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbFirstWeekOfYear vbFirstFullWeek = 3
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbFirstWeekOfYear vbFirstJan1 = 1
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbFirstWeekOfYear vbUseSystem = 0
+} //end of class VBA6.DLL.tlb.VbFirstWeekOfYear
+.class VBA6.DLL.tlb.VbIMEStatus (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("ED822017-6D7F-11CF-B949-00AA004455EA")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEAlphaDbl = 7
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEAlphaSng = 8
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEDisable = 3
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEHiragana = 4
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEKatakanaDbl = 5
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEKatakanaSng = 6
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEModeAlpha = 8
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEModeAlphaFull = 7
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEModeDisable = 3
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEModeHangul = 10
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEModeHangulFull = 9
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEModeHiragana = 4
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEModeKatakana = 5
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEModeKatakanaHalf = 6
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEModeNoControl = 0
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEModeOff = 2
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEModeOn = 1
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMENoOp = 0
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEOff = 2
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbIMEStatus vbIMEOn = 1
+} //end of class VBA6.DLL.tlb.VbIMEStatus
+.class VBA6.DLL.tlb.VbMsgBoxResult (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("ED822012-6D7F-11CF-B949-00AA004455EA")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxResult vbAbort = 3
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxResult vbCancel = 2
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxResult vbIgnore = 5
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxResult vbNo = 7
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxResult vbOK = 1
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxResult vbRetry = 4
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxResult vbYes = 6
+} //end of class VBA6.DLL.tlb.VbMsgBoxResult
+.class VBA6.DLL.tlb.VbMsgBoxStyle (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("ED822011-6D7F-11CF-B949-00AA004455EA")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbAbortRetryIgnore = 2
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbApplicationModal = 0
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbCritical = 16
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbDefaultButton1 = 0
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbDefaultButton2 = 256
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbDefaultButton3 = 512
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbDefaultButton4 = 768
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbExclamation = 48
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbInformation = 64
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbMsgBoxHelpButton = 16384
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbMsgBoxRight = 524288
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbMsgBoxRtlReading = 1048576
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbMsgBoxSetForeground = 65536
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbOKCancel = 1
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbOKOnly = 0
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbQuestion = 32
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbRetryCancel = 5
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbSystemModal = 4096
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbYesNo = 4
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbMsgBoxStyle vbYesNoCancel = 3
+} //end of class VBA6.DLL.tlb.VbMsgBoxStyle
+.class VBA6.DLL.tlb.VbStrConv (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("ED822014-6D7F-11CF-B949-00AA004455EA")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbStrConv vbFromUnicode = 128
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbStrConv vbHiragana = 32
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbStrConv vbKatakana = 16
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbStrConv vbLowerCase = 2
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbStrConv vbNarrow = 8
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbStrConv vbProperCase = 3
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbStrConv vbUnicode = 64
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbStrConv vbUpperCase = 1
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbStrConv vbWide = 4
+} //end of class VBA6.DLL.tlb.VbStrConv
+.class VBA6.DLL.tlb.VbTriState (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("07D7F562-A08E-11D0-9706-00A0C911004E")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbTriState vbFalse = 0
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbTriState vbTrue = -1
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbTriState vbUseDefault = -2
+} //end of class VBA6.DLL.tlb.VbTriState
+.class VBA6.DLL.tlb.VbVarType (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("ED822010-6D7F-11CF-B949-00AA004455EA")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbArray = 8192
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbBoolean = 11
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbByte = 17
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbCurrency = 6
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbDataObject = 13
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbDate = 7
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbDecimal = 14
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbDouble = 5
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbEmpty = 0
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbError = 10
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbInteger = 2
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbLong = 3
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbNull = 1
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbObject = 9
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbSingle = 4
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbString = 8
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbUserDefinedType = 36
+.field (HasDefault, Literal, Public, Static) VBA6.DLL.tlb.VbVarType vbVariant = 12
+} //end of class VBA6.DLL.tlb.VbVarType

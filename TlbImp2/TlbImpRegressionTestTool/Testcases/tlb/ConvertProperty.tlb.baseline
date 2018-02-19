@@ -1,0 +1,318 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly ConvertProperty.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("AE53DFE8-BE45-4780-A240-00463F2FB1F5")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("ConvertPropertyLib")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)1, (Int32)0)
+} // end of assembly
+.module ConvertProperty.tlb.dll
+.file ConvertProperty.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class ConvertProperty.tlb.DispMethodPropGetCustom (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("896E6252-829E-4E0A-9C2A-C7E1D358453E")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)2)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void vget ([mscorlib]System.Object&)
+.override ConvertProperty.tlb.DispMethodPropGetCustom.vget{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)-4)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method vget
+} //end of class ConvertProperty.tlb.DispMethodPropGetCustom
+.class ConvertProperty.tlb.DispMethodPropGetM4 (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("DC40C1B7-96B4-4F73-B05B-2F473B61A9AE")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)2)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void vget ([mscorlib]System.Object&)
+.override ConvertProperty.tlb.DispMethodPropGetM4.vget{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)-4)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method vget
+} //end of class ConvertProperty.tlb.DispMethodPropGetM4
+.class ConvertProperty.tlb.DispMethodPropSetM4 (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("26012058-2BF3-4BEA-A5AE-A713D78F41DB")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)2)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vput (System.Object)
+.override ConvertProperty.tlb.DispMethodPropSetM4.set_vput{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)6)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_vput
+.property (None) System.Object vput
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)6)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vput (System.Object)
+} // end of property vput
+} //end of class ConvertProperty.tlb.DispMethodPropSetM4
+.class ConvertProperty.tlb.DispPropertyCustom (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("1AA3EE41-D340-432A-93FD-1B4B796ABA31")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)2)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_p1 ()
+.override ConvertProperty.tlb.DispPropertyCustom.get_p1{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)-4)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_p1
+.property (None) System.Object p1
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)-4)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_p1 ()
+} // end of property p1
+} //end of class ConvertProperty.tlb.DispPropertyCustom
+.class ConvertProperty.tlb.DispPropertyM4 (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("FF3320D7-AC11-47DD-9193-EBF4B0F017F7")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)2)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_p1 ()
+.override ConvertProperty.tlb.DispPropertyM4.get_p1{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)-4)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_p1
+.property (None) System.Object p1
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)-4)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_p1 ()
+} // end of property p1
+} //end of class ConvertProperty.tlb.DispPropertyM4
+.class ConvertProperty.tlb.MethodPropertyGetCustom (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements System.Collections.IEnumerable, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("8ADC4198-429A-4CD3-8AF1-D407C271A952")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) [mscorlib]System.Collections.IEnumerator GetEnumerator ()
+.override ConvertProperty.tlb.MethodPropertyGetCustom.GetEnumerator{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)-4)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)44, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0, MarshalType = "System.Runtime.InteropServices.CustomMarshalers.EnumeratorToEnumVariantMarshaler, CustomMarshalers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", MarshalTypeRef = System.Runtime.InteropServices.CustomMarshalers.EnumeratorToEnumVariantMarshaler, MarshalCookie = "")
+} // end of method GetEnumerator
+} //end of class ConvertProperty.tlb.MethodPropertyGetCustom
+.class ConvertProperty.tlb.MethodPropertyGetM4 (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements System.Collections.IEnumerable, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("4FC78DB1-2700-41BF-95CB-BDCA81C37250")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) [mscorlib]System.Collections.IEnumerator GetEnumerator ()
+.override ConvertProperty.tlb.MethodPropertyGetM4.GetEnumerator{
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)44, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0, MarshalType = "System.Runtime.InteropServices.CustomMarshalers.EnumeratorToEnumVariantMarshaler, CustomMarshalers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", MarshalTypeRef = System.Runtime.InteropServices.CustomMarshalers.EnumeratorToEnumVariantMarshaler, MarshalCookie = "")
+} // end of method GetEnumerator
+} //end of class ConvertProperty.tlb.MethodPropertyGetM4
+.class ConvertProperty.tlb.MethodPropertyPutM4 (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("AE976199-DFBC-41F0-A227-A971660218CB")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vput (System.Object)
+.override ConvertProperty.tlb.MethodPropertyPutM4.set_vput{
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_vput
+.property (None) System.Object vput
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)-4)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_vput (System.Object)
+} // end of property vput
+} //end of class ConvertProperty.tlb.MethodPropertyPutM4
+.class ConvertProperty.tlb.MultiProp (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Reflection.DefaultMemberAttribute("rput")
+.custom [mscorlib]System.Runtime.InteropServices.ComConversionLossAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("25370D28-6AD4-461C-9F90-6E2163404978")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 rput (System.Object)
+.override ConvertProperty.tlb.MultiProp.rput{
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method rput
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 rputref (System.Object, [mscorlib]System.String&)
+.override ConvertProperty.tlb.MultiProp.rputref{
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method rputref
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_lput (System.Object, System.Int32, [mscorlib]System.Int32&, System.Int32)
+.override ConvertProperty.tlb.MultiProp.set_lput{
+.custom [mscorlib]System.Runtime.InteropServices.LCIDConversionAttribute((Int32)3)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [3]
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+.param [4]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_lput
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_lputref (System.Object, System.Int32, [mscorlib]System.Int32&, [mscorlib]System.Int32&)
+.override ConvertProperty.tlb.MultiProp.set_lputref{
+.custom [mscorlib]System.Runtime.InteropServices.LCIDConversionAttribute((Int32)3)
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [3]
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+.param [4]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_lputref
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_nput (System.Object, [mscorlib]System.String&)
+.override ConvertProperty.tlb.MultiProp.set_nput{
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method set_nput
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_nputref (System.Object, System.Int32, [mscorlib]System.Int32&)
+.override ConvertProperty.tlb.MultiProp.set_nputref{
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [3]
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+} // end of method set_nputref
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_oput (System.Object, System.Int32, [mscorlib]System.Int32&, System.Int32, System.Int32)
+.override ConvertProperty.tlb.MultiProp.set_oput{
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [3]
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+.param [4]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+.param [5]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_oput
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_oputref (System.Object, System.Int32, [mscorlib]System.Int32&, System.Int32, [mscorlib]System.Int32&)
+.override ConvertProperty.tlb.MultiProp.set_oputref{
+.custom [mscorlib]System.Runtime.InteropServices.PreserveSigAttribute()
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.param [3]
+.custom [mscorlib]System.Runtime.InteropServices.OutAttribute()
+.param [4]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+.param [5]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_oputref
+.property (None) System.Int32 lput
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_lput (System.Object, System.Int32, [mscorlib]System.Int32&, System.Int32)
+} // end of property lput
+.property (None) System.Int32 oput
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)6)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_oput (System.Object, System.Int32, [mscorlib]System.Int32&, System.Int32, System.Int32)
+} // end of property oput
+.property (None) System.IntPtr lputref
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_lputref (System.Object, System.Int32, [mscorlib]System.Int32&, [mscorlib]System.Int32&)
+} // end of property lputref
+.property (None) System.IntPtr nput
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_nput (System.Object, [mscorlib]System.String&)
+} // end of property nput
+.property (None) System.IntPtr nputref
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_nputref (System.Object, System.Int32, [mscorlib]System.Int32&)
+} // end of property nputref
+.property (None) System.IntPtr oputref
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)7)
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_oputref (System.Object, System.Int32, [mscorlib]System.Int32&, System.Int32, [mscorlib]System.Int32&)
+} // end of property oputref
+} //end of class ConvertProperty.tlb.MultiProp
+.class ConvertProperty.tlb.Rename (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("47CD947F-23A3-4995-B6D4-81EE02A0092A")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)1)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Int32 m5 ()
+.override ConvertProperty.tlb.Rename.m5{
+} // end of method m5
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void m6 ([mscorlib]System.Int32&)
+.override ConvertProperty.tlb.Rename.m6{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method m6
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void m7 ([mscorlib]System.Int32&)
+.override ConvertProperty.tlb.Rename.m7{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method m7
+} //end of class ConvertProperty.tlb.Rename

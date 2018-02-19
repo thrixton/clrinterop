@@ -1,0 +1,111 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly AddAttribute_2.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("777D5A39-13B4-48E9-AEE5-46C420C79A31")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("AddAttribute_2")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)0, (Int32)0)
+} // end of assembly
+.module AddAttribute_2.tlb.dll
+.file AddAttribute_2.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class AddAttribute_2.tlb.__MIDL___MIDL_itf_AddAttribute_2_0001_0065_0001 (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.field (HasDefault, Literal, Public, Static) AddAttribute_2.tlb.__MIDL___MIDL_itf_AddAttribute_2_0001_0065_0001 day1 = 1
+.field (HasDefault, Literal, Public, Static) AddAttribute_2.tlb.__MIDL___MIDL_itf_AddAttribute_2_0001_0065_0001 day2 = 2
+.field (HasDefault, Literal, Public, Static) AddAttribute_2.tlb.__MIDL___MIDL_itf_AddAttribute_2_0001_0065_0001 day3 = 3
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+} //end of class AddAttribute_2.tlb.__MIDL___MIDL_itf_AddAttribute_2_0001_0065_0001
+.class AddAttribute_2.tlb.__MIDL___MIDL_itf_AddAttribute_2_0001_0065_0002 (AnsiClass, AutoLayout, BeforeFieldInit, Public, Sealed, SequentialLayout)
+.extends [mscorlib]System.ValueType
+{
+.field (Public) System.Int32 fint
+} //end of class AddAttribute_2.tlb.__MIDL___MIDL_itf_AddAttribute_2_0001_0065_0002
+.class AddAttribute_2.tlb.__MIDL___MIDL_itf_AddAttribute_2_0001_0066_0002 (AnsiClass, AutoLayout, ExplicitLayout, Public, Sealed)
+.extends [mscorlib]System.ValueType
+{
+.field (Public) System.Double d2
+.custom [mscorlib]System.Runtime.InteropServices.FieldOffsetAttribute((Int32)0)
+.field (Public) System.Single f1
+.custom [mscorlib]System.Runtime.InteropServices.FieldOffsetAttribute((Int32)0)
+} //end of class AddAttribute_2.tlb.__MIDL___MIDL_itf_AddAttribute_2_0001_0066_0002
+.class AddAttribute_2.tlb.coclassTargetType (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements AddAttribute_2.tlb.iTargetType, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.CoClassAttribute(typeof(AddAttribute_2.tlb.coclassTargetTypeClass))
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("C08634CB-9C83-4479-984D-A49F7EB8CFB6")
+} //end of class AddAttribute_2.tlb.coclassTargetType
+.class AddAttribute_2.tlb.coclassTargetTypeClass (AnsiClass, AutoLayout, Import, Public)
+.extends [mscorlib]System.__ComObject
+.implements AddAttribute_2.tlb.iTargetType, AddAttribute_2.tlb.coclassTargetType, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("F15E6D0D-87A0-4C02-89C3-6D51B4D09BCF")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)2)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor ()
+{
+} // end of method .ctor
+} //end of class AddAttribute_2.tlb.coclassTargetTypeClass
+.class AddAttribute_2.tlb.dispiTargetType (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("EC8E2F30-777F-4ADC-808A-EFD84F9746FD")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)2)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+} //end of class AddAttribute_2.tlb.dispiTargetType
+.class AddAttribute_2.tlb.enumTargetType (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.field (HasDefault, Literal, Public, Static) AddAttribute_2.tlb.enumTargetType day1 = 1
+.field (HasDefault, Literal, Public, Static) AddAttribute_2.tlb.enumTargetType day2 = 2
+.field (HasDefault, Literal, Public, Static) AddAttribute_2.tlb.enumTargetType day3 = 3
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+} //end of class AddAttribute_2.tlb.enumTargetType
+.class AddAttribute_2.tlb.iTargetType (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.ObsoleteAttribute("Obsoleted", (Boolean)True)
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("C08634CB-9C83-4479-984D-A49F7EB8CFB6")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+} //end of class AddAttribute_2.tlb.iTargetType
+.class AddAttribute_2.tlb.moduleTargetType (Abstract, AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("3CF74EF1-4D94-4D3C-9D9C-CBD487CD9217")
+.field (Literal, Public, Static) System.UInt32 COLOR_FRAME
+} //end of class AddAttribute_2.tlb.moduleTargetType
+.class AddAttribute_2.tlb.strTargetType (AnsiClass, AutoLayout, BeforeFieldInit, Public, Sealed, SequentialLayout)
+.extends [mscorlib]System.ValueType
+{
+.field (Public) System.Int32 fint
+} //end of class AddAttribute_2.tlb.strTargetType
+.class AddAttribute_2.tlb.unionTargetType (AnsiClass, AutoLayout, BeforeFieldInit, Public, Sealed, SequentialLayout)
+.extends [mscorlib]System.ValueType
+{
+.field (Public) AddAttribute_2.tlb.__MIDL___MIDL_itf_AddAttribute_2_0001_0066_0002 tagged_union
+.field (Public) System.Int32 l1
+} //end of class AddAttribute_2.tlb.unionTargetType

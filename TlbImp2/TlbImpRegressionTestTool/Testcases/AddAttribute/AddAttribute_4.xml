@@ -1,0 +1,18 @@
+<Rules>
+  <Rule Name="Rule #1" Category="Type">
+    <Condition>
+      <And>
+        <NativeName Operator="Equal" Value="TargetType" />
+        <And>
+          <TypeKind Operator="Equal" Value="Interface" />
+        </And>
+      </And>
+    </Condition>
+    <Action Name="AddAttribute">
+      <Parameter Key="AssemblyName" Value="mscorlib" />
+      <Parameter Key="TypeName" Value="System.Runtime.InteropServices.ComDefaultInterfaceAttribute" />
+      <Parameter Key="Constructor" Value="Void .ctor(System.Type)" />
+      <Parameter Key="Data" Value="01 00 0D 53 79 73 74 65 6D 2E 53 74 72 69 6E 67 00 00" />
+    </Action>
+  </Rule>
+</Rules>

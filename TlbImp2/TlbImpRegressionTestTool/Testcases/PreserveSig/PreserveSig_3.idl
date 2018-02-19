@@ -1,0 +1,17 @@
+[
+  uuid(40da6a2b-cdf6-4940-a677-c8ac3aa2e31f),
+  version(1.0)
+]
+library PreserveSig_3
+{
+    importlib("stdole2.tlb");
+    [
+      uuid(65a7257f-2396-41cc-86b6-665f6641d07e)
+    ]
+    interface TargetType : IDispatch
+    {
+		HRESULT TargetFunction([in] int p, [out, retval] VARIANT_BOOL *ret);
+		HRESULT TargetFunction2([in] int p, [out, retval] VARIANT_BOOL *ret);
+		HRESULT TargetFunction3([in] int p, [out, retval] VARIANT_BOOL *ret);
+    };
+};

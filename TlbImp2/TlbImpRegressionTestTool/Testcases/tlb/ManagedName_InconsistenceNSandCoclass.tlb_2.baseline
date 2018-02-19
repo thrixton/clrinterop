@@ -1,0 +1,62 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly ManagedName_InconsistenceNSandCoclass.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("BD224EEB-498B-405F-88CB-9BD7FEB513A3")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("InconsistenceNSandCoclass")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)1, (Int32)0)
+} // end of assembly
+.module ManagedName_InconsistenceNSandCoclass.tlb.dll
+.file ManagedName_InconsistenceNSandCoclass.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class MyClass (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements MyLib.IDispIDObject, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.CoClassAttribute(typeof(MyClassClass))
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("8FB6B79A-51AA-4B74-9C2C-537E2F1DF2A6")
+} //end of class MyClass
+.class MyClassClass (AnsiClass, AutoLayout, Import, Public)
+.extends [mscorlib]System.__ComObject
+.implements MyLib.IDispIDObject, MyClass, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("852F1C9E-0DD6-4204-8CC7-F4B7CE5183EE")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)2)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor ()
+{
+} // end of method .ctor
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void GetResult ()
+.override MyClassClass.GetResult{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743808)
+} // end of method GetResult
+} //end of class MyClassClass
+.class MyLib.IDispIDObject (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("8FB6B79A-51AA-4B74-9C2C-537E2F1DF2A6")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4288)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void GetResult ()
+.override MyLib.IDispIDObject.GetResult{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1610743808)
+} // end of method GetResult
+} //end of class MyLib.IDispIDObject

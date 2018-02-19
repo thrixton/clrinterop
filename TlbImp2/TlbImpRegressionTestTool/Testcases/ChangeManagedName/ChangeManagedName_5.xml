@@ -1,0 +1,13 @@
+<Rules>
+  <Rule Name="Rule #1" Category="Type">
+    <Condition>
+      <And>
+        <NativeName Operator="Equal" Value="TargetType" />
+        <TypeKind Operator="Equal" Value="Interface" />
+      </And>
+    </Condition>
+    <Action Name="ChangeManagedName">
+      <Parameter Key="NewName" Value="NewType" />
+    </Action>
+  </Rule>
+</Rules>

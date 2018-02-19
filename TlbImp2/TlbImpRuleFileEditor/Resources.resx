@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Msg_ActionDescription_AddAttribute" xml:space="preserve">
+    <value>AddAttribute action is used to add some customized attribute to the corresponding managed types of the tlb types.</value>
+  </data>
+  <data name="Msg_ActionDescription_ChangeManagedName" xml:space="preserve">
+    <value>ChangeManagedName action is used to give tlb type a customized managed name instead of the default one.</value>
+  </data>
+  <data name="Msg_ActionDescription_ConvertTo" xml:space="preserve">
+    <value>ConvertTo action is used to convert tlb function parameter to the user-specified managed signature. When converting a tlb function signature into managed function signature, TlbImp may not do as what we want, because TlbImp does not have all information. For example, “HRESULT  Func(int *intArray)” will be converted to “void Func (ref int intArray)”. ConvertTo action can convert the “int *” to a fixed array, for example, “void Func (int[20] intArray)”.</value>
+  </data>
+  <data name="Msg_ActionDescription_PreserveSig" xml:space="preserve">
+    <value>In a normal function conversion process, TlbImp will use the [out, retval] parameter as the return value to substitute HResult return value and when error occurs, an exception will be thrown. If we perform a function conversion with PreserveSig, the original signature will be preserved, and TlbImp will not put the [out, retval] parameter in the return place in the function signature.</value>
+  </data>
+  <data name="Msg_ActionDescription_ResolveTo" xml:space="preserve">
+    <value>In the conversion process, when TlbImp comes across some unknown tlb type, TlbImp will try to resolve this new tlb type to a managed type. ResolveTo action is used to resolve a tlb type to a user-specified managed type.</value>
+  </data>
+  <data name="Msg_EditUninitializedActionTip" xml:space="preserve">
+    <value>double click sub nodes to edit...</value>
+  </data>
+  <data name="Msg_InstructionAboutAddNewRule" xml:space="preserve">
+    <value>Please select Category and Action to create a new rule. After a new rule is created, please go to the rule file panel in the main dialog to edit the Condition and Action.</value>
+  </data>
+  <data name="Msg_MainFormTitle" xml:space="preserve">
+    <value>TlbImp Config File Editor</value>
+  </data>
+  <data name="Msg_NoParametersToEdit" xml:space="preserve">
+    <value>This action does not have any parameters to edit.</value>
+  </data>
+  <data name="Msg_NoRuleFileToSave" xml:space="preserve">
+    <value>No rule file to save.</value>
+  </data>
+  <data name="Msg_RemoveAllRuleQuestion" xml:space="preserve">
+    <value>Do you want to delete all rules?</value>
+  </data>
+  <data name="Msg_RemoveAllRuleTitle" xml:space="preserve">
+    <value>Remove All Rules</value>
+  </data>
+  <data name="Msg_RemoveAllSubconditionQuestion" xml:space="preserve">
+    <value>Do you want to delete all subconditions of the condition '{0}'?</value>
+  </data>
+  <data name="Msg_RemoveAllSubconditionTitle" xml:space="preserve">
+    <value>Remove All Subconditions</value>
+  </data>
+  <data name="Msg_RemoveConditionQuestion" xml:space="preserve">
+    <value>Do you want to delete the condition "{0}"?</value>
+  </data>
+  <data name="Msg_RemoveConditionTitle" xml:space="preserve">
+    <value>Remove Condition</value>
+  </data>
+  <data name="Msg_RemoveRuleQuestion" xml:space="preserve">
+    <value>Do you want to delete the rule '{0}'?</value>
+  </data>
+  <data name="Msg_RemoveRuleTitle" xml:space="preserve">
+    <value>Remove Rule</value>
+  </data>
+  <data name="Msg_SaveFileQuestion" xml:space="preserve">
+    <value>The current rules have some changes. Do you want to save the changes?</value>
+  </data>
+  <data name="Msg_SaveFileQuestionTitle" xml:space="preserve">
+    <value>Save File</value>
+  </data>
+  <data name="Msg_TypeLibTreeRootDefaultText" xml:space="preserve">
+    <value>&lt;double click to open a .tlb file…&gt;</value>
+  </data>
+  <data name="Wrn_ActionUninitialized" xml:space="preserve">
+    <value>The action of rule '{0}' is not initialized.</value>
+  </data>
+  <data name="Wrn_AssemblyLoadFailed" xml:space="preserve">
+    <value>Cannot load assembly '{0}'.</value>
+  </data>
+  <data name="Wrn_BadParameterInput" xml:space="preserve">
+    <value>The input parameter value '{0}' for type '{1}' is invalid.</value>
+  </data>
+  <data name="Wrn_CannotUseByteDataInputHelper_CtorNotFound" xml:space="preserve">
+    <value>Cannot use byte data input helper, because constructor '{0}' cannot be found in the type '{1}'.</value>
+  </data>
+  <data name="Wrn_CannotUseByteDataInputHelper_CtorNotSelected" xml:space="preserve">
+    <value>Cannot use byte data input helper. Select a constructor first.</value>
+  </data>
+  <data name="Wrn_CannotUseByteDataInputHelper_ParameterNotSupported" xml:space="preserve">
+    <value>Cannot use byte data input helper. Input helper do not support parameter type '{0}'.</value>
+  </data>
+  <data name="Wrn_CannotUseByteDataInputHelper_TypeNotLoaded" xml:space="preserve">
+    <value>Attribute type is null or not loaded successfully. Cannot use byte data input helper.</value>
+  </data>
+  <data name="Wrn_EmptyCompositeCondition" xml:space="preserve">
+    <value>Condition '{0}' should have at least one sub condition.</value>
+  </data>
+  <data name="Wrn_InvalidByteData" xml:space="preserve">
+    <value>The byte data is invalid. Input data in the hexadecimal way.</value>
+  </data>
+  <data name="Wrn_InvalidCondition" xml:space="preserve">
+    <value>The condition is not complete. The previous modification is not accepted.</value>
+  </data>
+  <data name="Wrn_InvalidSizeParamIndexOffset" xml:space="preserve">
+    <value>'SizeParamIndexOffset' is invalid.</value>
+  </data>
+  <data name="Wrn_LoadRuleFileFailed" xml:space="preserve">
+    <value>Cannot open rule file '{0}'. The xml format is invalid.</value>
+  </data>
+  <data name="Wrn_ManagedTypeCannotBeLoaded" xml:space="preserve">
+    <value>Type '{0}' of Assembly '{1}' cannot be loaded.</value>
+  </data>
+  <data name="Wrn_NoManagedTypeSelected_TypeSelector" xml:space="preserve">
+    <value>No managed type is selected. Select a type in the treeview first please.</value>
+  </data>
+  <data name="Wrn_NoRuleFileToAddRuleTo" xml:space="preserve">
+    <value>No rule file to add rule to.</value>
+  </data>
+  <data name="Wrn_NoTlbTypeSelected_TlbTypeSelector" xml:space="preserve">
+    <value>No type library type is selected.</value>
+  </data>
+  <data name="Wrn_ParseDataFailed" xml:space="preserve">
+    <value>Parsing byte data according to constructor '{0}' failed. The data does not match with the parameter list of the constructor.</value>
+  </data>
+  <data name="Wrn_SaveRuleFileFailed" xml:space="preserve">
+    <value>Saving rule file failed. There exists invalid rule. Please check the conditions before saving.</value>
+  </data>
+  <data name="Wrn_SubconditionLost" xml:space="preserve">
+    <value>Your change of this node, will cause some of its subconditions lost. Do you want to continue the change?</value>
+  </data>
+  <data name="Wrn_SubconditionLostTitle" xml:space="preserve">
+    <value>Condition Lost</value>
+  </data>
+  <data name="Wrn_TypeLibLoadFailed" xml:space="preserve">
+    <value>Cannot load type library '{0}'.</value>
+  </data>
+</root>

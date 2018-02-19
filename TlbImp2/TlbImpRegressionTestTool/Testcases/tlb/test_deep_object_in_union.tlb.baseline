@@ -1,0 +1,40 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly test_deep_object_in_union.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("1D86CDDA-E1EB-4F3F-8A58-06C554239D4D")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("test_deep_object_in_union")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)1, (Int32)0)
+} // end of assembly
+.module test_deep_object_in_union.tlb.dll
+.file test_deep_object_in_union.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class test_deep_object_in_union.tlb.tagMyStruct (AnsiClass, AutoLayout, BeforeFieldInit, Public, Sealed, SequentialLayout)
+.extends [mscorlib]System.ValueType
+{
+.field (HasFieldMarshal, Public) System.Object p
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)25, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} //end of class test_deep_object_in_union.tlb.tagMyStruct
+.class test_deep_object_in_union.tlb.tagMyUnion (AnsiClass, AutoLayout, ExplicitLayout, Public, Sealed)
+.extends [mscorlib]System.ValueType
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComConversionLossAttribute()
+.field (Public) System.Int32 a
+.custom [mscorlib]System.Runtime.InteropServices.FieldOffsetAttribute((Int32)0)
+} //end of class test_deep_object_in_union.tlb.tagMyUnion

@@ -1,0 +1,1407 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly msstdfmt.dll.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("6B263850-900B-11D0-9484-00A0C91110ED")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("StdFormat")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)1, (Int32)0)
+} // end of assembly
+.module msstdfmt.dll.tlb.dll
+.file msstdfmt.dll.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class msstdfmt.dll.tlb.DataFormat (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("E675F3F0-91B5-11D0-9484-00A0C91110ED")
+} //end of class msstdfmt.dll.tlb.DataFormat
+.class msstdfmt.dll.tlb.DataFormats (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("A1741EF6-FFC6-11D0-BD02-00C04FC2FB86")
+} //end of class msstdfmt.dll.tlb.DataFormats
+.class msstdfmt.dll.tlb.FirstDayOfWeek (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("91F625B0-9C13-11D0-9484-00A0C91110ED")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FirstDayOfWeek fmtDayUseSystem = 0
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FirstDayOfWeek fmtFriday = 6
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FirstDayOfWeek fmtMonday = 2
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FirstDayOfWeek fmtSaturday = 7
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FirstDayOfWeek fmtSunday = 1
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FirstDayOfWeek fmtThursday = 5
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FirstDayOfWeek fmtTuesday = 3
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FirstDayOfWeek fmtWednesday = 4
+} //end of class msstdfmt.dll.tlb.FirstDayOfWeek
+.class msstdfmt.dll.tlb.FirstWeekOfYear (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("91F625B1-9C13-11D0-9484-00A0C91110ED")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FirstWeekOfYear fmtFirstFourDays = 2
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FirstWeekOfYear fmtFirstFullWeek = 3
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FirstWeekOfYear fmtFirstJan1 = 1
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FirstWeekOfYear fmtWeekUseSystem = 0
+} //end of class msstdfmt.dll.tlb.FirstWeekOfYear
+.class msstdfmt.dll.tlb.FormatType (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Enum
+.implements System.IComparable, System.IFormattable, System.IConvertible, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("D23CBFF0-9010-11D0-9484-00A0C91110ED")
+.field (Public, RTSpecialName, SpecialName) System.Int32 value__
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FormatType fmtBoolean = 5
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FormatType fmtBytes = 6
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FormatType fmtCheckbox = 4
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FormatType fmtCustom = 1
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FormatType fmtGeneral = 0
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FormatType fmtObject = 3
+.field (HasDefault, Literal, Public, Static) msstdfmt.dll.tlb.FormatType fmtPicture = 2
+} //end of class msstdfmt.dll.tlb.FormatType
+.class msstdfmt.dll.tlb.IDataFormatDisp (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("E675F3F0-91B5-11D0-9484-00A0C91110ED")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4176)
+} //end of class msstdfmt.dll.tlb.IDataFormatDisp
+.class msstdfmt.dll.tlb.IDataFormatsDisp (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("A1741EF6-FFC6-11D0-BD02-00C04FC2FB86")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4176)
+} //end of class msstdfmt.dll.tlb.IDataFormatsDisp
+.class msstdfmt.dll.tlb.IStdDataFormatDisp (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements msstdfmt.dll.tlb.IDataFormatDisp, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("6C51B910-900B-11D0-9484-00A0C91110ED")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4304)
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.FirstDayOfWeek get_FirstDayOfWeek ()
+.override msstdfmt.dll.tlb.IStdDataFormatDisp.get_FirstDayOfWeek{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)6)
+} // end of method get_FirstDayOfWeek
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.FirstWeekOfYear get_FirstWeekOfYear ()
+.override msstdfmt.dll.tlb.IStdDataFormatDisp.get_FirstWeekOfYear{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)7)
+} // end of method get_FirstWeekOfYear
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.FormatType get_Type ()
+.override msstdfmt.dll.tlb.IStdDataFormatDisp.get_Type{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+} // end of method get_Type
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_FalseValue ()
+.override msstdfmt.dll.tlb.IStdDataFormatDisp.get_FalseValue{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_FalseValue
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_NullValue ()
+.override msstdfmt.dll.tlb.IStdDataFormatDisp.get_NullValue{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_NullValue
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_TrueValue ()
+.override msstdfmt.dll.tlb.IStdDataFormatDisp.get_TrueValue{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_TrueValue
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_Format ()
+.override msstdfmt.dll.tlb.IStdDataFormatDisp.get_Format{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_Format
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_FalseValue ([mscorlib]System.Object&)
+.override msstdfmt.dll.tlb.IStdDataFormatDisp.set_FalseValue{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_FalseValue
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_FirstDayOfWeek (msstdfmt.dll.tlb.FirstDayOfWeek)
+.override msstdfmt.dll.tlb.IStdDataFormatDisp.set_FirstDayOfWeek{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)6)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_FirstDayOfWeek
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_FirstWeekOfYear (msstdfmt.dll.tlb.FirstWeekOfYear)
+.override msstdfmt.dll.tlb.IStdDataFormatDisp.set_FirstWeekOfYear{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)7)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_FirstWeekOfYear
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Format (System.String)
+.override msstdfmt.dll.tlb.IStdDataFormatDisp.set_Format{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_Format
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_NullValue ([mscorlib]System.Object&)
+.override msstdfmt.dll.tlb.IStdDataFormatDisp.set_NullValue{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_NullValue
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_TrueValue ([mscorlib]System.Object&)
+.override msstdfmt.dll.tlb.IStdDataFormatDisp.set_TrueValue{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_TrueValue
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Type (msstdfmt.dll.tlb.FormatType)
+.override msstdfmt.dll.tlb.IStdDataFormatDisp.set_Type{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_Type
+.property (None) msstdfmt.dll.tlb.FirstDayOfWeek FirstDayOfWeek
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)6)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.FirstDayOfWeek get_FirstDayOfWeek ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_FirstDayOfWeek (msstdfmt.dll.tlb.FirstDayOfWeek)
+} // end of property FirstDayOfWeek
+.property (None) msstdfmt.dll.tlb.FirstWeekOfYear FirstWeekOfYear
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)7)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.FirstWeekOfYear get_FirstWeekOfYear ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_FirstWeekOfYear (msstdfmt.dll.tlb.FirstWeekOfYear)
+} // end of property FirstWeekOfYear
+.property (None) msstdfmt.dll.tlb.FormatType Type
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.FormatType get_Type ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Type (msstdfmt.dll.tlb.FormatType)
+} // end of property Type
+.property (None) System.Object FalseValue
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_FalseValue ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_FalseValue ([mscorlib]System.Object&)
+} // end of property FalseValue
+.property (None) System.Object NullValue
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_NullValue ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_NullValue ([mscorlib]System.Object&)
+} // end of property NullValue
+.property (None) System.Object TrueValue
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_TrueValue ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_TrueValue ([mscorlib]System.Object&)
+} // end of property TrueValue
+.property (None) System.String Format
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_Format ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Format (System.String)
+} // end of property Format
+} //end of class msstdfmt.dll.tlb.IStdDataFormatDisp
+.class msstdfmt.dll.tlb.IStdDataFormatEvents (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("C2F13ED0-91B0-11D0-9484-00A0C91110ED")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)2)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4112)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Changed ()
+.override msstdfmt.dll.tlb.IStdDataFormatEvents.Changed{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+} // end of method Changed
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Format (msstdfmt.dll.tlb.StdDataValue)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents.Format{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)28, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method Format
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void UnFormat (msstdfmt.dll.tlb.StdDataValue)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents.UnFormat{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)28, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method UnFormat
+} //end of class msstdfmt.dll.tlb.IStdDataFormatEvents
+.class msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.MulticastDelegate
+.implements System.ICloneable, System.Runtime.Serialization.ISerializable, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute((Boolean)False)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor (System.Object, System.UIntPtr)
+{
+} // end of method .ctor
+.method  (PrivateScope, Public, Virtual) System.Void Invoke ()
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler.Invoke{
+} // end of method Invoke
+} //end of class msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler
+.class msstdfmt.dll.tlb.IStdDataFormatEvents_Event (Interface Abstract, AnsiClass, AutoLayout, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComEventInterfaceAttribute(typeof(msstdfmt.dll.tlb.IStdDataFormatEvents), typeof(msstdfmt.dll.tlb.IStdDataFormatEvents_EventProvider))
+.custom [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute((Boolean)False)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Changed (msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_Event.add_Changed{
+} // end of method add_Changed
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Format (msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_Event.add_Format{
+} // end of method add_Format
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_UnFormat (msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_Event.add_UnFormat{
+} // end of method add_UnFormat
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Changed (msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_Event.remove_Changed{
+} // end of method remove_Changed
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Format (msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_Event.remove_Format{
+} // end of method remove_Format
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_UnFormat (msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_Event.remove_UnFormat{
+} // end of method remove_UnFormat
+.event (None) msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler Changed
+{
+.addmethod (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Changed (msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler)
+.removemethod (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Changed (msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler)
+} // end of event Changed
+.event (None) msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler Format
+{
+.addmethod (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Format (msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler)
+.removemethod (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Format (msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler)
+} // end of event Format
+.event (None) msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler UnFormat
+{
+.addmethod (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_UnFormat (msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler)
+.removemethod (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_UnFormat (msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler)
+} // end of event UnFormat
+} //end of class msstdfmt.dll.tlb.IStdDataFormatEvents_Event
+.class msstdfmt.dll.tlb.IStdDataFormatEvents_EventProvider (AnsiClass, AutoLayout, Sealed)
+.extends [mscorlib]System.Object
+.implements msstdfmt.dll.tlb.IStdDataFormatEvents_Event, System.IDisposable, 
+{
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor (System.Object)
+{
+.maxstack 6
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:call instance [mscorlib]System.Object::.ctor ()
+IL_0009:ldarg 0
+IL_000d:ldarg 1
+IL_0011:castclass System.Runtime.InteropServices.ComTypes.IConnectionPointContainer
+IL_0016:ldc.i4.0 
+IL_0017:newobj instance [mscorlib]System.WeakReference::.ctor (System.Object, System.Boolean)
+IL_0021:ret 
+IL_XXXX:stfld System.WeakReference m_wkConnectionPointContainer
+} // end of method .ctor
+.field (Private) [mscorlib]System.Collections.ArrayList m_aEventSinkHelpers
+.field (Private) [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+.field (Private) [mscorlib]System.WeakReference m_wkConnectionPointContainer
+.method  (PrivateScope, Public, Virtual) System.Void add_Changed (msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_EventProvider.add_Changed{
+.maxstack 6
+.locals int (msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper (0) System.Int32 (1) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0012:brtrue IL_0020
+IL_0017:ldarg 0
+IL_001b:call instance [mscorlib]System.Void Init ()
+IL_0020:newobj instance msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper::.ctor ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4.0 
+IL_0027:stloc.1 
+IL_0028:ldarg 0
+IL_002c:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0031:ldloc.0 
+IL_0032:castclass System.Object
+IL_0037:ldloca.s 1
+IL_0039:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Advise (System.Object, [mscorlib]System.Int32&)
+IL_003e:ldloc.0 
+IL_003f:ldloc.1 
+IL_0045:ldloc.0 
+IL_0046:ldarg 1
+IL_004f:ldarg 0
+IL_0053:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0058:ldloc.0 
+IL_0059:castclass System.Object
+IL_005e:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::Add (System.Object)
+IL_0063:pop 
+IL_0064:leave IL_0073
+}
+finally
+{
+IL_0069:ldarg 0
+IL_006d:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_0072:endfinally 
+}
+IL_0073:ret 
+IL_XXXX:stfld Int32 m_dwCookie
+IL_XXXX:stfld msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler m_ChangedDelegate
+} // end of method add_Changed
+.method  (PrivateScope, Public, Virtual) System.Void add_Format (msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_EventProvider.add_Format{
+.maxstack 6
+.locals int (msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper (0) System.Int32 (1) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0012:brtrue IL_0020
+IL_0017:ldarg 0
+IL_001b:call instance [mscorlib]System.Void Init ()
+IL_0020:newobj instance msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper::.ctor ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4.0 
+IL_0027:stloc.1 
+IL_0028:ldarg 0
+IL_002c:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0031:ldloc.0 
+IL_0032:castclass System.Object
+IL_0037:ldloca.s 1
+IL_0039:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Advise (System.Object, [mscorlib]System.Int32&)
+IL_003e:ldloc.0 
+IL_003f:ldloc.1 
+IL_0045:ldloc.0 
+IL_0046:ldarg 1
+IL_004f:ldarg 0
+IL_0053:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0058:ldloc.0 
+IL_0059:castclass System.Object
+IL_005e:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::Add (System.Object)
+IL_0063:pop 
+IL_0064:leave IL_0073
+}
+finally
+{
+IL_0069:ldarg 0
+IL_006d:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_0072:endfinally 
+}
+IL_0073:ret 
+IL_XXXX:stfld Int32 m_dwCookie
+IL_XXXX:stfld msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler m_FormatDelegate
+} // end of method add_Format
+.method  (PrivateScope, Public, Virtual) System.Void add_UnFormat (msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_EventProvider.add_UnFormat{
+.maxstack 6
+.locals int (msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper (0) System.Int32 (1) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0012:brtrue IL_0020
+IL_0017:ldarg 0
+IL_001b:call instance [mscorlib]System.Void Init ()
+IL_0020:newobj instance msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper::.ctor ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4.0 
+IL_0027:stloc.1 
+IL_0028:ldarg 0
+IL_002c:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0031:ldloc.0 
+IL_0032:castclass System.Object
+IL_0037:ldloca.s 1
+IL_0039:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Advise (System.Object, [mscorlib]System.Int32&)
+IL_003e:ldloc.0 
+IL_003f:ldloc.1 
+IL_0045:ldloc.0 
+IL_0046:ldarg 1
+IL_004f:ldarg 0
+IL_0053:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0058:ldloc.0 
+IL_0059:castclass System.Object
+IL_005e:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::Add (System.Object)
+IL_0063:pop 
+IL_0064:leave IL_0073
+}
+finally
+{
+IL_0069:ldarg 0
+IL_006d:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_0072:endfinally 
+}
+IL_0073:ret 
+IL_XXXX:stfld Int32 m_dwCookie
+IL_XXXX:stfld msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler m_UnFormatDelegate
+} // end of method add_UnFormat
+.method  (PrivateScope, Public, Virtual) System.Void Dispose ()
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_EventProvider.Dispose{
+.maxstack 2
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:callvirt instance [mscorlib]System.Void Finalize ()
+IL_0009:ldarg 0
+IL_000d:call [mscorlib]System.Void [mscorlib]System.GC::SuppressFinalize (System.Object)
+IL_0012:ret 
+} // end of method Dispose
+.method  (PrivateScope, Public, Virtual) System.Void Finalize ()
+{
+.maxstack 5
+.locals int (System.Int32 (0) System.Int32 (1) msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper (2) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0012:brfalse IL_007e
+IL_0017:ldarg 0
+IL_001b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0020:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::get_Count ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4 0
+IL_002b:stloc.1 
+IL_002c:ldc.i4 0
+IL_0031:ldloc.0 
+IL_0032:bge IL_006f
+IL_0037:ldarg 0
+IL_003b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0040:ldloc.1 
+IL_0041:callvirt instance System.Object [mscorlib]System.Collections.ArrayList::get_Item (System.Int32)
+IL_0046:castclass msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper
+IL_004b:stloc.2 
+IL_004c:ldarg 0
+IL_0050:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0055:ldloc.2 
+IL_0056:ldfld Int32 m_dwCookie
+IL_005b:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Unadvise (System.Int32)
+IL_0060:ldloc.1 
+IL_0061:ldc.i4 1
+IL_0066:add 
+IL_0067:stloc.1 
+IL_0068:ldloc.1 
+IL_0069:ldloc.0 
+IL_006a:blt IL_0037
+IL_006f:ldarg 0
+IL_0073:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0078:call System.Int32 [mscorlib]System.Runtime.InteropServices.Marshal::ReleaseComObject (System.Object)
+IL_007d:pop 
+IL_007e:leave IL_0089
+}
+catch System.Exception
+{
+IL_0083:pop 
+IL_0084:leave IL_0089
+}
+IL_0089:leave IL_0098
+}
+finally
+{
+IL_008e:ldarg 0
+IL_0092:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_0097:endfinally 
+}
+IL_0098:ret 
+} // end of method Finalize
+.method  (Private, PrivateScope) System.Void Init ()
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_EventProvider.Init{
+.maxstack 5
+.locals int (System.Runtime.InteropServices.ComTypes.IConnectionPoint (0) System.Guid (1) System.Byte[] (2) )
+IL_0000:ldnull 
+IL_0001:stloc.0 
+IL_0002:ldc.i4 16
+IL_0007:newarr System.Byte
+IL_000c:stloc.2 
+IL_000d:ldloc.2 
+IL_000e:ldc.i4 0
+IL_0013:ldc.i4 208
+IL_0018:stelem.i1 
+IL_0019:ldloc.2 
+IL_001a:ldc.i4 1
+IL_001f:ldc.i4 62
+IL_0024:stelem.i1 
+IL_0025:ldloc.2 
+IL_0026:ldc.i4 2
+IL_002b:ldc.i4 241
+IL_0030:stelem.i1 
+IL_0031:ldloc.2 
+IL_0032:ldc.i4 3
+IL_0037:ldc.i4 194
+IL_003c:stelem.i1 
+IL_003d:ldloc.2 
+IL_003e:ldc.i4 4
+IL_0043:ldc.i4 176
+IL_0048:stelem.i1 
+IL_0049:ldloc.2 
+IL_004a:ldc.i4 5
+IL_004f:ldc.i4 145
+IL_0054:stelem.i1 
+IL_0055:ldloc.2 
+IL_0056:ldc.i4 6
+IL_005b:ldc.i4 208
+IL_0060:stelem.i1 
+IL_0061:ldloc.2 
+IL_0062:ldc.i4 7
+IL_0067:ldc.i4 17
+IL_006c:stelem.i1 
+IL_006d:ldloc.2 
+IL_006e:ldc.i4 8
+IL_0073:ldc.i4 148
+IL_0078:stelem.i1 
+IL_0079:ldloc.2 
+IL_007a:ldc.i4 9
+IL_007f:ldc.i4 132
+IL_0084:stelem.i1 
+IL_0085:ldloc.2 
+IL_0086:ldc.i4 10
+IL_008b:ldc.i4 0
+IL_0090:stelem.i1 
+IL_0091:ldloc.2 
+IL_0092:ldc.i4 11
+IL_0097:ldc.i4 160
+IL_009c:stelem.i1 
+IL_009d:ldloc.2 
+IL_009e:ldc.i4 12
+IL_00a3:ldc.i4 201
+IL_00a8:stelem.i1 
+IL_00a9:ldloc.2 
+IL_00aa:ldc.i4 13
+IL_00af:ldc.i4 17
+IL_00b4:stelem.i1 
+IL_00b5:ldloc.2 
+IL_00b6:ldc.i4 14
+IL_00bb:ldc.i4 16
+IL_00c0:stelem.i1 
+IL_00c1:ldloc.2 
+IL_00c2:ldc.i4 15
+IL_00c7:ldc.i4 237
+IL_00cc:stelem.i1 
+IL_00cd:ldloca.s 1
+IL_00cf:ldloc.2 
+IL_00d0:call instance [mscorlib]System.Guid::.ctor ([mscorlib]System.Byte[])
+IL_00d5:ldarg 0
+IL_00d9:ldfld System.WeakReference m_wkConnectionPointContainer
+IL_00de:callvirt instance System.Object [mscorlib]System.WeakReference::get_Target ()
+IL_00e3:castclass System.Runtime.InteropServices.ComTypes.IConnectionPointContainer
+IL_00e8:ldloca.s 1
+IL_00ea:ldloca.s 0
+IL_00ec:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPointContainer::FindConnectionPoint ([mscorlib]System.Guid&, [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint&)
+IL_00f1:ldarg 0
+IL_00f5:ldloc.0 
+IL_00f6:castclass System.Runtime.InteropServices.ComTypes.IConnectionPoint
+IL_0100:ldarg 0
+IL_0104:newobj instance [mscorlib]System.Collections.ArrayList::.ctor ()
+IL_010e:ret 
+IL_XXXX:stfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_XXXX:stfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+} // end of method Init
+.method  (PrivateScope, Public, Virtual) System.Void remove_Changed (msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_EventProvider.remove_Changed{
+.maxstack 6
+.locals int (System.Int32 (0) System.Int32 (1) msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper (2) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0012:brfalse IL_00e1
+IL_0017:ldarg 0
+IL_001b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0020:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::get_Count ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4 0
+IL_002b:stloc.1 
+IL_002c:ldc.i4 0
+IL_0031:ldloc.0 
+IL_0032:bge IL_00e1
+IL_0037:ldarg 0
+IL_003b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0040:ldloc.1 
+IL_0041:callvirt instance System.Object [mscorlib]System.Collections.ArrayList::get_Item (System.Int32)
+IL_0046:castclass msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper
+IL_004b:stloc.2 
+IL_004c:ldloc.2 
+IL_004d:ldfld msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler m_ChangedDelegate
+IL_0052:ldnull 
+IL_0053:beq IL_00d2
+IL_0058:ldloc.2 
+IL_0059:ldfld msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler m_ChangedDelegate
+IL_005e:ldarg 1
+IL_0062:castclass System.Object
+IL_0067:callvirt instance System.Boolean [mscorlib]System.Delegate::Equals (System.Object)
+IL_006c:ldc.i4 255
+IL_0071:and 
+IL_0072:ldc.i4 0
+IL_0077:beq IL_00d2
+IL_007c:ldarg 0
+IL_0080:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0085:ldloc.1 
+IL_0086:callvirt instance [mscorlib]System.Void [mscorlib]System.Collections.ArrayList::RemoveAt (System.Int32)
+IL_008b:ldarg 0
+IL_008f:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0094:ldloc.2 
+IL_0095:ldfld Int32 m_dwCookie
+IL_009a:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Unadvise (System.Int32)
+IL_009f:ldloc.0 
+IL_00a0:ldc.i4 1
+IL_00a5:bgt IL_00e1
+IL_00aa:ldarg 0
+IL_00ae:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_00b3:call System.Int32 [mscorlib]System.Runtime.InteropServices.Marshal::ReleaseComObject (System.Object)
+IL_00b8:pop 
+IL_00b9:ldarg 0
+IL_00bd:ldnull 
+IL_00c3:ldarg 0
+IL_00c7:ldnull 
+IL_00cd:br IL_00e1
+IL_00d2:ldloc.1 
+IL_00d3:ldc.i4 1
+IL_00d8:add 
+IL_00d9:stloc.1 
+IL_00da:ldloc.1 
+IL_00db:ldloc.0 
+IL_00dc:blt IL_0037
+IL_00e1:leave IL_00f0
+}
+finally
+{
+IL_00e6:ldarg 0
+IL_00ea:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_00ef:endfinally 
+}
+IL_00f0:ret 
+IL_XXXX:stfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_XXXX:stfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+} // end of method remove_Changed
+.method  (PrivateScope, Public, Virtual) System.Void remove_Format (msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_EventProvider.remove_Format{
+.maxstack 6
+.locals int (System.Int32 (0) System.Int32 (1) msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper (2) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0012:brfalse IL_00e1
+IL_0017:ldarg 0
+IL_001b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0020:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::get_Count ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4 0
+IL_002b:stloc.1 
+IL_002c:ldc.i4 0
+IL_0031:ldloc.0 
+IL_0032:bge IL_00e1
+IL_0037:ldarg 0
+IL_003b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0040:ldloc.1 
+IL_0041:callvirt instance System.Object [mscorlib]System.Collections.ArrayList::get_Item (System.Int32)
+IL_0046:castclass msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper
+IL_004b:stloc.2 
+IL_004c:ldloc.2 
+IL_004d:ldfld msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler m_FormatDelegate
+IL_0052:ldnull 
+IL_0053:beq IL_00d2
+IL_0058:ldloc.2 
+IL_0059:ldfld msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler m_FormatDelegate
+IL_005e:ldarg 1
+IL_0062:castclass System.Object
+IL_0067:callvirt instance System.Boolean [mscorlib]System.Delegate::Equals (System.Object)
+IL_006c:ldc.i4 255
+IL_0071:and 
+IL_0072:ldc.i4 0
+IL_0077:beq IL_00d2
+IL_007c:ldarg 0
+IL_0080:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0085:ldloc.1 
+IL_0086:callvirt instance [mscorlib]System.Void [mscorlib]System.Collections.ArrayList::RemoveAt (System.Int32)
+IL_008b:ldarg 0
+IL_008f:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0094:ldloc.2 
+IL_0095:ldfld Int32 m_dwCookie
+IL_009a:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Unadvise (System.Int32)
+IL_009f:ldloc.0 
+IL_00a0:ldc.i4 1
+IL_00a5:bgt IL_00e1
+IL_00aa:ldarg 0
+IL_00ae:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_00b3:call System.Int32 [mscorlib]System.Runtime.InteropServices.Marshal::ReleaseComObject (System.Object)
+IL_00b8:pop 
+IL_00b9:ldarg 0
+IL_00bd:ldnull 
+IL_00c3:ldarg 0
+IL_00c7:ldnull 
+IL_00cd:br IL_00e1
+IL_00d2:ldloc.1 
+IL_00d3:ldc.i4 1
+IL_00d8:add 
+IL_00d9:stloc.1 
+IL_00da:ldloc.1 
+IL_00db:ldloc.0 
+IL_00dc:blt IL_0037
+IL_00e1:leave IL_00f0
+}
+finally
+{
+IL_00e6:ldarg 0
+IL_00ea:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_00ef:endfinally 
+}
+IL_00f0:ret 
+IL_XXXX:stfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_XXXX:stfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+} // end of method remove_Format
+.method  (PrivateScope, Public, Virtual) System.Void remove_UnFormat (msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_EventProvider.remove_UnFormat{
+.maxstack 6
+.locals int (System.Int32 (0) System.Int32 (1) msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper (2) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0012:brfalse IL_00e1
+IL_0017:ldarg 0
+IL_001b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0020:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::get_Count ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4 0
+IL_002b:stloc.1 
+IL_002c:ldc.i4 0
+IL_0031:ldloc.0 
+IL_0032:bge IL_00e1
+IL_0037:ldarg 0
+IL_003b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0040:ldloc.1 
+IL_0041:callvirt instance System.Object [mscorlib]System.Collections.ArrayList::get_Item (System.Int32)
+IL_0046:castclass msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper
+IL_004b:stloc.2 
+IL_004c:ldloc.2 
+IL_004d:ldfld msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler m_UnFormatDelegate
+IL_0052:ldnull 
+IL_0053:beq IL_00d2
+IL_0058:ldloc.2 
+IL_0059:ldfld msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler m_UnFormatDelegate
+IL_005e:ldarg 1
+IL_0062:castclass System.Object
+IL_0067:callvirt instance System.Boolean [mscorlib]System.Delegate::Equals (System.Object)
+IL_006c:ldc.i4 255
+IL_0071:and 
+IL_0072:ldc.i4 0
+IL_0077:beq IL_00d2
+IL_007c:ldarg 0
+IL_0080:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0085:ldloc.1 
+IL_0086:callvirt instance [mscorlib]System.Void [mscorlib]System.Collections.ArrayList::RemoveAt (System.Int32)
+IL_008b:ldarg 0
+IL_008f:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0094:ldloc.2 
+IL_0095:ldfld Int32 m_dwCookie
+IL_009a:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Unadvise (System.Int32)
+IL_009f:ldloc.0 
+IL_00a0:ldc.i4 1
+IL_00a5:bgt IL_00e1
+IL_00aa:ldarg 0
+IL_00ae:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_00b3:call System.Int32 [mscorlib]System.Runtime.InteropServices.Marshal::ReleaseComObject (System.Object)
+IL_00b8:pop 
+IL_00b9:ldarg 0
+IL_00bd:ldnull 
+IL_00c3:ldarg 0
+IL_00c7:ldnull 
+IL_00cd:br IL_00e1
+IL_00d2:ldloc.1 
+IL_00d3:ldc.i4 1
+IL_00d8:add 
+IL_00d9:stloc.1 
+IL_00da:ldloc.1 
+IL_00db:ldloc.0 
+IL_00dc:blt IL_0037
+IL_00e1:leave IL_00f0
+}
+finally
+{
+IL_00e6:ldarg 0
+IL_00ea:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_00ef:endfinally 
+}
+IL_00f0:ret 
+IL_XXXX:stfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_XXXX:stfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+} // end of method remove_UnFormat
+} //end of class msstdfmt.dll.tlb.IStdDataFormatEvents_EventProvider
+.class msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.MulticastDelegate
+.implements System.ICloneable, System.Runtime.Serialization.ISerializable, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute((Boolean)False)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor (System.Object, System.UIntPtr)
+{
+} // end of method .ctor
+.method  (PrivateScope, Public, Virtual) System.Void Invoke (msstdfmt.dll.tlb.StdDataValue)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler.Invoke{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)28, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method Invoke
+} //end of class msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler
+.class msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+.implements msstdfmt.dll.tlb.IStdDataFormatEvents, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (Assembly, PrivateScope, RTSpecialName, SpecialName) .ctor ()
+{
+.maxstack 4
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:call instance [mscorlib]System.Object::.ctor ()
+IL_0009:ldarg 0
+IL_000d:ldc.i4 0
+IL_0017:ldarg 0
+IL_001b:ldnull 
+IL_0021:ldarg 0
+IL_0025:ldnull 
+IL_002b:ldarg 0
+IL_002f:ldnull 
+IL_0035:ret 
+IL_XXXX:stfld Int32 m_dwCookie
+IL_XXXX:stfld msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler m_ChangedDelegate
+IL_XXXX:stfld msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler m_FormatDelegate
+IL_XXXX:stfld msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler m_UnFormatDelegate
+} // end of method .ctor
+.field (Public) System.Int32 m_dwCookie
+.field (Public) msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler m_ChangedDelegate
+.field (Public) msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler m_FormatDelegate
+.field (Public) msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler m_UnFormatDelegate
+.method  (PrivateScope, Public, Virtual) System.Void Changed ()
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper.Changed{
+.maxstack 1
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:ldfld msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler m_ChangedDelegate
+IL_0009:brfalse IL_001d
+IL_000e:ldarg 0
+IL_0012:ldfld msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler m_ChangedDelegate
+IL_0017:callvirt instance [mscorlib]System.Void msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler::Invoke ()
+IL_001c:ret 
+IL_001d:ret 
+} // end of method Changed
+.method  (PrivateScope, Public, Virtual) System.Void Format (msstdfmt.dll.tlb.StdDataValue)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper.Format{
+.maxstack 2
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:ldfld msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler m_FormatDelegate
+IL_0009:brfalse IL_0021
+IL_000e:ldarg 0
+IL_0012:ldfld msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler m_FormatDelegate
+IL_0017:ldarg 1
+IL_001b:callvirt instance [mscorlib]System.Void msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler::Invoke (msstdfmt.dll.tlb.StdDataValue)
+IL_0020:ret 
+IL_0021:ret 
+} // end of method Format
+.method  (PrivateScope, Public, Virtual) System.Void UnFormat (msstdfmt.dll.tlb.StdDataValue)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper.UnFormat{
+.maxstack 2
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:ldfld msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler m_UnFormatDelegate
+IL_0009:brfalse IL_0021
+IL_000e:ldarg 0
+IL_0012:ldfld msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler m_UnFormatDelegate
+IL_0017:ldarg 1
+IL_001b:callvirt instance [mscorlib]System.Void msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler::Invoke (msstdfmt.dll.tlb.StdDataValue)
+IL_0020:ret 
+IL_0021:ret 
+} // end of method UnFormat
+} //end of class msstdfmt.dll.tlb.IStdDataFormatEvents_SinkHelper
+.class msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.MulticastDelegate
+.implements System.ICloneable, System.Runtime.Serialization.ISerializable, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute((Boolean)False)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor (System.Object, System.UIntPtr)
+{
+} // end of method .ctor
+.method  (PrivateScope, Public, Virtual) System.Void Invoke (msstdfmt.dll.tlb.StdDataValue)
+.override msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler.Invoke{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)28, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method Invoke
+} //end of class msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler
+.class msstdfmt.dll.tlb.IStdDataFormatsDisp (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements msstdfmt.dll.tlb.IDataFormatsDisp, System.Collections.IEnumerable, 
+{
+.custom [mscorlib]System.Reflection.DefaultMemberAttribute("Item")
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("99FF4676-FFC3-11D0-BD02-00C04FC2FB86")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4304)
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_Count ()
+.override msstdfmt.dll.tlb.IStdDataFormatsDisp.get_Count{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+} // end of method get_Count
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.DataFormat get_Item (System.Object)
+.override msstdfmt.dll.tlb.IStdDataFormatsDisp.get_Item{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.ComAliasNameAttribute("msstdfmt.dll.tlb.DataFormat")
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)28, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_Item
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) [mscorlib]System.Collections.IEnumerator GetEnumerator ()
+.override msstdfmt.dll.tlb.IStdDataFormatsDisp.GetEnumerator{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)-4)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibFuncAttribute((System.Runtime.InteropServices.TypeLibFuncFlags)64)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)44, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0, MarshalType = "System.Runtime.InteropServices.CustomMarshalers.EnumeratorToEnumVariantMarshaler, CustomMarshalers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", MarshalTypeRef = System.Runtime.InteropServices.CustomMarshalers.EnumeratorToEnumVariantMarshaler, MarshalCookie = "")
+} // end of method GetEnumerator
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.String _ItemField (System.Object)
+.override msstdfmt.dll.tlb.IStdDataFormatsDisp._ItemField{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibFuncAttribute((System.Runtime.InteropServices.TypeLibFuncFlags)64)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method _ItemField
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Add (msstdfmt.dll.tlb.DataFormat, System.Object)
+.override msstdfmt.dll.tlb.IStdDataFormatsDisp.Add{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.ComAliasNameAttribute("msstdfmt.dll.tlb.DataFormat")
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)28, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+} // end of method Add
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Clear ()
+.override msstdfmt.dll.tlb.IStdDataFormatsDisp.Clear{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+} // end of method Clear
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Remove (System.Object)
+.override msstdfmt.dll.tlb.IStdDataFormatsDisp.Remove{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method Remove
+.property (None) System.Int32 Count
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_Count ()
+} // end of property Count
+.property (None) msstdfmt.dll.tlb.DataFormat Item
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComAliasNameAttribute("msstdfmt.dll.tlb.DataFormat")
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.DataFormat get_Item (System.Object)
+} // end of property Item
+} //end of class msstdfmt.dll.tlb.IStdDataFormatsDisp
+.class msstdfmt.dll.tlb.IStdDataValueDisp (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Reflection.DefaultMemberAttribute("Value")
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("5DE7A180-91B1-11D0-9484-00A0C91110ED")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4304)
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_TargetObject ()
+.override msstdfmt.dll.tlb.IStdDataValueDisp.get_TargetObject{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)26, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_TargetObject
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_Value ()
+.override msstdfmt.dll.tlb.IStdDataValueDisp.get_Value{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_Value
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_TargetObject (System.Object)
+.override msstdfmt.dll.tlb.IStdDataValueDisp.set_TargetObject{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)26, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_TargetObject
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Value ([mscorlib]System.Object&)
+.override msstdfmt.dll.tlb.IStdDataValueDisp.set_Value{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_Value
+.property (None) System.Object TargetObject
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_TargetObject ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_TargetObject (System.Object)
+} // end of property TargetObject
+.property (None) System.Object Value
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_Value ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Value ([mscorlib]System.Object&)
+} // end of property Value
+} //end of class msstdfmt.dll.tlb.IStdDataValueDisp
+.class msstdfmt.dll.tlb.StdDataFormat (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements msstdfmt.dll.tlb.IStdDataFormatDisp, msstdfmt.dll.tlb.IDataFormatDisp, msstdfmt.dll.tlb.IStdDataFormatEvents_Event, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.CoClassAttribute(typeof(msstdfmt.dll.tlb.StdDataFormatClass))
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("6C51B910-900B-11D0-9484-00A0C91110ED")
+} //end of class msstdfmt.dll.tlb.StdDataFormat
+.class msstdfmt.dll.tlb.StdDataFormatClass (AnsiClass, AutoLayout, Import, Public)
+.extends [mscorlib]System.__ComObject
+.implements msstdfmt.dll.tlb.IStdDataFormatDisp, msstdfmt.dll.tlb.IDataFormatDisp, msstdfmt.dll.tlb.StdDataFormat, msstdfmt.dll.tlb.IStdDataFormatEvents_Event, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.ComSourceInterfacesAttribute("msstdfmt.dll.tlb.IStdDataFormatEvents  ")
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("6D835690-900B-11D0-9484-00A0C91110ED")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)2)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor ()
+{
+} // end of method .ctor
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.FirstDayOfWeek get_FirstDayOfWeek ()
+.override msstdfmt.dll.tlb.StdDataFormatClass.get_FirstDayOfWeek{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)6)
+} // end of method get_FirstDayOfWeek
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.FirstWeekOfYear get_FirstWeekOfYear ()
+.override msstdfmt.dll.tlb.StdDataFormatClass.get_FirstWeekOfYear{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)7)
+} // end of method get_FirstWeekOfYear
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.FormatType get_Type ()
+.override msstdfmt.dll.tlb.StdDataFormatClass.get_Type{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+} // end of method get_Type
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_FalseValue ()
+.override msstdfmt.dll.tlb.StdDataFormatClass.get_FalseValue{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_FalseValue
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_NullValue ()
+.override msstdfmt.dll.tlb.StdDataFormatClass.get_NullValue{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_NullValue
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_TrueValue ()
+.override msstdfmt.dll.tlb.StdDataFormatClass.get_TrueValue{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_TrueValue
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_Format ()
+.override msstdfmt.dll.tlb.StdDataFormatClass.get_Format{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_Format
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Changed (msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler)
+.override msstdfmt.dll.tlb.StdDataFormatClass.add_Changed{
+} // end of method add_Changed
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Format (msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler)
+.override msstdfmt.dll.tlb.StdDataFormatClass.add_Format{
+} // end of method add_Format
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_UnFormat (msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler)
+.override msstdfmt.dll.tlb.StdDataFormatClass.add_UnFormat{
+} // end of method add_UnFormat
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Changed (msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler)
+.override msstdfmt.dll.tlb.StdDataFormatClass.remove_Changed{
+} // end of method remove_Changed
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Format (msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler)
+.override msstdfmt.dll.tlb.StdDataFormatClass.remove_Format{
+} // end of method remove_Format
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_UnFormat (msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler)
+.override msstdfmt.dll.tlb.StdDataFormatClass.remove_UnFormat{
+} // end of method remove_UnFormat
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_FalseValue ([mscorlib]System.Object&)
+.override msstdfmt.dll.tlb.StdDataFormatClass.set_FalseValue{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_FalseValue
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_FirstDayOfWeek (msstdfmt.dll.tlb.FirstDayOfWeek)
+.override msstdfmt.dll.tlb.StdDataFormatClass.set_FirstDayOfWeek{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)6)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_FirstDayOfWeek
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_FirstWeekOfYear (msstdfmt.dll.tlb.FirstWeekOfYear)
+.override msstdfmt.dll.tlb.StdDataFormatClass.set_FirstWeekOfYear{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)7)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_FirstWeekOfYear
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Format (System.String)
+.override msstdfmt.dll.tlb.StdDataFormatClass.set_Format{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_Format
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_NullValue ([mscorlib]System.Object&)
+.override msstdfmt.dll.tlb.StdDataFormatClass.set_NullValue{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_NullValue
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_TrueValue ([mscorlib]System.Object&)
+.override msstdfmt.dll.tlb.StdDataFormatClass.set_TrueValue{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_TrueValue
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Type (msstdfmt.dll.tlb.FormatType)
+.override msstdfmt.dll.tlb.StdDataFormatClass.set_Type{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+} // end of method set_Type
+.property (None) msstdfmt.dll.tlb.FirstDayOfWeek FirstDayOfWeek
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)6)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.FirstDayOfWeek get_FirstDayOfWeek ()
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_FirstDayOfWeek (msstdfmt.dll.tlb.FirstDayOfWeek)
+} // end of property FirstDayOfWeek
+.property (None) msstdfmt.dll.tlb.FirstWeekOfYear FirstWeekOfYear
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)7)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.FirstWeekOfYear get_FirstWeekOfYear ()
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_FirstWeekOfYear (msstdfmt.dll.tlb.FirstWeekOfYear)
+} // end of property FirstWeekOfYear
+.property (None) msstdfmt.dll.tlb.FormatType Type
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.FormatType get_Type ()
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Type (msstdfmt.dll.tlb.FormatType)
+} // end of property Type
+.property (None) System.Object FalseValue
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_FalseValue ()
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_FalseValue ([mscorlib]System.Object&)
+} // end of property FalseValue
+.property (None) System.Object NullValue
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_NullValue ()
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_NullValue ([mscorlib]System.Object&)
+} // end of property NullValue
+.property (None) System.Object TrueValue
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_TrueValue ()
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_TrueValue ([mscorlib]System.Object&)
+} // end of property TrueValue
+.property (None) System.String Format
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_Format ()
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Format (System.String)
+} // end of property Format
+.event (None) msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler Changed
+{
+.addmethod (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Changed (msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler)
+.removemethod (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Changed (msstdfmt.dll.tlb.IStdDataFormatEvents_ChangedEventHandler)
+} // end of event Changed
+.event (None) msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler IStdDataFormatEvents_Event_Format
+{
+.addmethod (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_Format (msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler)
+.removemethod (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_Format (msstdfmt.dll.tlb.IStdDataFormatEvents_FormatEventHandler)
+} // end of event IStdDataFormatEvents_Event_Format
+.event (None) msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler UnFormat
+{
+.addmethod (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_UnFormat (msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler)
+.removemethod (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_UnFormat (msstdfmt.dll.tlb.IStdDataFormatEvents_UnFormatEventHandler)
+} // end of event UnFormat
+} //end of class msstdfmt.dll.tlb.StdDataFormatClass
+.class msstdfmt.dll.tlb.StdDataFormats (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements msstdfmt.dll.tlb.IStdDataFormatsDisp, msstdfmt.dll.tlb.IDataFormatsDisp, System.Collections.IEnumerable, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.CoClassAttribute(typeof(msstdfmt.dll.tlb.StdDataFormatsClass))
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("99FF4676-FFC3-11D0-BD02-00C04FC2FB86")
+} //end of class msstdfmt.dll.tlb.StdDataFormats
+.class msstdfmt.dll.tlb.StdDataFormatsClass (AnsiClass, AutoLayout, Import, Public)
+.extends [mscorlib]System.__ComObject
+.implements msstdfmt.dll.tlb.IStdDataFormatsDisp, msstdfmt.dll.tlb.IDataFormatsDisp, System.Collections.IEnumerable, msstdfmt.dll.tlb.StdDataFormats, 
+{
+.custom [mscorlib]System.Reflection.DefaultMemberAttribute("Item")
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("99FF4677-FFC3-11D0-BD02-00C04FC2FB86")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)2)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor ()
+{
+} // end of method .ctor
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_Count ()
+.override msstdfmt.dll.tlb.StdDataFormatsClass.get_Count{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+} // end of method get_Count
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.DataFormat get_Item (System.Object)
+.override msstdfmt.dll.tlb.StdDataFormatsClass.get_Item{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.ComAliasNameAttribute("msstdfmt.dll.tlb.DataFormat")
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)28, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_Item
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) [mscorlib]System.Collections.IEnumerator GetEnumerator ()
+.override msstdfmt.dll.tlb.StdDataFormatsClass.GetEnumerator{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)-4)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibFuncAttribute((System.Runtime.InteropServices.TypeLibFuncFlags)64)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)44, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0, MarshalType = "System.Runtime.InteropServices.CustomMarshalers.EnumeratorToEnumVariantMarshaler, CustomMarshalers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", MarshalTypeRef = System.Runtime.InteropServices.CustomMarshalers.EnumeratorToEnumVariantMarshaler, MarshalCookie = "")
+} // end of method GetEnumerator
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.String _ItemField (System.Object)
+.override msstdfmt.dll.tlb.StdDataFormatsClass._ItemField{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)5)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibFuncAttribute((System.Runtime.InteropServices.TypeLibFuncFlags)64)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method _ItemField
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Add (msstdfmt.dll.tlb.DataFormat, System.Object)
+.override msstdfmt.dll.tlb.StdDataFormatsClass.Add{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.ComAliasNameAttribute("msstdfmt.dll.tlb.DataFormat")
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)28, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.param [2]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+.custom [mscorlib]System.Runtime.InteropServices.OptionalAttribute()
+} // end of method Add
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Clear ()
+.override msstdfmt.dll.tlb.StdDataFormatsClass.Clear{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+} // end of method Clear
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void Remove (System.Object)
+.override msstdfmt.dll.tlb.StdDataFormatsClass.Remove{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method Remove
+.property (None) System.Int32 Count
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Int32 get_Count ()
+} // end of property Count
+.property (None) msstdfmt.dll.tlb.DataFormat Item
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComAliasNameAttribute("msstdfmt.dll.tlb.DataFormat")
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) msstdfmt.dll.tlb.DataFormat get_Item (System.Object)
+} // end of property Item
+} //end of class msstdfmt.dll.tlb.StdDataFormatsClass
+.class msstdfmt.dll.tlb.StdDataValue (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements msstdfmt.dll.tlb.IStdDataValueDisp, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.CoClassAttribute(typeof(msstdfmt.dll.tlb.StdDataValueClass))
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("5DE7A180-91B1-11D0-9484-00A0C91110ED")
+} //end of class msstdfmt.dll.tlb.StdDataValue
+.class msstdfmt.dll.tlb.StdDataValueClass (AnsiClass, AutoLayout, Import, Public)
+.extends [mscorlib]System.__ComObject
+.implements msstdfmt.dll.tlb.IStdDataValueDisp, msstdfmt.dll.tlb.StdDataValue, 
+{
+.custom [mscorlib]System.Reflection.DefaultMemberAttribute("Value")
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("2B11E9B0-9F09-11D0-9484-00A0C91110ED")
+.method  (Assembly, PrivateScope, RTSpecialName, SpecialName) .ctor ()
+{
+} // end of method .ctor
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_TargetObject ()
+.override msstdfmt.dll.tlb.StdDataValueClass.get_TargetObject{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)26, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_TargetObject
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_Value ()
+.override msstdfmt.dll.tlb.StdDataValueClass.get_Value{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_Value
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_TargetObject (System.Object)
+.override msstdfmt.dll.tlb.StdDataValueClass.set_TargetObject{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)26, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_TargetObject
+.method  (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Value ([mscorlib]System.Object&)
+.override msstdfmt.dll.tlb.StdDataValueClass.set_Value{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)27, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_Value
+.property (None) System.Object TargetObject
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_TargetObject ()
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_TargetObject (System.Object)
+} // end of property TargetObject
+.property (None) System.Object Value
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)0)
+.get (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Object get_Value ()
+.set (HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_Value ([mscorlib]System.Object&)
+} // end of property Value
+} //end of class msstdfmt.dll.tlb.StdDataValueClass

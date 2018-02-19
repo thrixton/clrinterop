@@ -1,0 +1,16 @@
+<Rules>
+  <Rule Name="Rule #1" Category="Signature">
+    <Condition>
+      <And>
+        <NativeSignature Operator="Equal" Value="INT *" />
+      </And>
+    </Condition>
+    <Action Name="ConvertTo">
+      <Parameter Key="Direction" Value="[In]" />
+      <Parameter Key="ByRef" Value="False" />
+      <Parameter Key="ManagedType" Value="LPArray" />
+      <Parameter Key="MarshalAs" Value="(default)" />
+      <Parameter Key="Attributes" Value="[SizeParamIndexOffset=+1]" />
+    </Action>
+  </Rule>
+</Rules>

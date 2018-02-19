@@ -1,0 +1,28 @@
+<Rules>
+  <Rule Name="Rule #1" Category="Type">
+    <Condition>
+      <And>
+        <NativeName Operator="Equal" Value="TargetType" />
+      </And>
+    </Condition>
+    <Action Name="AddAttribute">
+      <Parameter Key="AssemblyName" Value="mscorlib" />
+      <Parameter Key="TypeName" Value="System.CLSCompliantAttribute" />
+      <Parameter Key="Constructor" Value="Void .ctor(Boolean)" />
+      <Parameter Key="Data" Value="01 00 01 00 00" />
+    </Action>
+  </Rule>
+  <Rule Name="Rule #2" Category="Type">
+    <Condition>
+      <And>
+        <NativeName Operator="Equal" Value="TargetType" />
+      </And>
+    </Condition>
+    <Action Name="AddAttribute">
+      <Parameter Key="AssemblyName" Value="mscorlib" />
+      <Parameter Key="TypeName" Value="System.CLSCompliantAttribute" />
+      <Parameter Key="Constructor" Value="Void .ctor(Boolean)" />
+      <Parameter Key="Data" Value="01 00 00 00 00" />
+    </Action>
+  </Rule>
+</Rules>

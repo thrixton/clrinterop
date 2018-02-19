@@ -1,0 +1,61 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly AddAttribute_3.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("46000433-1DD4-4A6D-BAC8-9C643D27E18E")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("AddAttribute_3")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)1, (Int32)0)
+} // end of assembly
+.module AddAttribute_3.tlb.dll
+.file AddAttribute_3.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class AddAttribute_3.tlb.coclassTargetType (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements AddAttribute_3.tlb.TargetType, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.CoClassAttribute(typeof(AddAttribute_3.tlb.coclassTargetTypeClass))
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("31767136-FF80-4914-852B-8BF48756DD8E")
+} //end of class AddAttribute_3.tlb.coclassTargetType
+.class AddAttribute_3.tlb.coclassTargetTypeClass (AnsiClass, AutoLayout, Import, Public)
+.extends [mscorlib]System.__ComObject
+.implements AddAttribute_3.tlb.TargetType, AddAttribute_3.tlb.coclassTargetType, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("F15E6D0D-87A0-4C02-89C3-6D51B4D09BCF")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)2)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor ()
+{
+} // end of method .ctor
+} //end of class AddAttribute_3.tlb.coclassTargetTypeClass
+.class AddAttribute_3.tlb.moduleTargetType (Abstract, AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+{
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("3CF74EF1-4D94-4D3C-9D9C-CBD487CD9217")
+.field (Literal, Public, Static) System.UInt32 COLOR_FRAME
+} //end of class AddAttribute_3.tlb.moduleTargetType
+.class AddAttribute_3.tlb.TargetType (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.DefaultCharSetAttribute((System.Runtime.InteropServices.CharSet)3)
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("31767136-FF80-4914-852B-8BF48756DD8E")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+} //end of class AddAttribute_3.tlb.TargetType

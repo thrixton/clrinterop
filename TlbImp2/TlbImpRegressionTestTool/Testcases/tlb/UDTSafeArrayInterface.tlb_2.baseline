@@ -1,0 +1,647 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly UDTSafeArrayInterface.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("96D885D2-88AF-432C-8890-06956327C86A")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("UDTSafeArrayInterface")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)1, (Int32)0)
+} // end of assembly
+.module UDTSafeArrayInterface.tlb.dll
+.file UDTSafeArrayInterface.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class UDTSafeArrayInterface.tlb.D1 (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("A8942DEA-3589-47AA-BBE4-4EE40FDFCBB1")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)2)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_p1 ()
+.override UDTSafeArrayInterface.tlb.D1.get_p1{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method get_p1
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.String m1 ()
+.override UDTSafeArrayInterface.tlb.D1.m1{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)2)
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method m1
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p1 (System.String)
+.override UDTSafeArrayInterface.tlb.D1.set_p1{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method set_p1
+.property (None) System.String p1
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.String get_p1 ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_p1 (System.String)
+} // end of property p1
+} //end of class UDTSafeArrayInterface.tlb.D1
+.class UDTSafeArrayInterface.tlb.I (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("F6F99885-90F5-4E9E-9702-2D314C8AC23A")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)1)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method (System.String)
+.override UDTSafeArrayInterface.tlb.I.method{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method method
+} //end of class UDTSafeArrayInterface.tlb.I
+.class UDTSafeArrayInterface.tlb.I1 (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComConversionLossAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("C7CB2F45-0B9D-4FF5-9642-704523CF8A98")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)1)
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) [mscorlib]System.Array get_propSafeArray ()
+.override UDTSafeArrayInterface.tlb.I1.get_propSafeArray{
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 13, SafeArrayUserDefinedSubType = UDTSafeArrayInterface.tlb.I)
+} // end of method get_propSafeArray
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) [mscorlib]System.Array get_propSafeArray2 ()
+.override UDTSafeArrayInterface.tlb.I1.get_propSafeArray2{
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 22)
+} // end of method get_propSafeArray2
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) [mscorlib]System.Array method3 ()
+.override UDTSafeArrayInterface.tlb.I1.method3{
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 13, SafeArrayUserDefinedSubType = UDTSafeArrayInterface.tlb.I)
+} // end of method method3
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method1 ([mscorlib]System.Array)
+.override UDTSafeArrayInterface.tlb.I1.method1{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 13, SafeArrayUserDefinedSubType = UDTSafeArrayInterface.tlb.I)
+} // end of method method1
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method2 ([mscorlib]System.Array)
+.override UDTSafeArrayInterface.tlb.I1.method2{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 22)
+} // end of method method2
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_propSafeArray ([mscorlib]System.Array)
+.override UDTSafeArrayInterface.tlb.I1.set_propSafeArray{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 13, SafeArrayUserDefinedSubType = UDTSafeArrayInterface.tlb.I)
+} // end of method set_propSafeArray
+.method  (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_propSafeArray2 ([mscorlib]System.Array)
+.override UDTSafeArrayInterface.tlb.I1.set_propSafeArray2{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 22)
+} // end of method set_propSafeArray2
+.property (None) [mscorlib]System.Array propSafeArray
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)3)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) [mscorlib]System.Array get_propSafeArray ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_propSafeArray ([mscorlib]System.Array)
+} // end of property propSafeArray
+.property (None) [mscorlib]System.Array propSafeArray2
+{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)4)
+.get (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) [mscorlib]System.Array get_propSafeArray2 ()
+.set (Abstract, HideBySig, PrivateScope, Public, SpecialName, Virtual, VtableLayoutMask) System.Void set_propSafeArray2 ([mscorlib]System.Array)
+} // end of property propSafeArray2
+} //end of class UDTSafeArrayInterface.tlb.I1
+.class UDTSafeArrayInterface.tlb.I2 (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComConversionLossAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("0555BDB8-ED37-446C-8504-AFCAA09B6916")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)1)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) [mscorlib]System.Array method3 ()
+.override UDTSafeArrayInterface.tlb.I2.method3{
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 9)
+} // end of method method3
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method1 ([mscorlib]System.Array)
+.override UDTSafeArrayInterface.tlb.I2.method1{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 9)
+} // end of method method1
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method2 ([mscorlib]System.Array&)
+.override UDTSafeArrayInterface.tlb.I2.method2{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 22)
+} // end of method method2
+} //end of class UDTSafeArrayInterface.tlb.I2
+.class UDTSafeArrayInterface.tlb.I3 (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComConversionLossAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("2C74B626-D8FC-449F-AB27-14DF0ADEBB0D")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)1)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) [mscorlib]System.Array method3 ()
+.override UDTSafeArrayInterface.tlb.I3.method3{
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 9, SafeArrayUserDefinedSubType = UDTSafeArrayInterface.tlb.D1)
+} // end of method method3
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method1 ([mscorlib]System.Array)
+.override UDTSafeArrayInterface.tlb.I3.method1{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 9, SafeArrayUserDefinedSubType = UDTSafeArrayInterface.tlb.D1)
+} // end of method method1
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method2 ([mscorlib]System.Array)
+.override UDTSafeArrayInterface.tlb.I3.method2{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 22)
+} // end of method method2
+} //end of class UDTSafeArrayInterface.tlb.I3
+.class UDTSafeArrayInterface.tlb.I4 (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("411BDC1C-3917-4057-8654-82CD8B6276B2")
+.custom [mscorlib]System.Runtime.InteropServices.InterfaceTypeAttribute((System.Runtime.InteropServices.ComInterfaceType)2)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method1 ([mscorlib]System.String&)
+.override UDTSafeArrayInterface.tlb.I4.method1{
+.custom [mscorlib]System.Runtime.InteropServices.DispIdAttribute((Int32)1)
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method method1
+} //end of class UDTSafeArrayInterface.tlb.I4
+.class UDTSafeArrayInterface.tlb.I4_Event (Interface Abstract, AnsiClass, AutoLayout, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComEventInterfaceAttribute(typeof(UDTSafeArrayInterface.tlb.I4), typeof(UDTSafeArrayInterface.tlb.I4_EventProvider))
+.custom [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute((Boolean)False)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_method1 (UDTSafeArrayInterface.tlb.I4_method1EventHandler)
+.override UDTSafeArrayInterface.tlb.I4_Event.add_method1{
+} // end of method add_method1
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_method1 (UDTSafeArrayInterface.tlb.I4_method1EventHandler)
+.override UDTSafeArrayInterface.tlb.I4_Event.remove_method1{
+} // end of method remove_method1
+.event (None) UDTSafeArrayInterface.tlb.I4_method1EventHandler method1
+{
+.addmethod (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_method1 (UDTSafeArrayInterface.tlb.I4_method1EventHandler)
+.removemethod (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_method1 (UDTSafeArrayInterface.tlb.I4_method1EventHandler)
+} // end of event method1
+} //end of class UDTSafeArrayInterface.tlb.I4_Event
+.class UDTSafeArrayInterface.tlb.I4_EventProvider (AnsiClass, AutoLayout, Sealed)
+.extends [mscorlib]System.Object
+.implements UDTSafeArrayInterface.tlb.I4_Event, System.IDisposable, 
+{
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor (System.Object)
+{
+.maxstack 6
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:call instance [mscorlib]System.Object::.ctor ()
+IL_0009:ldarg 0
+IL_000d:ldarg 1
+IL_0011:castclass System.Runtime.InteropServices.ComTypes.IConnectionPointContainer
+IL_0016:ldc.i4.0 
+IL_0017:newobj instance [mscorlib]System.WeakReference::.ctor (System.Object, System.Boolean)
+IL_0021:ret 
+IL_XXXX:stfld System.WeakReference m_wkConnectionPointContainer
+} // end of method .ctor
+.field (Private) [mscorlib]System.Collections.ArrayList m_aEventSinkHelpers
+.field (Private) [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+.field (Private) [mscorlib]System.WeakReference m_wkConnectionPointContainer
+.method  (PrivateScope, Public, Virtual) System.Void add_method1 (UDTSafeArrayInterface.tlb.I4_method1EventHandler)
+.override UDTSafeArrayInterface.tlb.I4_EventProvider.add_method1{
+.maxstack 6
+.locals int (UDTSafeArrayInterface.tlb.I4_SinkHelper (0) System.Int32 (1) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0012:brtrue IL_0020
+IL_0017:ldarg 0
+IL_001b:call instance [mscorlib]System.Void Init ()
+IL_0020:newobj instance UDTSafeArrayInterface.tlb.I4_SinkHelper::.ctor ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4.0 
+IL_0027:stloc.1 
+IL_0028:ldarg 0
+IL_002c:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0031:ldloc.0 
+IL_0032:castclass System.Object
+IL_0037:ldloca.s 1
+IL_0039:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Advise (System.Object, [mscorlib]System.Int32&)
+IL_003e:ldloc.0 
+IL_003f:ldloc.1 
+IL_0045:ldloc.0 
+IL_0046:ldarg 1
+IL_004f:ldarg 0
+IL_0053:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0058:ldloc.0 
+IL_0059:castclass System.Object
+IL_005e:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::Add (System.Object)
+IL_0063:pop 
+IL_0064:leave IL_0073
+}
+finally
+{
+IL_0069:ldarg 0
+IL_006d:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_0072:endfinally 
+}
+IL_0073:ret 
+IL_XXXX:stfld Int32 m_dwCookie
+IL_XXXX:stfld UDTSafeArrayInterface.tlb.I4_method1EventHandler m_method1Delegate
+} // end of method add_method1
+.method  (PrivateScope, Public, Virtual) System.Void Dispose ()
+.override UDTSafeArrayInterface.tlb.I4_EventProvider.Dispose{
+.maxstack 2
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:callvirt instance [mscorlib]System.Void Finalize ()
+IL_0009:ldarg 0
+IL_000d:call [mscorlib]System.Void [mscorlib]System.GC::SuppressFinalize (System.Object)
+IL_0012:ret 
+} // end of method Dispose
+.method  (PrivateScope, Public, Virtual) System.Void Finalize ()
+{
+.maxstack 5
+.locals int (System.Int32 (0) System.Int32 (1) UDTSafeArrayInterface.tlb.I4_SinkHelper (2) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0012:brfalse IL_007e
+IL_0017:ldarg 0
+IL_001b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0020:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::get_Count ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4 0
+IL_002b:stloc.1 
+IL_002c:ldc.i4 0
+IL_0031:ldloc.0 
+IL_0032:bge IL_006f
+IL_0037:ldarg 0
+IL_003b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0040:ldloc.1 
+IL_0041:callvirt instance System.Object [mscorlib]System.Collections.ArrayList::get_Item (System.Int32)
+IL_0046:castclass UDTSafeArrayInterface.tlb.I4_SinkHelper
+IL_004b:stloc.2 
+IL_004c:ldarg 0
+IL_0050:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0055:ldloc.2 
+IL_0056:ldfld Int32 m_dwCookie
+IL_005b:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Unadvise (System.Int32)
+IL_0060:ldloc.1 
+IL_0061:ldc.i4 1
+IL_0066:add 
+IL_0067:stloc.1 
+IL_0068:ldloc.1 
+IL_0069:ldloc.0 
+IL_006a:blt IL_0037
+IL_006f:ldarg 0
+IL_0073:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0078:call System.Int32 [mscorlib]System.Runtime.InteropServices.Marshal::ReleaseComObject (System.Object)
+IL_007d:pop 
+IL_007e:leave IL_0089
+}
+catch System.Exception
+{
+IL_0083:pop 
+IL_0084:leave IL_0089
+}
+IL_0089:leave IL_0098
+}
+finally
+{
+IL_008e:ldarg 0
+IL_0092:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_0097:endfinally 
+}
+IL_0098:ret 
+} // end of method Finalize
+.method  (Private, PrivateScope) System.Void Init ()
+.override UDTSafeArrayInterface.tlb.I4_EventProvider.Init{
+.maxstack 5
+.locals int (System.Runtime.InteropServices.ComTypes.IConnectionPoint (0) System.Guid (1) System.Byte[] (2) )
+IL_0000:ldnull 
+IL_0001:stloc.0 
+IL_0002:ldc.i4 16
+IL_0007:newarr System.Byte
+IL_000c:stloc.2 
+IL_000d:ldloc.2 
+IL_000e:ldc.i4 0
+IL_0013:ldc.i4 28
+IL_0018:stelem.i1 
+IL_0019:ldloc.2 
+IL_001a:ldc.i4 1
+IL_001f:ldc.i4 220
+IL_0024:stelem.i1 
+IL_0025:ldloc.2 
+IL_0026:ldc.i4 2
+IL_002b:ldc.i4 27
+IL_0030:stelem.i1 
+IL_0031:ldloc.2 
+IL_0032:ldc.i4 3
+IL_0037:ldc.i4 65
+IL_003c:stelem.i1 
+IL_003d:ldloc.2 
+IL_003e:ldc.i4 4
+IL_0043:ldc.i4 23
+IL_0048:stelem.i1 
+IL_0049:ldloc.2 
+IL_004a:ldc.i4 5
+IL_004f:ldc.i4 57
+IL_0054:stelem.i1 
+IL_0055:ldloc.2 
+IL_0056:ldc.i4 6
+IL_005b:ldc.i4 87
+IL_0060:stelem.i1 
+IL_0061:ldloc.2 
+IL_0062:ldc.i4 7
+IL_0067:ldc.i4 64
+IL_006c:stelem.i1 
+IL_006d:ldloc.2 
+IL_006e:ldc.i4 8
+IL_0073:ldc.i4 134
+IL_0078:stelem.i1 
+IL_0079:ldloc.2 
+IL_007a:ldc.i4 9
+IL_007f:ldc.i4 84
+IL_0084:stelem.i1 
+IL_0085:ldloc.2 
+IL_0086:ldc.i4 10
+IL_008b:ldc.i4 130
+IL_0090:stelem.i1 
+IL_0091:ldloc.2 
+IL_0092:ldc.i4 11
+IL_0097:ldc.i4 205
+IL_009c:stelem.i1 
+IL_009d:ldloc.2 
+IL_009e:ldc.i4 12
+IL_00a3:ldc.i4 139
+IL_00a8:stelem.i1 
+IL_00a9:ldloc.2 
+IL_00aa:ldc.i4 13
+IL_00af:ldc.i4 98
+IL_00b4:stelem.i1 
+IL_00b5:ldloc.2 
+IL_00b6:ldc.i4 14
+IL_00bb:ldc.i4 118
+IL_00c0:stelem.i1 
+IL_00c1:ldloc.2 
+IL_00c2:ldc.i4 15
+IL_00c7:ldc.i4 178
+IL_00cc:stelem.i1 
+IL_00cd:ldloca.s 1
+IL_00cf:ldloc.2 
+IL_00d0:call instance [mscorlib]System.Guid::.ctor ([mscorlib]System.Byte[])
+IL_00d5:ldarg 0
+IL_00d9:ldfld System.WeakReference m_wkConnectionPointContainer
+IL_00de:callvirt instance System.Object [mscorlib]System.WeakReference::get_Target ()
+IL_00e3:castclass System.Runtime.InteropServices.ComTypes.IConnectionPointContainer
+IL_00e8:ldloca.s 1
+IL_00ea:ldloca.s 0
+IL_00ec:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPointContainer::FindConnectionPoint ([mscorlib]System.Guid&, [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint&)
+IL_00f1:ldarg 0
+IL_00f5:ldloc.0 
+IL_00f6:castclass System.Runtime.InteropServices.ComTypes.IConnectionPoint
+IL_0100:ldarg 0
+IL_0104:newobj instance [mscorlib]System.Collections.ArrayList::.ctor ()
+IL_010e:ret 
+IL_XXXX:stfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_XXXX:stfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+} // end of method Init
+.method  (PrivateScope, Public, Virtual) System.Void remove_method1 (UDTSafeArrayInterface.tlb.I4_method1EventHandler)
+.override UDTSafeArrayInterface.tlb.I4_EventProvider.remove_method1{
+.maxstack 6
+.locals int (System.Int32 (0) System.Int32 (1) UDTSafeArrayInterface.tlb.I4_SinkHelper (2) )
+IL_0000:ldarg 0
+IL_0004:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Enter (System.Object)
+.try
+{
+IL_0009:ldarg 0
+IL_000d:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0012:brfalse IL_00e1
+IL_0017:ldarg 0
+IL_001b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0020:callvirt instance System.Int32 [mscorlib]System.Collections.ArrayList::get_Count ()
+IL_0025:stloc.0 
+IL_0026:ldc.i4 0
+IL_002b:stloc.1 
+IL_002c:ldc.i4 0
+IL_0031:ldloc.0 
+IL_0032:bge IL_00e1
+IL_0037:ldarg 0
+IL_003b:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0040:ldloc.1 
+IL_0041:callvirt instance System.Object [mscorlib]System.Collections.ArrayList::get_Item (System.Int32)
+IL_0046:castclass UDTSafeArrayInterface.tlb.I4_SinkHelper
+IL_004b:stloc.2 
+IL_004c:ldloc.2 
+IL_004d:ldfld UDTSafeArrayInterface.tlb.I4_method1EventHandler m_method1Delegate
+IL_0052:ldnull 
+IL_0053:beq IL_00d2
+IL_0058:ldloc.2 
+IL_0059:ldfld UDTSafeArrayInterface.tlb.I4_method1EventHandler m_method1Delegate
+IL_005e:ldarg 1
+IL_0062:castclass System.Object
+IL_0067:callvirt instance System.Boolean [mscorlib]System.Delegate::Equals (System.Object)
+IL_006c:ldc.i4 255
+IL_0071:and 
+IL_0072:ldc.i4 0
+IL_0077:beq IL_00d2
+IL_007c:ldarg 0
+IL_0080:ldfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_0085:ldloc.1 
+IL_0086:callvirt instance [mscorlib]System.Void [mscorlib]System.Collections.ArrayList::RemoveAt (System.Int32)
+IL_008b:ldarg 0
+IL_008f:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_0094:ldloc.2 
+IL_0095:ldfld Int32 m_dwCookie
+IL_009a:callvirt instance [mscorlib]System.Void [mscorlib]System.Runtime.InteropServices.ComTypes.IConnectionPoint::Unadvise (System.Int32)
+IL_009f:ldloc.0 
+IL_00a0:ldc.i4 1
+IL_00a5:bgt IL_00e1
+IL_00aa:ldarg 0
+IL_00ae:ldfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+IL_00b3:call System.Int32 [mscorlib]System.Runtime.InteropServices.Marshal::ReleaseComObject (System.Object)
+IL_00b8:pop 
+IL_00b9:ldarg 0
+IL_00bd:ldnull 
+IL_00c3:ldarg 0
+IL_00c7:ldnull 
+IL_00cd:br IL_00e1
+IL_00d2:ldloc.1 
+IL_00d3:ldc.i4 1
+IL_00d8:add 
+IL_00d9:stloc.1 
+IL_00da:ldloc.1 
+IL_00db:ldloc.0 
+IL_00dc:blt IL_0037
+IL_00e1:leave IL_00f0
+}
+finally
+{
+IL_00e6:ldarg 0
+IL_00ea:call [mscorlib]System.Void [mscorlib]System.Threading.Monitor::Exit (System.Object)
+IL_00ef:endfinally 
+}
+IL_00f0:ret 
+IL_XXXX:stfld System.Collections.ArrayList m_aEventSinkHelpers
+IL_XXXX:stfld System.Runtime.InteropServices.ComTypes.IConnectionPoint m_ConnectionPoint
+} // end of method remove_method1
+} //end of class UDTSafeArrayInterface.tlb.I4_EventProvider
+.class UDTSafeArrayInterface.tlb.I4_method1EventHandler (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.MulticastDelegate
+.implements System.ICloneable, System.Runtime.Serialization.ISerializable, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComVisibleAttribute((Boolean)False)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor (System.Object, System.UIntPtr)
+{
+} // end of method .ctor
+.method  (PrivateScope, Public, Virtual) System.Void Invoke ([mscorlib]System.String&)
+.override UDTSafeArrayInterface.tlb.I4_method1EventHandler.Invoke{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method Invoke
+} //end of class UDTSafeArrayInterface.tlb.I4_method1EventHandler
+.class UDTSafeArrayInterface.tlb.I4_SinkHelper (AnsiClass, AutoLayout, Public, Sealed)
+.extends [mscorlib]System.Object
+.implements UDTSafeArrayInterface.tlb.I4, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)16)
+.method  (Assembly, PrivateScope, RTSpecialName, SpecialName) .ctor ()
+{
+.maxstack 4
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:call instance [mscorlib]System.Object::.ctor ()
+IL_0009:ldarg 0
+IL_000d:ldc.i4 0
+IL_0017:ldarg 0
+IL_001b:ldnull 
+IL_0021:ret 
+IL_XXXX:stfld Int32 m_dwCookie
+IL_XXXX:stfld UDTSafeArrayInterface.tlb.I4_method1EventHandler m_method1Delegate
+} // end of method .ctor
+.field (Public) System.Int32 m_dwCookie
+.field (Public) UDTSafeArrayInterface.tlb.I4_method1EventHandler m_method1Delegate
+.method  (PrivateScope, Public, Virtual) System.Void method1 ([mscorlib]System.String&)
+.override UDTSafeArrayInterface.tlb.I4_SinkHelper.method1{
+.maxstack 2
+.locals int ()
+IL_0000:ldarg 0
+IL_0004:ldfld UDTSafeArrayInterface.tlb.I4_method1EventHandler m_method1Delegate
+IL_0009:brfalse IL_0021
+IL_000e:ldarg 0
+IL_0012:ldfld UDTSafeArrayInterface.tlb.I4_method1EventHandler m_method1Delegate
+IL_0017:ldarg 1
+IL_001b:callvirt instance [mscorlib]System.Void UDTSafeArrayInterface.tlb.I4_method1EventHandler::Invoke ([mscorlib]System.String&)
+IL_0020:ret 
+IL_0021:ret 
+} // end of method method1
+} //end of class UDTSafeArrayInterface.tlb.I4_SinkHelper
+.class UDTSafeArrayInterface.tlb.I5 (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComConversionLossAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("4023086F-20BF-4603-A825-10F8E253AF2D")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) [mscorlib]System.Array method4 ()
+.override UDTSafeArrayInterface.tlb.I5.method4{
+.param [0]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 9, SafeArrayUserDefinedSubType = UDTSafeArrayInterface.tlb.iSource)
+} // end of method method4
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method1 ([mscorlib]System.Array)
+.override UDTSafeArrayInterface.tlb.I5.method1{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 13, SafeArrayUserDefinedSubType = System.Object)
+} // end of method method1
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method2 ([mscorlib]System.Array)
+.override UDTSafeArrayInterface.tlb.I5.method2{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 22)
+} // end of method method2
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method3 ([mscorlib]System.Array)
+.override UDTSafeArrayInterface.tlb.I5.method3{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)29, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 9, SafeArrayUserDefinedSubType = UDTSafeArrayInterface.tlb.iSource)
+} // end of method method3
+} //end of class UDTSafeArrayInterface.tlb.I5
+.class UDTSafeArrayInterface.tlb.iSource (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("F5D83864-0AFE-469A-80ED-138FA570C8D3")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void play (System.String)
+.override UDTSafeArrayInterface.tlb.iSource.play{
+.param [1]
+.custom [mscorlib]System.Runtime.InteropServices.InAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.MarshalAsAttribute((System.Runtime.InteropServices.UnmanagedType)19, ArraySubType = 0, SizeParamIndex = 0, SizeConst = 0, IidParameterIndex = 0, SafeArraySubType = 0)
+} // end of method play
+} //end of class UDTSafeArrayInterface.tlb.iSource
+.class UDTSafeArrayInterface.tlb.Test (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+.implements UDTSafeArrayInterface.tlb.I4_Event, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.CoClassAttribute(typeof(UDTSafeArrayInterface.tlb.TestClass))
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+} //end of class UDTSafeArrayInterface.tlb.Test
+.class UDTSafeArrayInterface.tlb.TestClass (AnsiClass, AutoLayout, Import, Public)
+.extends [mscorlib]System.__ComObject
+.implements UDTSafeArrayInterface.tlb.Test, UDTSafeArrayInterface.tlb.I4_Event, 
+{
+.custom [mscorlib]System.Runtime.InteropServices.ClassInterfaceAttribute((System.Runtime.InteropServices.ClassInterfaceType)0)
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.ComSourceInterfacesAttribute("UDTSafeArrayInterface.tlb.I4  ")
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("71E98E49-6C6D-4348-8348-DE2E696396F7")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)2)
+.method  (PrivateScope, Public, RTSpecialName, SpecialName) .ctor ()
+{
+} // end of method .ctor
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_method1 (UDTSafeArrayInterface.tlb.I4_method1EventHandler)
+.override UDTSafeArrayInterface.tlb.TestClass.add_method1{
+} // end of method add_method1
+.method  (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_method1 (UDTSafeArrayInterface.tlb.I4_method1EventHandler)
+.override UDTSafeArrayInterface.tlb.TestClass.remove_method1{
+} // end of method remove_method1
+.event (None) UDTSafeArrayInterface.tlb.I4_method1EventHandler method1
+{
+.addmethod (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void add_method1 (UDTSafeArrayInterface.tlb.I4_method1EventHandler)
+.removemethod (HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void remove_method1 (UDTSafeArrayInterface.tlb.I4_method1EventHandler)
+} // end of event method1
+} //end of class UDTSafeArrayInterface.tlb.TestClass

@@ -1,0 +1,120 @@
+<TestCases>
+    <TestCase Target=".\tlb\mso.dll.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\mso.dll.tlb.baseline"/>
+    <TestCase Target=".\tlb\mso.dll.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\mso.dll.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\vb6ext.olb.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\vb6ext.olb.tlb.baseline"/>
+    <TestCase Target=".\tlb\vb6ext.olb.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\vb6ext.olb.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\dispret.dll.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\dispret.dll.tlb.baseline"/>
+    <TestCase Target=".\tlb\dispret.dll.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\dispret.dll.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\msado20.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\msado20.tlb.baseline"/>
+    <TestCase Target=".\tlb\msado20.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\msado20.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\msado25.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\msado25.tlb.baseline"/>
+    <TestCase Target=".\tlb\msado25.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\msado25.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\MSPPT9.OLB.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\MSPPT9.OLB.tlb.baseline"/>
+    <TestCase Target=".\tlb\MSPPT9.OLB.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\MSPPT9.OLB.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\ConvertProperty.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\ConvertProperty.tlb.baseline"/>
+    <TestCase Target=".\tlb\ConvertProperty.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\ConvertProperty.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\msword9.olb.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\msword9.olb.tlb.baseline"/>
+    <TestCase Target=".\tlb\msword9.olb.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\msword9.olb.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\vcpb2.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\vcpb2.tlb.baseline"/>
+    <TestCase Target=".\tlb\vcpb2.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\vcpb2.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\PropGet01.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\PropGet01.tlb.baseline"/>
+    <TestCase Target=".\tlb\PropGet01.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\PropGet01.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\VBA6.DLL.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\VBA6.DLL.tlb.baseline"/>
+    <TestCase Target=".\tlb\VBA6.DLL.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\VBA6.DLL.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\MSO9.DLL.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\MSO9.DLL.tlb.baseline"/>
+    <TestCase Target=".\tlb\MSO9.DLL.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\MSO9.DLL.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\MSO97RT.DLL.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\MSO97RT.DLL.tlb.baseline"/>
+    <TestCase Target=".\tlb\MSO97RT.DLL.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\MSO97RT.DLL.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\MSACC9.OLB.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\MSACC9.OLB.tlb.baseline"/>
+    <TestCase Target=".\tlb\MSACC9.OLB.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\MSACC9.OLB.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\msstdfmt.dll.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\msstdfmt.dll.tlb.baseline"/>
+    <TestCase Target=".\tlb\msstdfmt.dll.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\msstdfmt.dll.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\UDTSafeArrayEnum.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\UDTSafeArrayEnum.tlb.baseline"/>
+    <TestCase Target=".\tlb\UDTSafeArrayEnum.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\UDTSafeArrayEnum.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\UDTSafeArrayInterface.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\UDTSafeArrayInterface.tlb.baseline"/>
+    <TestCase Target=".\tlb\UDTSafeArrayInterface.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\UDTSafeArrayInterface.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\prop01.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\prop01.tlb.baseline"/>
+    <TestCase Target=".\tlb\prop01.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\prop01.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\prop02.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\prop02.tlb.baseline"/>
+    <TestCase Target=".\tlb\prop02.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\prop02.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\prop03.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\prop03.tlb.baseline"/>
+    <TestCase Target=".\tlb\prop03.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\prop03.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\propgetwithvoid.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\propgetwithvoid.tlb.baseline"/>
+    <TestCase Target=".\tlb\propgetwithvoid.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\propgetwithvoid.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\propset01.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\propset01.tlb.baseline"/>
+    <TestCase Target=".\tlb\propset01.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\propset01.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\s0006.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\s0006.tlb.baseline"/>
+    <TestCase Target=".\tlb\s0006.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\s0006.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\S0046.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\S0046.tlb.baseline"/>
+    <TestCase Target=".\tlb\S0046.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\S0046.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\ManagedNameAttribute.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\ManagedNameAttribute.tlb.baseline"/>
+    <TestCase Target=".\tlb\ManagedNameAttribute.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\ManagedNameAttribute.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\ManagedName_InconsistenceNSandCoclass.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\ManagedName_InconsistenceNSandCoclass.tlb.baseline"/>
+    <TestCase Target=".\tlb\ManagedName_InconsistenceNSandCoclass.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\ManagedName_InconsistenceNSandCoclass.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\mso.dll.tlb" WorkingDirectory=".\tlb\" Arguments="/unsafe" Baseline=".\tlb\mso.dll.tlb_3.baseline"/>
+    <TestCase Target=".\tlb\msado25.tlb" WorkingDirectory=".\tlb\" Arguments="/unsafe" Baseline=".\tlb\msado25.tlb_3.baseline"/>
+    <TestCase Target=".\tlb\msppt.olb.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\msppt.olb.tlb.baseline"/>
+    <TestCase Target=".\tlb\msppt.olb.tlb" WorkingDirectory=".\tlb\" Arguments="/sysarray /transform:dispret" Baseline=".\tlb\msppt.olb.tlb_2.baseline"/>
+    <TestCase Target=".\tlb\spdesign.exe.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\spdesign.exe.tlb.baseline"/>
+    <TestCase Target=".\tlb\test_deep_object_in_union.tlb" WorkingDirectory=".\tlb\" Arguments="" Baseline=".\tlb\test_deep_object_in_union.tlb.baseline"/>
+    <TestCase Target=".\AddAttribute\AddAttribute_1.tlb" WorkingDirectory=".\AddAttribute\" Arguments="/config:AddAttribute_1.xml" Baseline=".\AddAttribute\AddAttribute_1.baseline"/>
+    <TestCase Target=".\AddAttribute\AddAttribute_2.tlb" WorkingDirectory=".\AddAttribute\" Arguments="/config:AddAttribute_2.xml" Baseline=".\AddAttribute\AddAttribute_2.baseline"/>
+    <TestCase Target=".\AddAttribute\AddAttribute_3.tlb" WorkingDirectory=".\AddAttribute\" Arguments="/config:AddAttribute_3.xml" Baseline=".\AddAttribute\AddAttribute_3.baseline"/>
+    <TestCase Target=".\AddAttribute\AddAttribute_4.tlb" WorkingDirectory=".\AddAttribute\" Arguments="/config:AddAttribute_4.xml" Baseline=".\AddAttribute\AddAttribute_4.baseline"/>
+    <TestCase Target=".\AddAttribute\AddAttribute_5.tlb" WorkingDirectory=".\AddAttribute\" Arguments="/config:AddAttribute_5.xml" Baseline=".\AddAttribute\AddAttribute_5.baseline"/>
+    <TestCase Target=".\AddAttribute\AddAttribute_6.tlb" WorkingDirectory=".\AddAttribute\" Arguments="/config:AddAttribute_6.xml" Baseline=".\AddAttribute\AddAttribute_6.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_1.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_1.xml" Baseline=".\ChangeManagedName\ChangeManagedName_1.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_2.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_2.xml" Baseline=".\ChangeManagedName\ChangeManagedName_2.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_3_1.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_3_1.xml" Baseline=".\ChangeManagedName\ChangeManagedName_3_1.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_3_2.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_3_2.xml" Baseline=".\ChangeManagedName\ChangeManagedName_3_2.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_3_3.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_3_3.xml" Baseline=".\ChangeManagedName\ChangeManagedName_3_3.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_3_4.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_3_4.xml" Baseline=".\ChangeManagedName\ChangeManagedName_3_4.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_3_5.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_3_5.xml" Baseline=".\ChangeManagedName\ChangeManagedName_3_5.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_3_6.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_3_6.xml" Baseline=".\ChangeManagedName\ChangeManagedName_3_6.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_3_7.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_3_7.xml" Baseline=".\ChangeManagedName\ChangeManagedName_3_7.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_4.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_4.xml" Baseline=".\ChangeManagedName\ChangeManagedName_4.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_5.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_5.xml" Baseline=".\ChangeManagedName\ChangeManagedName_5.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_6.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_6.xml" Baseline=".\ChangeManagedName\ChangeManagedName_6.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_7.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_7.xml" Baseline=".\ChangeManagedName\ChangeManagedName_7.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_8.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_8.xml" Baseline=".\ChangeManagedName\ChangeManagedName_8.baseline"/>
+    <TestCase Target=".\ChangeManagedName\ChangeManagedName_9.tlb" WorkingDirectory=".\ChangeManagedName\" Arguments="/config:ChangeManagedName_9.xml" Baseline=".\ChangeManagedName\ChangeManagedName_9.baseline"/>
+    <TestCase Target=".\ConvertTo\ConvertTo_1.tlb" WorkingDirectory=".\ConvertTo\" Arguments="/config:ConvertTo_1.xml" Baseline=".\ConvertTo\ConvertTo_1.baseline"/>
+    <TestCase Target=".\ConvertTo\ConvertTo_2.tlb" WorkingDirectory=".\ConvertTo\" Arguments="/config:ConvertTo_2.xml" Baseline=".\ConvertTo\ConvertTo_2.baseline"/>
+    <TestCase Target=".\ConvertTo\ConvertTo_3.tlb" WorkingDirectory=".\ConvertTo\" Arguments="/config:ConvertTo_3.xml" Baseline=".\ConvertTo\ConvertTo_3.baseline"/>
+    <TestCase Target=".\ConvertTo\ConvertTo_4.tlb" WorkingDirectory=".\ConvertTo\" Arguments="/config:ConvertTo_4.xml" Baseline=".\ConvertTo\ConvertTo_4.baseline"/>
+    <TestCase Target=".\ConvertToOtherType\ConvertToOtherType_1.tlb" WorkingDirectory=".\ConvertToOtherType\" Arguments="/config:ConvertToOtherType_1.xml" Baseline=".\ConvertToOtherType\ConvertToOtherType_1.baseline"/>
+    <TestCase Target=".\ConvertToOtherType\ConvertToOtherType_2.tlb" WorkingDirectory=".\ConvertToOtherType\" Arguments="/config:ConvertToOtherType_2.xml" Baseline=".\ConvertToOtherType\ConvertToOtherType_2.baseline"/>
+    <TestCase Target=".\ConvertToOtherType\ConvertToOtherType_3_1.tlb" WorkingDirectory=".\ConvertToOtherType\" Arguments="/config:ConvertToOtherType_3_1.xml" Baseline=".\ConvertToOtherType\ConvertToOtherType_3_1.baseline"/>
+    <TestCase Target=".\ConvertToOtherType\ConvertToOtherType_3_2.tlb" WorkingDirectory=".\ConvertToOtherType\" Arguments="/config:ConvertToOtherType_3_2.xml" Baseline=".\ConvertToOtherType\ConvertToOtherType_3_2.baseline"/>
+    <TestCase Target=".\ConvertToOtherType\ConvertToOtherType_3_3.tlb" WorkingDirectory=".\ConvertToOtherType\" Arguments="/config:ConvertToOtherType_3_3.xml" Baseline=".\ConvertToOtherType\ConvertToOtherType_3_3.baseline"/>
+    <TestCase Target=".\ConvertToOtherType\ConvertToOtherType_4.tlb" WorkingDirectory=".\ConvertToOtherType\" Arguments="/config:ConvertToOtherType_4.xml" Baseline=".\ConvertToOtherType\ConvertToOtherType_4.baseline"/>
+    <TestCase Target=".\ConvertToOtherType\ConvertToOtherType_5.tlb" WorkingDirectory=".\ConvertToOtherType\" Arguments="/config:ConvertToOtherType_5.xml" Baseline=".\ConvertToOtherType\ConvertToOtherType_5.baseline"/>
+    <TestCase Target=".\ConvertToOtherType\ConvertToOtherType_6.tlb" WorkingDirectory=".\ConvertToOtherType\" Arguments="/config:ConvertToOtherType_6.xml" Baseline=".\ConvertToOtherType\ConvertToOtherType_6.baseline"/>
+    <TestCase Target=".\MultipleRules\MultipleRule_1.tlb" WorkingDirectory=".\MultipleRules\" Arguments="/config:MultipleRule_1.xml" Baseline=".\MultipleRules\MultipleRule_1.baseline"/>
+    <TestCase Target=".\MultipleRules\MultipleRule_2.tlb" WorkingDirectory=".\MultipleRules\" Arguments="/config:MultipleRule_2.xml" Baseline=".\MultipleRules\MultipleRule_2.baseline"/>
+    <TestCase Target=".\MultipleRules\MultipleRule_3.tlb" WorkingDirectory=".\MultipleRules\" Arguments="/config:MultipleRule_3.xml" Baseline=".\MultipleRules\MultipleRule_3.baseline"/>
+    <TestCase Target=".\MultipleRules\MultipleRule_4.tlb" WorkingDirectory=".\MultipleRules\" Arguments="/config:MultipleRule_4.xml" Baseline=".\MultipleRules\MultipleRule_4.baseline"/>
+    <TestCase Target=".\MultipleRules\MultipleRule_5.tlb" WorkingDirectory=".\MultipleRules\" Arguments="/config:MultipleRule_5.xml" Baseline=".\MultipleRules\MultipleRule_5.baseline"/>
+    <TestCase Target=".\MultipleRules\MultipleRule_6.tlb" WorkingDirectory=".\MultipleRules\" Arguments="/config:MultipleRule_6.xml" Baseline=".\MultipleRules\MultipleRule_6.baseline"/>
+    <TestCase Target=".\Operator\Operator_1.tlb" WorkingDirectory=".\Operator\" Arguments="/config:Operator_1.xml" Baseline=".\Operator\Operator_1.baseline"/>
+    <TestCase Target=".\Operator\Operator_2.tlb" WorkingDirectory=".\Operator\" Arguments="/config:Operator_2.xml" Baseline=".\Operator\Operator_2.baseline"/>
+    <TestCase Target=".\Operator\Operator_3.tlb" WorkingDirectory=".\Operator\" Arguments="/config:Operator_3.xml" Baseline=".\Operator\Operator_3.baseline"/>
+    <TestCase Target=".\Operator\Operator_4.tlb" WorkingDirectory=".\Operator\" Arguments="/config:Operator_4.xml" Baseline=".\Operator\Operator_4.baseline"/>
+    <TestCase Target=".\Operator\Operator_5.tlb" WorkingDirectory=".\Operator\" Arguments="/config:Operator_5.xml" Baseline=".\Operator\Operator_5.baseline"/>
+    <TestCase Target=".\Operator\Operator_6.tlb" WorkingDirectory=".\Operator\" Arguments="/config:Operator_6.xml" Baseline=".\Operator\Operator_6.baseline"/>
+    <TestCase Target=".\Operator\Operator_7.tlb" WorkingDirectory=".\Operator\" Arguments="/config:Operator_7.xml" Baseline=".\Operator\Operator_7.baseline"/>
+    <TestCase Target=".\Operator\Operator_8.tlb" WorkingDirectory=".\Operator\" Arguments="/config:Operator_8.xml" Baseline=".\Operator\Operator_8.baseline"/>
+    <TestCase Target=".\OtherScenario\OtherScenario_1.tlb" WorkingDirectory=".\OtherScenario\" Arguments="/config:OtherScenario_1.xml" Baseline=".\OtherScenario\OtherScenario_1.baseline"/>
+    <TestCase Target=".\OtherScenario\OtherScenario_2.tlb" WorkingDirectory=".\OtherScenario\" Arguments="/config:OtherScenario_2.xml" Baseline=".\OtherScenario\OtherScenario_2.baseline"/>
+    <TestCase Target=".\OtherScenario\OtherScenario_3.tlb" WorkingDirectory=".\OtherScenario\" Arguments="/config:OtherScenario_3.xml" Baseline=".\OtherScenario\OtherScenario_3.baseline"/>
+    <TestCase Target=".\PreserveSig\PreserveSig_1.tlb" WorkingDirectory=".\PreserveSig\" Arguments="/config:PreserveSig_1.xml" Baseline=".\PreserveSig\PreserveSig_1.baseline"/>
+    <TestCase Target=".\PreserveSig\PreserveSig_2.tlb" WorkingDirectory=".\PreserveSig\" Arguments="/config:PreserveSig_2.xml" Baseline=".\PreserveSig\PreserveSig_2.baseline"/>
+    <TestCase Target=".\PreserveSig\PreserveSig_3.tlb" WorkingDirectory=".\PreserveSig\" Arguments="/config:PreserveSig_3.xml" Baseline=".\PreserveSig\PreserveSig_3.baseline"/>
+    <TestCase Target=".\ResolveTo\ResolveTo_1.tlb" WorkingDirectory=".\ResolveTo\" Arguments="/config:ResolveTo_1.xml" Baseline=".\ResolveTo\ResolveTo_1.baseline"/>
+    <TestCase Target=".\ResolveTo\ResolveTo_2.tlb" WorkingDirectory=".\ResolveTo\" Arguments="/config:ResolveTo_2.xml" Baseline=".\ResolveTo\ResolveTo_2.baseline"/>
+    <TestCase Target=".\ResolveTo\ResolveTo_3.tlb" WorkingDirectory=".\ResolveTo\" Arguments="/config:ResolveTo_3.xml" Baseline=".\ResolveTo\ResolveTo_3.baseline"/>
+    <TestCase Target=".\ResolveTo\ResolveTo_4.tlb" WorkingDirectory=".\ResolveTo\" Arguments="/config:ResolveTo_4.xml" Baseline=".\ResolveTo\ResolveTo_4.baseline"/>
+    <TestCase Target=".\ResolveTo\ResolveTo_5.tlb" WorkingDirectory=".\ResolveTo\" Arguments="/config:ResolveTo_5.xml" Baseline=".\ResolveTo\ResolveTo_5.baseline"/>
+    <TestCase Target=".\Office\mso.dll.tlb" WorkingDirectory=".\Office\" Arguments="/config:mso.dll.xml" Baseline=".\Office\mso.dll.baseline"/>
+</TestCases>
+

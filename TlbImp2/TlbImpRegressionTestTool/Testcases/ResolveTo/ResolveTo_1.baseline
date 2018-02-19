@@ -1,0 +1,37 @@
+.assembly extern mscorlib
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey NULL
+.publickeytoken ( b7 7a 5c 56 19 34 e0 89 )
+.flags 
+} // end of assembly
+.assembly ResolveTo_1.tlb
+{
+.ver |
+.hash SHA1
+.culture NULL
+.versionCompatibility SameMachine
+.publickey ( )
+.publickeytoken ( )
+.flags 
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("2F2330D4-7F62-491C-89A2-BBAC627AE2F8")
+.custom [mscorlib]System.Runtime.InteropServices.ImportedFromTypeLibAttribute("ResolveTo_1")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibVersionAttribute((Int32)1, (Int32)0)
+} // end of assembly
+.module ResolveTo_1.tlb.dll
+.file ResolveTo_1.tlb.dll
+.pekind ILOnly
+.imageMachine I386
+.class ResolveTo_1.tlb.IA (Interface Abstract, AnsiClass, AutoLayout, Import, Public)
+
+{
+.custom [mscorlib]System.Runtime.InteropServices.ComImportAttribute()
+.custom [mscorlib]System.Runtime.InteropServices.GuidAttribute("68E59B77-0FD8-4F3C-89D5-0EFEFD67AF17")
+.custom [mscorlib]System.Runtime.InteropServices.TypeLibTypeAttribute((System.Runtime.InteropServices.TypeLibTypeFlags)4096)
+.method  (Abstract, HideBySig, PrivateScope, Public, Virtual, VtableLayoutMask) System.Void method1 (System.String)
+.override ResolveTo_1.tlb.IA.method1{
+} // end of method method1
+} //end of class ResolveTo_1.tlb.IA

@@ -1,0 +1,10 @@
+<Rules>
+  <Rule Name="Rule #1" Category="Function">
+    <Condition>
+      <And>
+        <NativeName Operator="Equal" Value="FuncA" />
+      </And>
+    </Condition>
+    <Action Name="PreserveSig" />
+  </Rule>
+</Rules>

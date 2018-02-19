@@ -1,0 +1,25 @@
+<Rules>
+  <Rule Name="Rule #1" Category="Signature">
+    <Condition>
+      <And>
+        <NativeParameterIndex Operator="Equal" Value="0" />
+        <NativeParentFunctionName Operator="Equal" Value="TargetFunction" />
+      </And>
+    </Condition>
+    <Action Name="ConvertTo">
+      <Parameter Key="Direction" Value="[Out]" />
+      <Parameter Key="ByRef" Value="False" />
+      <Parameter Key="ManagedType" Value="int" />
+      <Parameter Key="MarshalAs" Value="Error" />
+      <Parameter Key="Attributes" Value="[]" />
+    </Action>
+  </Rule>
+  <Rule Name="Rule #2" Category="Function">
+    <Condition>
+      <And>
+        <NativeName Operator="Equal" Value="TargetFunction" />
+      </And>
+    </Condition>
+    <Action Name="PreserveSig" />
+  </Rule>
+</Rules>
